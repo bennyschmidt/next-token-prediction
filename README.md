@@ -114,3 +114,13 @@ https://github.com/bennyschmidt/next-token-prediction/assets/45407493/cd4a1102-5
 (the following is lower quality on GitHub because it's a couple minutes long - this is training & booting up the LM from 0-1)
 
 https://github.com/bennyschmidt/next-token-prediction/assets/45407493/033e8260-6a8c-4627-9195-9a6c8bd843bd
+
+## Inspiration
+
+[![YouTube](https://img.youtube.com/vi/wjZofJX0v4M/0.jpg)](https://www.youtube.com/watch?v=wjZofJX0v4M)
+
+## Goals
+
+1. Demystify LLMS for people, show that it's just regular code that does normal stuff
+
+2. Actually make a pretty good LLM in JavaScript, with a version at least capable of running in a browser tab
