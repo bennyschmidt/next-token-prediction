@@ -10,6 +10,10 @@ Train a language model on a body of text and get high-quality predictions (next 
 
 #### Simple (from a built-in data bootstrap)
 
+Put this [`/training/`](https://github.com/bennyschmidt/next-token-prediction/tree/master/training) directory in the root of your project. 
+
+Now you just need to create your app's `index.js` file and run it. Your model will start training on the .txt files located in [`/training/documents/`](https://github.com/bennyschmidt/next-token-prediction/tree/master/training/documents). After training is complete it will run these 4 queries:
+
 ```javascript
 const MyLanguageModel = async () => {
   const { Language: LM } = require('next-token-prediction');
@@ -38,9 +42,13 @@ const MyLanguageModel = async () => {
 MyLanguageModel();
 ```
 
+-----
+
 #### Advanced (provide `trainingData` or create it from .txt files)
 
-From the dataset included in this repo:
+Put this [`/training/`](https://github.com/bennyschmidt/next-token-prediction/tree/master/training) directory in the root of your project. 
+
+Because training data was committed to this repo, you can optionally skip training, and just use the bootstrapped dataset and embeddings, like this:
 
 ```javascript
 const MyLanguageModel = async () => {
@@ -62,9 +70,7 @@ const MyLanguageModel = async () => {
 MyLanguageModel();
 ```
 
-From your own .txt files.
-
-⚠️ This can take a while, and uses a lot of CPU/GPU:
+Or, train on your own provided text files:
 
 ```javascript
 const MyLanguageModel = () => {
