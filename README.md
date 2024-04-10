@@ -121,6 +121,6 @@ https://github.com/bennyschmidt/next-token-prediction/assets/45407493/033e8260-6
 
 ## Goals
 
-1. Demystify LLMS for people, show that it's just regular code that does normal stuff
+1. Demystify LLMs for people, show that it's just regular code that does normal stuff
 
 2. Actually make a pretty good LLM in JavaScript, with a version at least capable of running in a browser tab
