@@ -10,14 +10,14 @@ Train a language model on a body of text and get high-quality predictions (next 
 
 #### Simple (from a built-in data bootstrap)
 
-Put this [`/training/`](https://github.com/bennyschmidt/next-token-prediction/tree/master/training) directory in the root of your project. 
+Put this [`/training/`](https://github.com/bennyschmidt/next-token-prediction/tree/master/training) directory in the root of your project.
 
 Now you just need to create your app's `index.js` file and run it. Your model will start training on the .txt files located in [`/training/documents/`](https://github.com/bennyschmidt/next-token-prediction/tree/master/training/documents). After training is complete it will run these 4 queries:
 
 ```javascript
-const MyLanguageModel = async () => {
-  const { Language: LM } = require('next-token-prediction');
+const { Language: LM } = require('next-token-prediction');
 
+const MyLanguageModel = async () => {
   const agent = await LM({
     bootstrap: true
   });
@@ -46,18 +46,18 @@ MyLanguageModel();
 
 #### Advanced (provide `trainingData` or create it from .txt files)
 
-Put this [`/training/`](https://github.com/bennyschmidt/next-token-prediction/tree/master/training) directory in the root of your project. 
+Put this [`/training/`](https://github.com/bennyschmidt/next-token-prediction/tree/master/training) directory in the root of your project.
 
 Because training data was committed to this repo, you can optionally skip training, and just use the bootstrapped dataset and embeddings, like this:
 
 ```javascript
+const { dirname } = require('path');
+const __root = dirname(require.main.filename);
+
+const { Language: LM } = require('next-token-prediction');
+const OpenSourceBooksDataset = require(`${__root}/training/datasets/OpenSourceBooks`);
+
 const MyLanguageModel = async () => {
-  const { dirname } = require('path');
-  const __root = dirname(require.main.filename);
-
-  const { Language: LM } = require('next-token-prediction');
-  const OpenSourceBooksDataset = require(`${__root}/training/datasets/OpenSourceBooks`);
-
   const agent = await LM({
     dataset: OpenSourceBooksDataset
   });
@@ -73,12 +73,12 @@ MyLanguageModel();
 Or, train on your own provided text files:
 
 ```javascript
+const { dirname } = require('path');
+const __root = dirname(require.main.filename);
+
+const { Language: LM } = require('next-token-prediction');
+
 const MyLanguageModel = () => {
-  const { dirname } = require('path');
-  const __root = dirname(require.main.filename);
-
-  const { Language: LM } = require('next-token-prediction');
-
   // The following .txt files should exist in a `/training/documents/`
   // directory in the root of your project
 
@@ -100,6 +100,10 @@ const MyLanguageModel = () => {
 
 MyLanguageModel();
 ```
+
+## Examples
+
+[Readline Completion](./examples/readline-completion/index.js)
 
 ## Video
 

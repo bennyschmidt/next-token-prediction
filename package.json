@@ -1,11 +1,12 @@
 {
   "name": "next-token-prediction",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "bennyschmidt",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "node test.js"
+    "test": "node test.js",
+    "example": "node ./examples/readline-completion/index.js"
   },
   "dependencies": {
     "lodash": "^4.17.21"
