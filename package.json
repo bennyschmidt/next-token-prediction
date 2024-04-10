@@ -1,0 +1,13 @@
+{
+  "name": "next-token-prediction",
+  "version": "1.0.0",
+  "author": "bennyschmidt",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

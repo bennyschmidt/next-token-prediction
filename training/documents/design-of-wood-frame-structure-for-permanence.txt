@@ -1,0 +1,1989 @@
+The American Wood Council (AWC) is the wood products division of the American Forest
+& Paper Association (AF&PA). AF&PA is the national trade association of the forest,
+paper and wood products industry, representing member companies engaged in growing,
+harvesting and processing wood and wood fiber, manufacturing pulp, paper andpaperboard
+products form both virgin and recycled fiber, and producing engineered and traditional
+wood products. For more information see www.afandpa.org.
+
+
+
+While every effort has been made to insure the accuracy of the information presented,
+and special effort has been made to assure that the information reflects the state-of-
+the-art, neither the American Forest & Paper Association nor its members assume any
+responsibility for any particular design prepared from this publication. Those using this
+document assume all liability from its use.
+
+
+
+Copyright © 2006
+American Forest & Paper Association, Inc.
+
+American Wood Council
+
+1111 19 th St., NW, Suite 800
+
+Washington, DC 20036
+
+202-463-4713
+
+awcinfo@afandpa.org
+
+www.awc.org
+
+
+
+WOOD CONSTRUCTION DATA 6
+
+
+
+TABLE OF CONTENTS
+
+
+
+Chapter/Title
+
+
+
+Page Chapter/Title
+
+
+
+Page
+
+
+
+Introduction 3
+
+Principles of Good Design 3
+
+The Role of Building Codes 3
+
+Moisture Control 4
+
+Sources of Moisture 4
+
+Principles of Water Management 4
+
+Termite Control 15
+
+Termite Barrier 16
+
+Chemical Soil Treatment 16
+
+Construction Details 17
+
+In-Ground Bait Systems 17
+
+Fumigation 17
+
+LIST OF ILLUSTRATIONS
+
+Figure Page
+
+1 Rain Exposure Zones 4
+
+2 Hygro-Thermal Zones 4
+
+3 Water Management Principles 5
+
+4 Flashing Over Openings in Exterior Walls .. 6
+
+5 Flashing Under Window in Exterior Wall 6
+
+6 Flashing Where Changes in Exterior
+Finish Occur 6
+
+7 Flashing at Various Points on a Roof 7
+
+8 Clearance Between Wood Siding and
+Earth 7
+
+9 Clearance Between Wood and Exposed
+Earth in Crawl Space or Other
+Unexcavated Concealed Areas 8
+
+10 Clearance Between Wood Columns and
+Floor or Exposed Earth when in
+Basements or when Exposed to Weather... 8
+
+11 Wood Beams or Girder Framing into
+Masonry or Concrete Wall 9
+
+12 Exterior Wood Steps 9
+
+
+
+Durable Materials 17
+
+Naturally Durable Wood 17
+
+Pressure Treated Wood 19
+
+Conditions of Use for Pressure Treated
+
+and Naturally Durable Wood 19
+
+Non-Pressure Treated Wood 20
+
+Bibliography 20
+
+Treating Specifications and Standards: ....20
+
+Selected References: 20
+
+Endnote 20
+
+
+
+Figure Page
+
+13 Exterior Concrete Steps 9
+
+14 Concrete Porch or Patio Slab 9
+
+15 Masonry Veneer Finish Over Wood
+Framing 10
+
+16 Site Drainage Away from Structure 10
+
+17 Damp Proofing and Drainage of a
+Masonry Foundation 11
+
+18 Damp-Proofing and Drainage of a Wood
+Foundation 11
+
+19 Drainage of a Crawl Space 11
+
+20 Shingles and Flashing at Eave 12
+
+21 Methods of Ventilating Roof Spaces and
+Amount of Ventilation Required 14
+
+22 Installation of Termite Shield 16
+
+23 Application of Soil Treatment 18
+
+24 Termite Control for Slab-on-Ground
+Construction 18
+
+
+
+AMERICAN FOREST & PAPER ASSOCIATION
+
+
+
+DESIGN OF WOOD FRAME STRUCTURES FOR PERMANANCE
+
+
+
+AMERICAN WOOD COUNCIL
+
+
+
+WOOD CONSTRUCTION DATA 6
+
+
+
+DETAILS FOR CONVENTIONAL WOOD FRAME CONSTRUCTION
+
+
+
+INTRODUCTION
+
+Design of durable structures is the result of careful
+planning and understanding of loads and forces that will
+likely act upon a building during its lifetime. If these key
+elements are not taken into consideration, the designer
+may compromise the ability of the structure to remain fully
+functional over extended periods of time.
+
+Building codes establish minimum requirements for
+structural strength, safety from fire, and other hazards.
+To this end, the American Forest & Paper Association
+(AF&PA) provides several design standards and construc-
+tion guides. AF&PA's National Design Specification®
+(NDS®) for Wood Construction, and the related Wood
+Frame Construction Manual for One- and Two-Family
+Dwellings, provide standards and guidelines for structural
+design and construction of wood-frame buildings. Like-
+wise, AF&PAs Design for Code Acceptance (DCA) series
+provides building code accepted methods for complying
+with fire safety provisions of the codes. Yet, building codes
+do not address all of the issues that promote long-term
+durability of buildings and structures. This document de-
+scribes practices to control moisture and protect a building
+from infestations of living organisms, which can influence
+the long-term durability of buildings, as can structural
+loads and fire exposures.
+
+Design of durable structures begins with an under-
+standing of moisture loading and how it interacts with
+building materials. The designer must be concerned with
+sources of water, how it is transported, and how it can be
+controlled and removed. Moisture flows within a building
+must be managed to prevent water accumulation or stor-
+age that may lead to premature deterioration of building
+products. Quality control is also extremely important in
+constructing building envelope assemblies to resist the
+negative effects of moisture.
+
+In many areas, there may also be a risk of insect in-
+festation. In particular, termites may attack wood frame
+structures and, in turn, reduce the life expectancy of the
+building.
+
+When properly designed, wood frame structures
+will resist damage by moisture and living organisms.
+Recommendations for control of moisture and protection
+against decay and insect infestations are contained in this
+document. Many of the recommendations are established
+practice among architects, engineers, and builders.
+
+PRINCIPLES OF GOOD DESIGN
+
+Protection of wood frame structures to provide
+maximum service-life involves four methods of control,
+which can be handled by proper design and construction:
+
+
+
+(1) control moisture content of wood, (2) provide effec-
+tive termite controls, (3) use of durable materials such as
+naturally durable or pressure treated wood, and (4) quality
+assurance.
+
+Wood construction maintained at a moisture content of
+20 percent or less will not decay. Optimum conditions for
+decay occur when moisture content is above 25 percent.
+It should be stressed that when wood is protected from
+water or from vapor condensation, and exposed to normal
+atmospheric conditions such as exist inside buildings and
+outdoors, its moisture content rarely exceeds 15 percent
+Therefore, moisture content control by means of accepted
+design and construction details is a simple and practical
+method of providing protection against decay.
+
+Moisture control also contributes to prevention of
+subterranean termite attack. One of the primary control
+methods for termites is elimination of sources of water
+for termites to ingest. Other methods include the use
+of effective barriers and bait systems supplemented by
+periodic inspection. Termite barriers are provided by use
+of accepted construction practices that drive termites into
+the open where shelter tubes can be detected by inspection
+and destroyed.
+
+Wood frame structures that properly manage moisture
+and are provided with a recognized termite control system
+supplemented by periodic inspections will resist subter-
+ranean termite attack and last for many years.
+
+In some cases architectural considerations or use ex-
+posures (swimming pools, marine structures, wet process
+industries, ground contact, or unusual climatic conditions)
+may complicate moisture control and termite protection
+and necessitate greater protection. In certain geographical
+regions, for example, high incidences of precipitation or
+termite infestation may indicate the need for greater protec-
+tion. Under these circumstances naturally durable wood
+of certain species may be used or wood pressure treated
+with chemicals to prevent decay and termite damage may
+be required.
+
+THE ROLE OF BUILDING CODES
+
+Building practices described in this document reflect
+a building science approach to mitigating moisture, pest,
+and durability problems in new and existing wood con-
+struction. State and local codes and ordinances may differ
+in their approaches to the same issues. In such cases, the
+local code official having jurisdiction should be consulted
+and shall have the final authority in determining local
+requirements.
+
+
+
+AMERICAN FOREST & PAPER ASSOCIATION
+
+
+
+DESIGN OF WOOD FRAME STRUCTURES FOR PERMANANCE
+
+
+
+MOISTURE CONTROL
+
+Sources of Moisture
+
+Sources of moisture include water from rain, snow,
+high humidity, soils, and water vapor from interior and
+exterior environments.
+
+The degree to which moisture will load a structure is
+dependent on a variety of factors including:
+
+• Climatic conditions;
+
+• Site-specific factors, such as location, solar expo-
+sure, wind exposure, and relationship to surrounding
+buildings, vegetation, and terrain;
+
+• Building design features, such as overhangs, cornic-
+es, site drainage, and crawl space ground cover.
+
+For design purposes, the probability of external envi-
+ronmental loads can be analyzed according to two climatic
+zones: rain exposure zones (Figure 1), and hygro-thermal
+zones (Figure 2). Microclimate and building design factors
+also influence the actual exposure level. These additional
+factors must be accounted for in the design process. To ac-
+count for moisture loads an understanding of how moisture
+may be transported into a structure is needed.
+
+Moisture loading will migrate into and through build-
+ing assemblies through several transport mechanisms
+including:
+
+• Liquid Flow/Capillarity - Liquid flow is the move-
+ment of liquid water under the influence of a driving
+force, such as gravity, or suction caused by capillary
+action.
+
+• Air movement - Air movement refers to the trans-
+port of water vapor through air leakage in and out
+of wall, ceiling, and roof envelope cavities.
+
+• Diffusion - Diffusion is the direct movement of wa-
+ter vapor through ceiling and wall surfaces, driven
+by vapor pressure differentials.
+
+Of these three transport mechanisms, liquid flow gen-
+erally produces the most significant moisture loads. Thus,
+it is not surprising that rain penetration and groundwater
+control has been the primary focus of builders and designers
+for generations. Air movement and vapor diffusion are also
+important, though less significant and less obvious contribu-
+tors to development of moisture problems in buildings.
+
+Principles of Water Management
+
+The primary objective when addressing moisture
+loads is to keep the building envelope dry by reducing the
+amount of water transported inside the building envelope
+and to achieve a balance of the moisture content within the
+building. To limit the amount of water intrusion and obtain
+a balance of moisture content, general principles of water
+management including deflection, distance (separation),
+drainage, and drying (Figure 3) should be followed.
+
+
+
+Figure 1 Rain Exposure Zones
+
+
+
+
+Figure 2 Hygro-Thermal Zones
+
+
+
+
+Lo*Q ] Under 20'
+
+
+
+Following the general principles of water management
+require that wetting and drying mechanisms be estab-
+lished and maintained to balance moisture content levels
+at or below the tolerance of building materials being
+used. Where the tolerance of building materials to
+moisture is likely to be exceeded, durable materials such
+as preservative treated wood should be utilized.
+
+Deflection
+
+Deflection is the first principal and main priority of
+water management. The intent is to keep rainwater away
+
+
+
+AMERICAN WOOD COUNCIL
+
+
+
+WOOD CONSTRUCTION DATA 6
+
+
+
+from the building and to minimize the potential for water
+penetration into the envelope. The deflection principle is
+evident in many building design patterns that have histori-
+cally proven effective at reducing the amount of rainwater
+on exterior walls. These include:
+
+• Placing the building so it is sheltered from prevailing
+winds.
+
+• Providing sizable roof overhangs and water collec-
+tion systems at the roof perimeters.
+
+• Providing architectural detailing including flashing
+and caulking that directs rainwater away from the
+building.
+
+• Providing an approvedt drainage system around the
+foundation perimeter to accept roof water runoff.
+
+• Installing permeable bulk vapor diffusion retarders
+on the exterior of walls and floors, including below
+a concrete slab or atop the bare soil within a crawl
+space.
+
+• Providing adequate separation of elements from
+moisture sources including soil and concrete.
+
+Figure 3 Water Management
+Principles
+
+
+
+
+Used with permission of the Canadian Wood Council.
+
+
+
+Sheltering
+
+Structures exposed to wind are more susceptible to
+moisture loads. To reduce wind and moisture loads, struc-
+tures should be located near other structures or be sheltered
+with natural barriers such as trees or large shrubbery.
+
+Overhangs
+
+A pitched roof with sufficiently wide overhangs can
+help ensure long-term durability of wood-frame buildings
+by deflecting precipitation. Detailing of projecting sills,
+flashings, and drip edges is also a critical component.
+Cladding and sealants are also part of the deflection line-
+of-defense.
+
+Flashing
+
+To prevent moisture from entering joints between build-
+ing elements, flashing is needed at the following places:
+
+• Heads of all openings in exterior walls unless pro-
+tected by overhanging eaves (Figure 4).
+
+• Under window openings where masonry veneer is
+used (Figure 5).
+
+• Where changes in exterior finish materials occur
+(Figure 6).
+
+• At the junction of roof deck and wood siding, at
+roof valleys, and around chimneys and vent stacks
+(Figure 7).
+
+Vapor Diffusion Retarder
+
+Vapor diffusion retarders should be provided to de-
+flect moisture away from the structure. For walls, this is
+called a "housewrap" or "building-wrap" and is attached
+to sheathing underneath the siding. These building wraps
+need to be breathable by allowing some transfer of water
+vapor. Without some vapor transfer, the water barrier can
+easily become a surface for condensation.
+
+Vapor diffusion retarders should also be placed under
+an exterior floor. In crawl spaces a vapor diffusion retarder
+should be placed upon the ground within a crawl space to
+deflect ground moisture.
+
+Where concrete/masonry foundations are used to
+support a wood-frame building, the natural inclination of
+moisture to move through the foundation wall must be
+restricted. Moisture movement through poured concrete
+foundation walls is controlled by externally applied, water
+repellant coatings and perimeter drains that reduce soil
+moisture. Coats of asphalt or tar should also be applied
+from footing to finish grade. Unit masonry walls require
+a 1/2-inch layer of portland-cement mortar applied from
+footing to finish grade, leaving a cove at the junction of
+the footing and wall. Mortar should then be mopped with
+asphalt or tar.
+
+Moisture control for concrete slab-on-grade con-
+struction is also essential. A high quality vapor diffusion
+retarder with a 1-perm rating and complying with ASTM
+
+1" Approved, as used in this text, means approved by the authority having jurisdiction.
+
+
+
+AMERICAN FOREST & PAPER ASSOCIATION
+
+
+
+DESIGN OF WOOD FRAME STRUCTURES FOR PERMANANCE
+
+
+
+E 1745 needs to be installed immediately below the con-
+crete slabs. At worst, these vapor diffusion retarders allow
+only minute amounts of water vapor to pass through into
+the slab. And, since many soils contain alkali and other
+chemicals that can cause many plastic products to fail,
+the vapor diffusion retarders must be capable of resisting
+chemical attack.
+
+Figure 4 Flashing Over Openings in
+Exterior Walls
+
+
+
+Distance - Separation of Wood Elements
+
+Separation of untreated wood from the ground and
+other sources of moisture and termite infestation is very
+important. The separations specified in this section are
+recommended for all buildings and are those considered
+necessary to maintain wood elements in permanent struc-
+tures at safe moisture contents for decay protection. When
+it is not possible or practical to comply with the clearance
+specified, the use of naturally durable or pressure treated
+wood is recommended.
+
+• In crawl spaces and other similar unexcavated areas,
+clearance between the bottom of wood joists, or a
+wood structural floor without joints, and the ground
+should be at least 18 inches. Between the bottom of
+wood girders and the ground, the clearance should
+be at least 12 inches. Clearance between a post or
+
+
+
+column supporting a permanent structure intended
+for human occupancy and exposed to earth should
+be at least 8 inches (Figure 8 & Figure 9).
+
+• When in basements, cellars, or when exposed to
+the weather, wood columns which support perma-
+nent structures should be supported by a metal or
+concrete pedestal extending 1 inch above concrete
+slabs or decks and 6 inches above exposed earth
+and separated from soil by an impervious moisture
+barrier (Figure 10).
+
+• Wood joists, beams or girders framing into exterior
+masonry or concrete walls should have at least 1/2
+inch of air space at top, end, and sides (Figure 11).
+
+• Wood sills which rest on concrete or masonry exte-
+rior walls should be at least 8 inches above exposed
+earth on the exterior of the building (Figure 8).
+
+The bottom of wood joists, girders, and subfloors sus-
+pended from foundation walls should be at least 8 inches
+above the horizontal projection of the outside grade level
+and should terminate at the interior face of any foundation
+wall studs.
+
+• Wood siding and wood trim should be at least 6
+inches above exposed earth on the exterior of a
+structure (Figure 8).
+
+• Fences and similar items should be separated from
+the main structure by at least 2 inches.
+
+• Exterior wood steps. Structural portions of wood
+stairs, such as stringers and posts, should be at least
+6 inches above the finished grade (Figure 12).
+
+• Porches, breezeways, and patios. Beams and head-
+ers supporting floor framing should be at least 12
+inches above ground. Floor joists or the bottom of
+a wood structural floor without joists should be at
+least 18 inches above ground. Posts which rest on
+wood, concrete, or masonry floors should be sup-
+ported on metal or concrete pedestals extending at
+least 1 inch above the floor or at least 6 inches above
+exposed earth, and separated by an impervious bar-
+rier (Figure 9 & Figure 10).
+
+• Concrete steps, concrete porch slabs, patio slabs or
+planters resting on the ground should be below the
+top of the foundation, and separated from wood in
+the main structure by at least 2 inches, or otherwise
+protected from moisture or concealed termite pen-
+etration (Figure 13 & Figure 14).
+
+• Shutters, window boxes, and other decorative at-
+tachments should be separated from exterior siding
+to avoid trapping rainwater.
+
+• Moisture permeable floors or roofs which are ex-
+posed to the weather, such as concrete or masonry
+slabs, should be separated from any wood structural
+members supporting them by an impervious mois-
+ture barrier.
+
+
+
+AMERICAN FOREST & PAPER ASSOCIATION
+
+
+
+DESIGN OF WOOD FRAME STRUCTURES FOR PERMANANCE
+
+
+
+Figure 9
+
+
+
+Clearance Between Wood
+and Exposed Earth in
+Crawl Space or Other
+Unexcavated Concealed
+Areas
+
+
+
+Figure 10 Clearance Between
+
+Wood Columns and Floor
+or Exposed Earth when
+in Basements or when
+Exposed to Weather
+
+
+Drainage
+
+Drainage is the next principle of moisture control,
+second only to deflection in terms of its capacity to man-
+age rainwater. Building design patterns that incorporate
+drainage principles include pitched roofs, sloped surfaces
+at horizontal elements, and soil drains around the perimeter
+of building foundations.
+
+Site Drainage and Sanitation
+
+The building site should always be graded to provide
+positive drainage away from foundation walls. In de-
+termining the height of the foundation, it is important to
+take into consideration the proposed height of finish grade
+to assure proper clearance for wood members resting on
+top of the foundation (Figure 16).
+
+Figure 16 Site Drainage Away from
+Structure
+
+
+
+TREATED
+WOOD SILL
+
+
+
+MAINTAIN PROPER
+CLEARANCE
+
+
+
+
+MASONRY, CONCRETE
+
+OR PRESSURE
+
+TREATED WOOD
+
+FOUNDATION
+
+
+
+Building Drainage
+
+All exposed wood surfaces, as well as adjoining
+areas, should be pitched to assure rapid water run-off.
+Construction details, which tend to trap moisture in end
+grain joints should be avoided.
+
+At the detail level, drainage is accomplished by
+collecting incidental moisture accumulation in the wall as-
+sembly and returning it to or beyond the exterior face of the
+cladding by means of gravity flow. Water is then diverted
+away from the structure using soil and site drainage.
+
+In its simplest form, building drainage is achieved by
+adding a drainage plane and cavity within the assembly,
+between the cladding and the sheathing. In wood frame
+construction, the drainage plane typically consists of a
+moisture barrier such as building paper, felt, or house-
+wrap, working in combination with window and door
+flashings. 1 Drainage is generally the primary means of
+providing redundancy for moisture control in a wall as-
+sembly.
+
+
+
+AMERICAN WOOD COUNCIL
+
+
+
+WOOD CONSTRUCTION DATA 6
+
+
+
+Drainage Cavities introduce an airspace between the
+cladding and the drainage plane/sheathing. The airspace
+serves as a capillary break to prevent water from excessive-
+ly wetting the drainage plane. The airspace, particularly
+when it provides a pressure equalization function, can also
+be seen as another means of deflection, in that pressure-
+equalization neutralizes the primary driving force behind
+rain penetration (air pressure differential), and thereby
+reduces the amount of moisture being driven through the
+cladding into the drainage cavity.
+
+Insulation applied internally or externally to founda-
+tion walls helps insure that cold interior concrete surfaces
+will not condense moisture and promote growth of mold
+and mildew.
+
+Foundation drainage and damp-proofing of walls
+below grade are insurance against development of undesir-
+able moisture conditions in crawl spaces and basements
+(Figure 17, Figure 18, and Figure 19).
+
+Figure 17 Damp Proofing and
+
+Drainage of a Masonry
+Foundation
+
+
+
+GRAVEL
+
+
+
+
+PARGING WITH
+COVE
+
+
+
+BUILDING
+PAPER
+
+DRAIN PIPE
+
+
+
+Footing drains, connected to a positive outfall, should
+be installed around foundations enclosing habitable spaces
+below grade (Figure 17).
+
+The gravel drainage system used for wood founda-
+tions, described below, may be substituted for footing
+drains around concrete or masonry foundations when there
+is provision for drainage from outside the footing to a sump
+or positive outfall under the basement slab.
+
+Moisture movement around wood foundation walls
+enclosing basements or other habitable spaces below-grade
+is controlled by drainage and by applying polyethylene
+sheeting on the outside of the wall, extending from the
+footing to finish grade. Drainage is provided by a porous
+layer of gravel or crushed stone placed below the floor
+
+
+
+slab and footer plate and extending at least one foot up the
+wall for well drained sites or half the total backfill height
+for poorly drained sites (Figure 18). This gravel layer is
+drained to a sump or positive outfall. For more detail on
+wood foundations, see the Permanent Wood Foundation:
+Design and Construction Guide, published by the Southern
+Forest Products Association.
+
+Drainage may also be needed within a crawl space
+where excessive moisture prevails (Figure 19).
+
+
+
+Figure 18
+
+
+
+Damp-Proofing and
+Drainage of a Wood
+Foundation
+
+
+
+POLYETHYLENE
+FILM
+
+
+
+FDN PRESSURE
+TREATED WOOD
+
+
+
+
+DRAINED GRAVEL OR CRUSHED STONE
+
+
+
+Figure 19 Drainage of a Crawl Space
+
+
+
+OUTFALL TO STORM
+SEWER OR NATURAL
+DRAINAGE
+
+
+
+
+
+GRATE
+
+
+
+DRAIN PIPE
+
+
+
+AMERICAN FOREST & PAPER ASSOCIATION
+
+
+
+DESIGN OF WOOD FRAME STRUCTURES FOR PERMANANCE
+
+
+
+For slab-on-ground construction and basement floors,
+earth should be covered with not less than 4 inches of
+coarse gravel or crushed stone over which a separating
+membrane is placed before pouring the slab. In slab-on-
+ground construction and where basements contain living
+space, this membrane should be a vapor diffusion retarder
+having a permeability not greater than one perm.
+
+Siding. Exterior wood siding should extend at least 1
+inch below the top of the foundation to provide a drip line
+protecting the sill from rainwater (Figure 8).
+
+Where the exterior finish is masonry veneer, a one-inch
+space should be provided between sheathing and the veneer
+extending down to at least the bottom of the sill plate. Weep
+holes and flashing should be provided at the base of the
+veneer wall to allow for drainage (Figure 15).
+
+Roofs. Shingles should project at least 1/2 inch beyond
+the roof sheathing to provide a drip line. When asphalt
+shingles are used, a starting course of wood shingles is
+desirable. Gutters and downspouts are needed unless eave
+projection is 24-inches or greater. Roof run-off should be
+drained away from the structure.
+
+In northern areas, melting snow may result in ice dams
+on roof overhang and gutters to the extent that water may
+work back under shingles and drip into attic spaces or
+walls. Protection is provided by applying eave flashing
+consisting of 55-pound roll roofing or 6-mil polyethylene
+extending over the roof sheathing from the edge of the eave
+to a point 18 inches inside the inner face of the exterior
+wall (Figure 20).
+
+Exposed Structural Members. Exposed structural
+members should be designed to provide sufficient venti-
+lation and drainage away from end joints to allow rapid
+drying. In instances where proper detailing of such joints
+may not provide sufficient protection, the designer can
+specify naturally durable or pressure treated wood.
+
+Figure 20 Shingles and Flashing at
+Eave
+
+
+
+EAVE FLASHING'
+
+EXTENDING BEYOND
+
+INSIDE FACE OF
+
+WAlL MAINTAIN
+
+2" <:UA*ANCi
+
+
+
+
+INSULATION
+
+
+
+GUTTER SET
+
+OUT F*OA4
+
+FASCIA
+
+
+
+Drying
+
+Drying is the mechanism by which moisture accu-
+mulations are removed by venting (air movement) and
+vapor diffusion (direct movement through wall and ceil-
+ing coverings). Moisture originates from both inside and
+outside the structure. Excessive moisture may condense on
+the underside of roof decking and inside walls, which can
+lead to mold and decay. Adequate ventilation and properly
+placed vapor diffusion retarders help provide solutions.
+The latter should always be located on or near the warm
+side of walls, floors, and ceilings. However, vapor diffusion
+retarders are typically omitted in ceiling assemblies where
+attics are well ventilated. The permeability of cladding,
+moisture barriers, vapor diffusion retarders and interior
+finish materials will greatly affect overall drying potential.
+Vapor diffusion retarders should be carefully installed to
+provide a complete envelope preventing moisture vapor
+produced inside the structure from entering enclosed
+spaces where condensation may occur.
+
+Local climate conditions, types of occupancy, and
+design methods determine the requirements for control
+of vapor movement and ventilation. Some energy-saving
+practices, such as reducing air leakage or adding insula-
+tion, may increase the potential for moisture condensation.
+Good construction practices (attention to detail) must be
+followed to prevent problems caused by condensation.
+Care should be taken to dry-frame cavities to a moisture
+content of < 20% prior to enclosure. General code provi-
+sions are largely based on houses where heating of the
+building is the primary concern. To build long-lasting,
+energy-efficient, healthy houses in areas where cooling of
+the building, not heating, is a primary concern, the climatic
+conditions of the area must be considered.
+
+Ventilation, vapor diffusion retarders, and ground
+cover requirements may vary. Consult the local building
+department to confirm specific requirements.
+
+Crawl Spaces
+
+Ventilation. Crawl spaces under buildings, and other
+unexcavated concealed spaces under porches, breezeways,
+patios or other appendages, should be naturally ventilated
+by openings in foundation walls or by suitable mechanical
+means. Such spaces should be provided with access panels
+so that they may be easily inspected. Crawl spaces must
+be designed to allow sufficient drying to prevent build-up
+of moisture to levels where water vapor will condense or
+where fungal growth can occur. In some hot and humid
+climates, local or state codes may restrict crawl space
+ventilation.
+
+Minimum ventilation requirements for crawl spaces
+are specified in the codes. The requirements are usually
+based on the ratio of the free ventilation area to the area
+to be ventilated. Typically, the required ratio is 1 to 150.
+When a vapor diffusion retarder is placed over the ground
+
+
+
+AMERICAN WOOD COUNCIL
+
+
+
+WOOD CONSTRUCTION DATA 6
+
+
+
+within a crawl space, the ventilation ratio may be reduced
+to 1 to 1500.
+
+Ventilation openings should be arranged to provide
+cross ventilation. They should be kept clear of shrubbery
+and should be covered with corrosion resistant wire mesh,
+with mesh openings not less than 1/4 inch nor more than
+1/2 inch in any dimension. Vents should be at least 3 inches
+above outside grade and below the bottom of floor joists,
+or wells with 6 inches of clearance around the vent should
+be provided. No unventilated, inaccessible spaces should
+be permitted.
+
+It is very important that ventilation should not be cut
+off at any time during the year when it is the only means
+of moisture control in crawl spaces. Ventilation openings
+are not necessary when crawl space walls are insulated,
+an approved vapor diffusion retarder is provided over the
+ground, and conditioned air is provided to the crawl space.
+Ventilation requirements are based on the assumption that
+outside air has a lower absolute humidity than air in the
+crawl space. In hot and humid climates where exterior air
+has a high absolute humidity, use of natural ventilation may
+not be the best option for drying the crawl space.
+
+Vapor Protection. Except in arid or semi-arid areas,
+soil should be covered with a fungi resistant vapor dif-
+fusion retarder having a permeability of 1 perm or less,
+such as 6 mil polyethylene lapped approximately 4 inches
+at joints. The vapor diffusion retarder should conform to
+ASTM El 745 and be resistant to chemicals in the soil.
+Laps should be sealed. The vapor diffusion retarder should
+lap-up onto the foundation so the concrete slab is isolated
+from soil and the foundation. Seam tape should be used to
+seal the retarder to any pipes or other objects that penetrate
+the retarder and the slab. The ground surface should be
+leveled and the cover turned up at walls and piers.
+
+Multi-Family and Nonresidential Buildings
+
+For multi-family or nonresidential buildings where
+crawl space configuration or building location may reduce
+the efficiency of natural ventilation, the required net area
+of vent openings should be increased. A vapor diffusion
+retarder is also recommended for such installations.
+
+Concrete Slab Foundations. Soil is a constant source
+of moisture, so deflection of soil moisture is important.
+The use of a sturdy vapor diffusion retarder beneath slabs
+prevents ground-based moisture from migrating up through
+the concrete by capillary action or diffusion. Lapping of
+joints in the vapor diffusion retarder and liberal use of
+tape and other sealants around pipe penetrations is critical.
+However, care should be taken in hot climates to slow the
+rate of concrete surface curing. Vapor diffusion retarders
+placed under the slab slow the rate of drying in the lower
+depth of the concrete. When the upper depth is exposed to
+high heat and dries too fast, it shrinks relative to the deeper
+concrete that can not disperse its moisture as fast because
+
+
+
+of the vapor diffusion retarder. Surface cracking can result.
+After the surface initially hardens, some means of covering
+the slab to slow the rate of curing is advised.
+
+Attics
+
+Natural Ventilation. To eliminate the problem of mois-
+ture condensation on roof framing in cold weather and to
+permit escape of heat in hot weather, ventilation of all attic
+spaces is required by model building codes (Figure 21).
+In some hot and humid climates, local codes may restrict
+attic space ventilation.
+
+For gable roofs that depend upon screened louvered
+openings for ventilation, a net open area of 1/150 of the
+area of the ceiling below should be provided. The free ven-
+tilating area may be reduced to 1/300 when a 3/4 inch slot
+is provided beneath the eaves in addition to the screened
+gable-end louvers (1/600 inlet and 1/600 outlet vent areas),
+or when a vapor diffusion retarder having a permeability of
+1 perm or less is installed on the warm side of the ceiling
+(Figure 20). For hip roofs, it is customary to provide a 3/4
+inch slot beneath the eaves and install ventilators near the
+peak, to obtain net inlet and outlet open areas of 1/450 and
+1/900, respectively, of the area of the ceiling below.
+
+In hot and humid regions, attic spaces can heat up
+to 130°F or more on a hot summer day. Eventually, that
+heat transfers through the ceiling insulation into living
+spaces below, increasing the cooling load. To counter this
+problem, it is suggested that twice the recommended roof
+ventilation be used and it is recommended that a radiant
+barrier be installed, such as labor-saving roof sheathing
+with foil laminated directly to it. The radiant barrier blocks
+transfer of heat from the roof to the attic. The radiant bar-
+rier should be applied to the underside of the roof, not on
+the attic floor, with adequate openings along the ridge and
+below the low-profile vents so that attic air can exhaust.
+Light colored roofing may also be used to slow heat trans-
+fer into the attic space.
+
+For flat roofs, blocking, bridging, and insulation should
+be arranged to permit unobstructed movement of air for
+ventilation. Such roofs may be ventilated along overhang-
+ing eaves on the basis of net open area equal to 1/250 of the
+area of the ceiling below. A vapor diffusion retarder having
+a maximum permeability of 1 perm should be applied to
+the warm side of the ceiling below flat roofs.
+
+Mechanical Ventilation. In lieu of natural ventilation
+of attic spaces described above, mechanical ventilation
+may be used. Such ventilation should provide minimum
+air changes of 0.7 cu. ft./min. (at 0.03" standard pressure)
+per sq. ft. of the ceiling below. Air intakes of 1 sq. ft. of
+free openings per 300 cu. ft./min. of fan capacity should be
+provided. Mechanical ventilation should provide adequate
+protection against harmful condensation throughout the
+year.
+
+
+
+AMERICAN FOREST & PAPER ASSOCIATION
+
+
+
+DESIGN OF WOOD FRAME STRUCTURES FOR PERMANANCE
+
+
+
+Figure 21 Methods of Ventilating Roof Spaces and Amount of Ventilation
+Required
+
+
+
+GABLE ROOF (NO EAVE SLOTS)
+
+
+
+
+/
+
+
+
+X,
+
+
+
+750
+
+
+
+300
+
+
+
+RATIO OF NET
+VENT AREA TO
+CEILING AREA
+
+WITHOUT VAPOR BARRIER
+
+
+
+WITH VAPOR BARRIER
+
+
+
+\W^
+
+
+
+GABLE ROOF (WITH EAVE SLOTS)
+
+
+
+
+*
+
+
+
+*|
+
+
+
+^ 7\
+
+
+
+t
+
+
+
+INLET
+
+1
+600
+
+
+
+OUTLET
+
+1
+600
+
+
+
+^
+
+
+
+
+
+HIP ROOF
+
+
+
+
+INLET
+450
+
+
+
+OUTLET
+
+1
+900
+
+
+
+7
+
+
+
+ii.i -j. -i, — „ _
+
+
+
+3 C£
+
+
+
+FLAT ROOF
+
+
+
+\
+
+
+
+1
+250
+
+
+
+In dwellings having roof slopes less than 3 in 12 or in
+cold weather climates, a vapor diffusion retarder having
+a permeability of 1 perm or less should be applied on the
+warm side of the ceiling. Where exposed interior wood
+roof decking is used, a vapor diffusion retarder should be
+installed between the wood roof decking and any insulation
+used on the exterior side of the roof decking. A vapor dif-
+fusion retarder is not necessary in unconditioned buildings
+where wood roof decking is not insulated.
+
+
+
+Walls
+
+Vapor Protection of Walls. The principle of vapor pro-
+tection is to make the warm side of the wall as vapor tight
+as possible, and the cold side permeable enough to permit
+passage of moisture vapor to the outside of the wall.
+
+Placement of the vapor diffusion retarder is dependent
+on climatic conditions. In cold climates, the vapor diffu-
+sion retarder should be placed on the interior of the wall.
+In hot humid areas the vapor diffusion retarder should be
+
+
+
+AMERICAN WOOD COUNCIL
+
+
+
+WOOD CONSTRUCTION DATA 6
+
+
+
+on the exterior of the wall. A permeability of at least 5
+times the vapor diffusion retarder permeability should be
+maintained between the vapor diffusion retarder and the
+cold-side face of the wall. In cold climates where the 5 to
+1 ratio of warm-side to cold-side permeability rating can-
+not otherwise be obtained, such as may occur with rigid
+foam plastic or foil faced sheathing, use of foilback gyp-
+sum board, polyethylene sheeting, or other special vapor
+diffusion retarder treatment located at the warm-side of
+the wall may be needed to avoid condensation in the wall
+cavity. In tightly sealed dwellings, use of dehumidifiers
+may be necessary to prevent objectionable condensation of
+moisture in kitchen, bathroom, laundry and similar areas.
+In regions of extreme heat, it is highly recommended not
+to place an impermeable vapor diffusion retarder under
+gypsum board, or cover gypsum board with vinyl wall
+paper. In regions where extreme heat and cold may oc-
+cur, inclusion and placement of vapor diffusion retarders
+should be carefully considered. Local codes may allow
+vapor diffusion retarders to be excluded all together in
+such climates.
+
+Where batt insulation with an integral vapor diffusion
+retarder is used in walls, care should be taken to insure that
+the retarder is face-stapled to studs to prevent movement of
+moist air into the enclosed wall space and avoid batt com-
+pression. Where batt insulation does not have an integral
+vapor diffusion retarder and such a retarder is required, a
+separate vapor diffusion retarder should be provided.
+
+In wall construction, the drying potential of both the
+cladding and the wall sheathing/framing must be consid-
+ered. Air spaces introduced for drainage purposes also
+offer a means to dry material by back-venting. Drying of
+sheathing and framing is often a separate matter and is
+greatly affected by the selection of moisture barrier and
+vapor diffusion retarder materials.
+
+TERMITE CONTROL
+
+Termites attack above the ground by means of shelter
+tubes attached to foundation walls, piers, and other ele-
+ments in contact with the ground. However, only under
+conditions which permit the insect to establish and main-
+tain contact with moisture, is a colony able to penetrate
+and consume wood in-service.
+
+There are more than 2,000 species of termites. The
+most damaging are roughly 20 species called "subter-
+ranean" termites because of their nesting and foraging
+habits. Of the subterranean termites, Formosan are by far
+the most damaging in the U.S. Formosan termites, which
+were introduced to Hawaii and the southeastern United
+States from Southeast Asia at the end of World War II, can
+cause more damage than domestic termites and at a faster
+rate. Formosan colonies also tend to be larger than those
+
+
+
+of domestic subterranean termites.
+
+The general information given below concerning pro-
+tection against termites is applicable to Formosan as well
+as domestic termites. However, given the increased level
+of damage possible from Formosans, additional precau-
+tions should be taken where they exist. Those geographic
+areas near enough to current infestations to be reasonably
+threatened by existing Formosan termite colonies or by
+migration in the near future are considered to be areas of
+severe risk. Those areas elsewhere would be considered
+to be intermediate and low risk areas.
+
+• Suppression. Formosan termite colonies should
+be contained in their current geographic region of
+infestation. Precautions should be taken to assure
+that logs, soil, landscape timbers, mulch, and other
+transportable sources of infestation are free of ter-
+mites.
+
+• Site Management. Construction sites must be man-
+aged to assure that nothing exists that promotes
+establishment of colonies. All construction debris
+should be removed from the site, along with dead
+trees, foliage, stumps and other sources of food for
+termites.
+
+• Soil Barriers. Soil barriers that kill or restrict move-
+ment of termites should be introduced based on the
+severity of infestation. In areas of severe risk, the
+use of barriers such as graded gravel or termite-
+resistant steel mesh is appropriate along with the
+use of chemical soil treatment or bait systems. In
+low-risk areas, soil barriers are not required.
+
+• Foundation Details. In all risk areas, the use of
+preservatively treated or naturally durable wood
+and termite barriers as discussed below is necessary.
+It is also important that foundation design be done
+with care. Depending on the type of foundation, use
+of graded gravel or termite-resistant steel mesh at
+points where piping penetrates slabs is reasonable.
+Where concrete masonry units are used as elements
+of the foundation, the bottom of the units should be
+protected with graded gravel or termite-resistant
+mesh, or the units should be filled with concrete.
+
+• Structural Protection. In areas of severe risk, an
+increased level of protection of structural elements
+of the building is justified. The structural frame
+- including posts, poles, columns, joists, girders,
+rafters, structural sheathing, and bracing - should
+be either preservatively treated wood or naturally
+durable.
+
+Prevention of subterranean termite attack is typically
+achieved using a barrier separating wood from earth, the
+application of chemical termiticide to the soil under and
+around the building, or through use of baiting systems
+which poison termite colonies.
+
+
+
+AMERICAN FOREST & PAPER ASSOCIATION
+
+
+
+DESIGN OF WOOD FRAME STRUCTURES FOR PERMANANCE
+
+
+
+The termite hazard will vary from one region to the
+next. In all areas, structures should still be designed to
+provide adequate and accessible clearance between earth
+and wood in order to permit periodic inspection for ter-
+mite shelter tubes and wood damage. Where clearances
+recommended under the heading "Distance - Separation of
+Wood Elements" is provided, no additional protection is
+required, unless a specific termite hazard is known to ex-
+ist. However, all foundations and piers of hollow masonry
+units should have solid masonry caps in which all joints
+or voids are filled with mortar.
+
+In addition, all roots, wood forms, stakes, and scraps
+of wood should be removed from the immediate vicinity
+of the house before back-filling and before placing a floor
+slab. Particular care should be taken to remove all scraps
+of wood from enclosed crawl spaces.
+
+Where local experience indicates that additional pro-
+tection against termites is required, one or more of the
+following systems should be specified depending on the
+degree of hazard:
+
+Termite Barrier
+
+The most common method of control is a termite
+barrier which is considered to be any building material or
+component which is impenetrable to termites and which
+drives the insect into the open where its activities can be
+detected.
+
+Properly installed termite shields should be of not less
+than 26 gauge galvanized steel, or other suitable metal of
+proper thickness, installed in an approved manner on top of
+all foundation walls and piers, and around all pipes leading
+from the ground (Figure 22). Longitudinal joints should
+be locked and soldered. Where masonry veneer is used,
+the shield should extend through the wall to the outside
+face of the veneer (Figure 22).
+
+Any of the barriers mentioned can be installed with-
+out major changes in established construction methods.
+However, periodic inspection is essential to the successful
+function of any of the barrier types recommended.
+
+
+
+Figure 22 Installation of Termite
+Shield
+
+
+
+SOLID
+MASONRY
+
+
+
+
+SOU COVER
+19 „ WHEN
+
+M/N. N££DED
+
+
+
+DAMP-PROOFED
+
+
+
+
+DAMP-PROOFED ^
+
+
+
+Chemical Soil Treatment
+
+Chemical soil treatment has been a standard
+practice for preventing termite infestation of structures for
+some time. A termiticide is placed into the soil under and
+around a structure to create a continuous chemical barrier
+that blocks potential routes of termite entry. Typically, a
+trench is dug around slabs, piers, or other supports touch-
+ing the soil, which is then saturated with termiticides.
+Soil below the slab is also treated with the termiticide.
+Application of soil treatments should be carried out by a
+licensed professional in accordance with requirements of
+the authority having jurisdiction. The typical effective life
+of a soil treatment varies between products.
+
+
+
+v^w ^S^^^ ^^SSS^^^
+
+
+
+FIOOR JOIST
+
+
+
+^ - dlRDFIl
+
+TERMITE
+SHIELD
+
+
+
+
+r
+
+
+
+AMERICAN WOOD COUNCIL
+
+
+
+WOOD CONSTRUCTION DATA 6
+
+
+
+Application of chemicals and precautions involved
+in their use should be in accordance with manufacturer's
+recommendations (Figure 23). For permanent wood foun-
+dations, soil treatment should be in accordance with the
+recommendations for poured concrete foundation walls,
+except that the treatment should extend below the wood
+footing.
+
+Construction Details
+
+A critical element in controlling termite access to the
+structure is proper detailing during the building design
+process, particularly in those areas at ground level. For
+foundations:
+
+• Poured concrete foundation walls may allow access
+when cracks greater than 1/64 inch are present.
+
+• Poured reinforced concrete caps, which should be
+at least 4 inches thick, on unit masonry foundations,
+may allow access when cracks greater than 1/64
+inch occur.
+
+• Slab-on-ground construction requires special con-
+sideration in areas where a termite hazard exists.
+Concrete slabs vary in their susceptibility to penetra-
+tion by termites and cannot be considered to provide
+adequate protection unless the slab and supporting
+foundation are poured integrally (monolithic slab)
+to avoid cracks or holes through which termites may
+enter (Figure 24).
+
+• Where other types of slab construction are used,
+termites may penetrate joints between the slab and
+wall. They may also enter through expansion joints
+or openings made for plumbing or conduit. Thus, it
+is necessary to provide a barrier at these points by
+use of termite shields or by chemical soil treatment
+(Figure 22 & Figure 23).
+
+Stucco, masonry veneer, and other non-wood siding in
+contact with the ground may provide access for termites
+in infested areas. For this reason, the veneer or siding
+should be kept at least 8 inches above finished grade, un-
+less termite shields are installed in an approved manner or
+the soil on the exterior has received a chemical treatment
+(Figure 22).
+
+Rigid expanded polystyrene or polyurethane insulation
+used against foundations can provide concealed access and
+are easily penetrated by termites. Where such foundation
+wall insulation is used and a particular termite hazard is
+known to exist, it is important that soil treatment, shields,
+or pressure treated wood be used as appropriate to the
+design.
+
+In-Ground Bait Systems
+
+In-ground bait systems are a relatively new technol-
+ogy for treating subterranean termites. In-ground bait
+
+
+
+stations are placed around a house in the soil. Untreated
+cellulosic material is placed in several of the stations and
+monitored several times a year for signs of termite activity.
+Once termite activity is found in the station, the cellulosic
+material is replaced by termiticide-treated, cellulosic mate-
+rial that the termites will return to their colonies. In order
+for this system to be effective, it must be maintained and
+serviced.
+
+Fumigation
+
+Structures subjected to a fumigation system are
+covered with a tent and a lethal gas is released into the
+structure. This treatment kills termites in the structure, but
+not termites in the soil. This system is effective in killing
+drywood termites as they infest and live self-contained in
+the wood of a structure. Fumigation is not recommended
+without other treatments for controlling subterranean ter-
+mites because termites in the soil may re-enter the structure
+as soon as 24-hours after fumigation.
+
+DURABLE MATERIALS
+
+Another principle involves selection of materials.
+Durable materials must be selected for use at all locations
+where moisture tolerance is necessary or where termite
+infestation is likely. Where deflection, distance, drainage,
+and drying cannot effectively maintain moisture content of
+wood components below 28%, decay resistant wood must
+be selected. For most wood framing components, this is
+achieved using preservative-treated wood. For some ap-
+plications, this is achieved through selection of naturally
+durable species of wood.
+
+Approved durable and preservative-treated wood is
+usually recommended when location of the member in
+question may be such that it cannot be maintained at a safe
+moisture content and when climatic or site conditions in
+certain areas may not permit control of decay or termites
+by construction practices alone.
+
+The use of naturally durable or preservative-treated
+wood in a particular condition depends on the exposure
+and importance of the given member. Recommended uses
+for naturally durable and pressure treated wood are given
+in the section entitled "Conditions of Use for Pressure
+Treated and Naturally Durable Wood."
+
+Naturally Durable Wood
+
+Substances deposited by the living tree makes the
+heartwood of certain species resistant to decay or termite
+attack. The following commercial species of naturally
+durable wood should consist of 100% heartwood, except
+that an occasional piece may have corner sapwood if 90%
+or more of the width of each side on which it occurs is
+heartwood:
+
+
+
+AMERICAN FOREST & PAPER ASSOCIATION
+
+
+
+DESIGN OF WOOD FRAME STRUCTURES FOR PERMANANCE
+
+
+
+Figure 23 Application of Soil Treatment
+
+
+
+
+TREATED
+AREA
+
+
+
+TREATED
+AREA
+
+
+
+
+DAMP-PROOFED
+
+
+
+GRAVEL FILL
+
+
+
+Figure 24 Termite Control for Slab-on-Ground Construction
+
+
+
+NATURALLY DURABLE OR
+
+PRESSURE TREATED WOOD
+
+SLEEPER
+
+
+
+
+GRAVEL FILL
+
+
+
+
+DAMP-PROOFED
+
+
+
+NATURALLY DURABLE OR
+
+PRESSURE TREATED WOOD
+
+SLEEPERS
+
+
+
+VAPOR
+RETARDER
+
+
+
+GRAVEL FILL
+
+
+
+SOIL POISON
+
+
+
+AMERICAN WOOD COUNCIL
+
+
+
+WOOD CONSTRUCTION DATA 6
+
+
+
+• Decay Resistant Species: Redwood, Cedars, and
+Black Locust.
+
+• Termite Resistant Species: Redwood and Eastern
+Red Cedar.
+
+• In addition to the applications recommended under
+"Conditions of Use for Pressure Treated and Natu-
+rally Durable Wood," naturally durable wood may
+be used wherever untreated wood is used.
+
+Pressure Treated Wood
+
+The effectiveness of preservative treatment is depen-
+dent upon the following factors: (a) type of chemical used,
+(b) amount of penetration, (c) amount of retention, and
+(d) uniform distribution of preservative. The expression
+"pressure treated wood" refers to wood meeting the reten-
+tion, penetration and other requirements applicable to the
+species, product, treatment, and conditions of use in the
+approved standards of the American Wood Preservers As-
+sociation (AWPA). Since penetration and retention may be
+controlled in the pressure treating process, it is important
+to select the right preservative and to specify the correct
+retention for the intended exposure. All wood required
+to be pressure treated should bear the quality mark of an
+approved inspection agency which maintains continuing
+supervision, testing, and inspection over the quality of the
+product. The mark should identify whether the pressure
+treated wood is suitable for use in contact with the ground,
+or is limited to above-ground use.
+
+Wood members selected for pressure treatment should
+be dimensioned and machined prior to preservative appli-
+cation. When such precutting is not feasible, all untreated
+surfaces exposed by sawing, planing, boring, or routing,
+must be treated with a liberal application of preservative.
+Wood pressure treated with a water-borne preservative
+and used in enclosed locations where drying cannot read-
+ily occur should be at a moisture content of 19% or less
+before being covered with insulation, interior wall finish,
+floor covering, or other material.
+
+Applications for pressure treated wood are not limited;
+it may be used where naturally durable or non-pressure
+treated wood is used. However, it should be required for
+members which are exposed to severe service conditions.
+Where members are to be painted or when finished ma-
+terials will be nailed to, or placed in direct contact with
+treated wood, water-borne or water-repellent preservatives
+should be specified.
+
+Conditions of Use for Pressure Treated and
+Naturally Durable Wood
+
+Where recommended clearances between wood and
+earth are not maintained for wood joists or girders, or the
+bottom of wood structural floors without joists, the floor
+assembly, including posts, girders, joists, and sub-floor,
+
+
+
+should be approved naturally durable or pressure treated
+wood. Naturally durable or pressure treated wood should
+also be used when recommended clearances cannot be
+maintained between the earth and sills which rest on con-
+crete or masonry exterior walls, and between the earth and
+wood siding and posts or columns. When ends of wood
+girders entering exterior masonry or concrete walls are
+not provided with the recommended clearance, or when
+posts or columns cannot meet the recommended clearance
+between the wood and concrete or masonry floors, those
+members should also be approved naturally durable or
+pressure treated wood.
+
+Sleepers and sills on a concrete or masonry slab, which
+are in direct contact with soil should be approved naturally
+durable or pressure treated wood. Pressure treated wood
+should be used for:
+
+• members in contact with the ground (except when
+completely below the permanent ground water table
+or continuously submerged in fresh water);
+
+• posts or columns embedded in concrete which is in
+direct contact with the earth; and
+
+• members not separated by an impervious moisture
+barrier from moisture permeable (concrete, masonry
+slabs) floors or roofs which they support.
+
+Retaining or crib walls should be approved pressure
+treated wood except that such walls of approved naturally
+durable wood up to 4 feet in height and of untreated wood
+up to 2 feet in height may be used when separated from
+the property line or a permanent building by a minimum
+distance equal to the height of the wall. Retaining or crib
+walls not more than 2 feet in height located on the property
+line also may be of approved naturally durable wood.
+
+In geographical areas where experience has demon-
+strated a specific need for protection against termites and
+decay, approved pressure treated or naturally durable
+wood should be used for those portions of wood members
+which form the structural supports of buildings, balconies,
+porches or similar permanent building appurtenances
+when such members are exposed to the weather without
+adequate protection from a roof, eave, overhang, or other
+covering to prevent moisture or water accumulation on
+the surface or at joints between members. In addition to
+providing preservatively treated floor framing members
+where suggested elsewhere, the use of treated sub-flooring
+is recommended for increased termite protection.
+
+Wood furring strips or other wood framing members
+attached directly to the interior of exterior masonry or
+concrete walls below grade should be approved naturally
+durable or pressure treated wood.
+
+Fasteners for naturally durable and preservative-
+treated wood shall be resistant to corrosion or protected to
+resist corrosion. Fasteners used in preservatively treated
+wood should be of a type recommended by the treating
+
+
+
+AMERICAN FOREST & PAPER ASSOCIATION
+
+
+
+DESIGN OF WOOD FRAME STRUCTURES FOR PERMANANCE
+
+
+
+industry and by the manufacturer of the chemical used in
+the treatment. When sacrificial coatings are applied to fas-
+teners, a minimum coating thickness capable of protecting
+the fastener for the expected service life of the structure
+shall be provided.
+
+Non-Pressure Treated Wood
+
+Non-pressure treatments are intended to provide resis-
+tance to decay in moderate exposures and, in the case of
+the water-repellent preservative, to retard liquid moisture
+absorption as well. They provide little, if any, protection
+against termite damage. Their effectiveness is based on
+the ability of the wood to absorb the preservative. While
+the end grain of wood readily absorbs the preservative to
+a sufficient depth for adequate protection, penetration into
+side grain is usually less than that obtained by pressure
+treatment.
+
+Moderate exposure implies that the wood is dry most
+of the time but occasionally may be damp enough to permit
+decay to occur. In general, non-pressure treatments are ef-
+fective for protection where the thinness and dryness of the
+member permits sufficient penetration and retention.
+
+Non-pressure treatments have been widely used for
+window sash and doors and their frames, as well as for
+wood siding and miscellaneous exterior trim. The wa-
+ter-repellent preservatives have the extra advantage of
+providing better paint performances on these items. Other
+applications include: fence parts not in contact with the
+ground; and exterior stairs, porch framing, and trim. Where
+wood members are exposed to the weather, ends which
+abut or are held by fastenings which tend to retain moisture
+may be protected by non-pressure treatment.
+
+Wood may be preservatively treated by one of the
+following non-pressure processes: (a) cold soaking or dip-
+ping in which immersion time is dictated by the desired
+retention and end penetration; and (b) vacuum process or
+hot-and-cold-bath method using treating cycles designed
+to produce the desired retention and penetration.
+
+Preservatives used for non-pressure treated wood are
+petroleum based. The water-repellant preservative should
+meet the standards of the Window & Door Manufacturers
+Association or the American Wood Preservers Association
+Standard for Oil-Borne Preservatives (P8). The treatments
+prescribed in AWPA P8 have a heavier concentration of
+preservatives and are not recommended for painting.
+
+
+
+BIBLIOGRAPHY
+
+Treating Specifications and Standards:
+
+1. American Wood Preservers Association. AWPA
+Book of Standards. Selma, Alabama.
+
+2. Window & Door Manufacturers Association. In-
+dustry Standard for Water-Repellent Preservative
+Non-Pressure Treatment for Millwork. NWMA I.
+S. 4-05. Des Plaines, Illinois.
+
+Selected References:
+
+1. American Society of Testing Materials, ASTM
+El 745 Standard Specification for Water Vapor
+Retarders Used in Contact with Soil or Granu-
+lar Fill under Concrete Slabs, Annual Book of
+ASTM Standards v. 04.12.
+
+2. American Forest & Paper Association. National
+Design Specification for Wood Construction.
+Washington, DC.
+
+3. American Forest & Paper Association. Wood
+Frame Construction Manual for One- and Two-
+Family Dwellings. Washington, DC.
+
+4. International Codes Council. International Build-
+ing Code. Falls Church, Virginia.
+
+5. Southern Forest Products Association. Perma-
+nent Wood Foundation Design and Construction
+Guide. Kenner, Louisiana.
+
+ENDNOTE
+
+1. §1403.2 of the International Building Code
+specifically requires the exterior wall envelope
+to be designed and constructed in such a manner
+as to prevent the accumulation of water within
+the wall assembly by providing a water-resistive
+barrier behind the veneer. In some exterior wall
+applications, a double layer of felt paper may be
+required. The designer should check with the list-
+ing or the Evaluation Report for specific installa-
+tion requirements beyond those specified in the
+building code.
