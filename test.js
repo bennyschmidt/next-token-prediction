@@ -65,6 +65,20 @@ const withTraining = async query => {
   );
 };
 
+const withFiles = async query => {
+  const agent = await LanguageModel({
+    files: ['brave-new-world']
+  });
+
+  // Log completion
+
+  console.log(
+    'complete >>',
+    `query: ${query}`,
+    agent.complete(query)
+  );
+};
+
 const runTests = async () => {
   // Unit: Run different queries in isolation
 
@@ -81,6 +95,10 @@ const runTests = async () => {
   // e2e: Run full training then query
 
   await withTraining('The sun');
+
+  // e2e: Run full training on user provided files
+
+  await withFiles('Society');
 };
 
 runTests();
