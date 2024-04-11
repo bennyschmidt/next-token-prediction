@@ -101,6 +101,10 @@ const MyLanguageModel = () => {
 MyLanguageModel();
 ```
 
+Run tests
+
+`npm test`
+
 ## Examples
 
 [Readline Completion](./examples/readline-completion/index.js)
