@@ -135,7 +135,7 @@ Watch: [YouTube](https://www.youtube.com/watch?v=wjZofJX0v4M)
   - spell checking
   - search/lookup
 
-2. Create decoders for other types (`ImageDecoder`, `AudioDecoder`) for:  
+2. Create decoders for other types for:  
   - reverse image lookup
   - reverse audio lookup
 
