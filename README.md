@@ -105,6 +105,32 @@ MyLanguageModel();
 
 [Readline Completion](./examples/readline-completion/index.js)
 
-## Video
+## Videos
 
-TBD
+https://github.com/bennyschmidt/next-token-prediction/assets/45407493/68c070bd-ee03-4b7e-8ba3-3885f77fd9f9
+
+https://github.com/bennyschmidt/next-token-prediction/assets/45407493/cd4a1102-5a82-4a6f-abb8-e96805fa65fd
+
+(the following is lower quality on GitHub because it's a couple minutes long - this is training & booting up the LM from 0-1)
+
+https://github.com/bennyschmidt/next-token-prediction/assets/45407493/033e8260-6a8c-4627-9195-9a6c8bd843bd
+
+## Inspiration
+
+3Blue1Brown video on YouTube:
+
+![YouTube](https://img.youtube.com/vi/wjZofJX0v4M/0.jpg)
+
+Watch: [YouTube](https://www.youtube.com/watch?v=wjZofJX0v4M)
+
+## Goals
+
+1. Provide a high-quality token prediction library for:
+  - auto-completion
+  - auto-correct
+  - spell checking
+  - search/lookup
+
+2. Demystify LLMs & simplify methodologies
+
+3. Make a high-quality, free/open LLM in JavaScript. Working on this [here](https://github.com/bennyschmidt/llimo)
