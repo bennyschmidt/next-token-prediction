@@ -123,7 +123,12 @@ https://github.com/bennyschmidt/next-token-prediction/assets/45407493/033e8260-6
 
 ## Goals
 
-1. Demystify LLMs
+1. Provide a high-quality token prediction library for:
+  - auto-completion
+  - auto-correct
+  - spell checking
+  - search/lookup
 
-2. Actually make a pretty good LLM in JavaScript
+2. Demystify LLMs & simplify methodologies
 
+3. Make a high-quality, free/open LLM in JavaScript. Working on this [here](https://github.com/bennyschmidt/llimo)
