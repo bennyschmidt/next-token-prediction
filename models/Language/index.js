@@ -1,7 +1,7 @@
 const { dirname } = require('path');
 const __root = dirname(require.main.filename);
 
-const Decoder = require('../../components/Decoder');
+const Decoder = require('../TextDecoder');
 
 const {
   combineDocuments,

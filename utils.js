@@ -2,6 +2,8 @@ const { dirname } = require('path');
 const __root = dirname(require.main.filename);
 const fs = require('fs').promises;
 
+const FORMAT_ERROR = 'Invalid file format.';
+
 module.exports = {
   combineDocuments: async documents => {
     let text = '';
@@ -12,7 +14,7 @@ module.exports = {
       );
 
       if (!sourceFile?.toString) {
-        throw new Error('Invalid file format.');
+        throw new Error(FORMAT_ERROR);
       }
 
       const source = sourceFile.toString().trim();

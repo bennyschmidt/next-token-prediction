@@ -7,7 +7,14 @@ const { merge } = require('lodash');
 const { combineDocuments } = require('../../utils');
 
 const MATCH_PUNCTUATION = new RegExp(/[.,\/#!$%?“”\^&\*;:{}=\_`~()]/g);
+const MATCH_TERMINATORS = new RegExp(/([.?!])\s*(?=[A-Z])/g);
+const MATCH_ALPHANUMERIC = new RegExp(/[^a-zA-Z0-9]/);
 const MISSING_EMBEDDING_ERROR = 'Failed to look up embedding.';
+const NOTIF_TRAINING = 'Training...';
+const NOTIF_END_OF_STATEMENT = 'End of statement.';
+const NOTIF_UNKNOWN_TOKEN = 'Skipping unrecognized token.';
+const NOTIF_END_OF_DATA = 'End of training data.';
+const NOTIF_CREATING_EMBEDDING = 'Creating model embedding...';
 const MAX_RESPONSE_LENGTH = 240;
 const RANKING_BATCH_SIZE = 10;
 
@@ -20,7 +27,7 @@ module.exports = () => {
 
   /**
    * getSingleTokenPrediction
-   * Predict the next token (word, pixel, etc.)
+   * Predict the next token
    */
 
   const getSingleTokenPrediction = token => {
@@ -221,19 +228,18 @@ module.exports = () => {
   /**
    * createEmbedding
    * Create a model embedding. Designed for words and
-   * phrases. For pixels and gradients (etc.), would need
-   * to extend/replace this in a more image-focused model
+   * phrases.
    */
 
   const createEmbedding = updatedEmbedding => {
-    console.log('Creating model embedding...');
+    console.log(NOTIF_CREATING_EMBEDDING);
 
     embedding = updatedEmbedding;
 
     // split text into token sequences
 
-    trainingTokenSequences = trainingText
-      .replace(/([.?!])\s*(?=[A-Z])/g, '$1|')
+    trainingTokenSequences = trainingText.replace(/\n/g, '')
+      .replace(MATCH_TERMINATORS, '$1|')
       .split('|')
       .map(sequence => sequence
         .replace(
@@ -249,7 +255,6 @@ module.exports = () => {
       // define the end of a sequence by newlines and spaces
 
       const sequenceEmbedding = sequence
-        .replace(/\n/g, '')
         .split(' ')
         .reduce((a, b) => {
           if (typeof(cursor) === 'object') {
@@ -287,9 +292,7 @@ module.exports = () => {
    * train
    * Sanitize and rank tokens then create embeddings
    * and save files a needed. Designed for words and
-   * phrases. For pixels and gradients (etc.), would
-   * need to extend/replace this in a more image-
-   * focused model
+   * phrases.
    */
 
   const train = async dataset => {
@@ -297,7 +300,7 @@ module.exports = () => {
 
     const startTime = Date.now();
 
-    console.log('Training...');
+    console.log(NOTIF_TRAINING);
 
     trainingText = await combineDocuments(files);
 
@@ -309,15 +312,15 @@ module.exports = () => {
       // End statement on punctuation
 
       if (token.match(MATCH_PUNCTUATION)) {
-        console.log('End of statement.');
+        console.log(NOTIF_END_OF_STATEMENT);
 
         return;
       }
 
       // Skip unparsable tokens
 
-      if (/[^a-zA-Z0-9]/.test(token)) {
-        console.log('Skipping unrecognized token.');
+      if (MATCH_ALPHANUMERIC.test(token)) {
+        console.log(NOTIF_UNKNOWN_TOKEN);
 
         return;
       }
@@ -327,17 +330,7 @@ module.exports = () => {
       // Ensure next token exists
 
       if (!nextToken) {
-        console.log('End of training data.');
-
-        return;
-      }
-
-      const nextTokenStart = nextToken[0];
-
-      // End statement on capital letter
-
-      if (/^\p{Lu}/u.test(nextTokenStart)) {
-        console.log('End of statement.');
+        console.log(NOTIF_END_OF_DATA);
 
         return;
       }
@@ -384,7 +377,7 @@ module.exports = () => {
     trainingTokens = trainingText.split(' ');
   };
 
-  // Decoder API
+  // TextDecoder API
 
   return {
     getSingleTokenPrediction,
