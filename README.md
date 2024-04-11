@@ -119,7 +119,9 @@ https://github.com/bennyschmidt/next-token-prediction/assets/45407493/033e8260-6
 
 3Blue1Brown video on YouTube:
 
-[![YouTube](https://img.youtube.com/vi/wjZofJX0v4M/0.jpg)](https://www.youtube.com/watch?v=wjZofJX0v4M)
+![YouTube](https://img.youtube.com/vi/wjZofJX0v4M/0.jpg)
+
+Watch: [YouTube](https://www.youtube.com/watch?v=wjZofJX0v4M)
 
 ## Goals
 
