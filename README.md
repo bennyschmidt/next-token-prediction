@@ -117,10 +117,13 @@ https://github.com/bennyschmidt/next-token-prediction/assets/45407493/033e8260-6
 
 ## Inspiration
 
+3Blue1Brown video on YouTube:
+
 [![YouTube](https://img.youtube.com/vi/wjZofJX0v4M/0.jpg)](https://www.youtube.com/watch?v=wjZofJX0v4M)
 
 ## Goals
 
-1. Demystify LLMs for people, show that it's just regular code that does normal stuff
+1. Demystify LLMs
 
-2. Actually make a pretty good LLM in JavaScript, with a version at least capable of running in a browser tab
+2. Actually make a pretty good LLM in JavaScript
+
