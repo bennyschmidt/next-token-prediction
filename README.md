@@ -101,6 +101,10 @@ const MyLanguageModel = () => {
 MyLanguageModel();
 ```
 
+Run tests
+
+`npm test`
+
 ## Examples
 
 [Readline Completion](./examples/readline-completion/index.js)
@@ -131,6 +135,10 @@ Watch: [YouTube](https://www.youtube.com/watch?v=wjZofJX0v4M)
   - spell checking
   - search/lookup
 
-2. Demystify LLMs & simplify methodologies
+2. Create decoders for other types for:  
+  - reverse image lookup
+  - reverse audio lookup
 
-3. Make a high-quality, free/open LLM in JavaScript. Working on this [here](https://github.com/bennyschmidt/llimo)
+3. Demystify LLMs & simplify methodologies
+
+4. Make a high-quality, free/open LLM in JavaScript. Working on this [here](https://github.com/bennyschmidt/llimo).
