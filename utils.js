@@ -33,5 +33,10 @@ module.exports = {
     const embedding = JSON.parse(embeddingFile.toString());
 
     return embedding;
-  }
+  },
+
+  isLowerCase: letter => (
+    letter === letter.toLowerCase() &&
+    letter !== letter.toUpperCase()
+  )
 };

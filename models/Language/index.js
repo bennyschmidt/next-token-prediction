@@ -1,7 +1,7 @@
 const { dirname } = require('path');
 const __root = dirname(require.main.filename);
 
-const Decoder = require('../TextDecoder');
+const Transformer = require('../Transformer');
 
 const {
   combineDocuments,
@@ -98,12 +98,12 @@ module.exports = async ({
     text,
     embedding: updatedEmbedding
   }) => {
-    const textDecoder = Decoder();
+    const textTransformer = Transformer();
 
-    textDecoder.ingest(text);
-    textDecoder.createEmbedding(updatedEmbedding);
+    textTransformer.ingest(text);
+    textTransformer.createEmbedding(updatedEmbedding);
 
-    return textDecoder;
+    return textTransformer;
   };
 
   /**
@@ -113,21 +113,21 @@ module.exports = async ({
    */
 
   const fromFiles = async files => {
-    const textDecoder = Decoder();
+    const textTransformer = Transformer();
 
     if (files) {
-      await textDecoder.train({
+      await textTransformer.train({
         name: datasetName,
         files
       });
     } else {
-      await textDecoder.train({
+      await textTransformer.train({
         name: DEFAULT_DATASET.name,
         files: DEFAULT_DATASET.files
       });
     }
 
-    return textDecoder;
+    return textTransformer;
   };
 
   /**
@@ -138,7 +138,7 @@ module.exports = async ({
 
   const complete = query => decoder.getCompletions(query).completion;
 
-  // Language API (extends Decoder)
+  // Language API (extends Transformer)
 
   await init();
 
