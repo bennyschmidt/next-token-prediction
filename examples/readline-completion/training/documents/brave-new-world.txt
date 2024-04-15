@@ -753,9 +753,9 @@ At breakfast the next morning, "Tommy," some one says, "do you
 know which is the longest river in Africa?" A shaking of the head. "But
 don't you remember something that begins: The Nile is the ..."
 
-"The - Nile - is - the - longest - river - in - Africa - and - the - second -
-in - length - of - all - the - rivers - of - the - globe ..." The words come
-rushing out. "Although - falling - short - of ..."
+"The Nile is the longest river in Africa and the second -
+in length of all the rivers of the globe ..." The words come
+rushing out. "Although falling short of ..."
 
 "Well now, which is the longest river in Africa?"
 
@@ -763,7 +763,7 @@ The eyes are blank. "I don't know."
 
 "But the Nile, Tommy."
 
-"The - Nile - is - the - longest - river - in - Africa - and - second ..."
+The Nile is the longest river in Africa and second ..."
 
 "Then which river is the longest, Tommy?"
 

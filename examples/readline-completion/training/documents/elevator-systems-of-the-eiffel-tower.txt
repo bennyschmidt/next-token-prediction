@@ -1,0 +1,1400 @@
+The 1,000-foot tower that formed the focal point and central feature of
+the Universal Exposition of 1889 at Paris has become one of the best known
+of man's works. It was among the most outstanding technological
+achievements of an age which was itself remarkable for such achievements.
+
+Second to the interest shown in the tower's structural aspects was the
+interest in its mechanical organs. Of these, the most exceptional were the
+three separate elevator systems by which the upper levels were made
+accessible to the Exposition visitors. The design of these systems
+involved problems far greater than had been encountered in previous
+elevator work anywhere in the world. The basis of these difficulties was
+the amplification of the two conditions that were the normal determinants
+in elevator design--passenger capacity and height of rise. In addition,
+there was the problem, totally new, of fitting elevator shafts to the
+curvature of the Tower's legs. The study of the various solutions to these
+problems presents a concise view of the capabilities of the elevator art
+just prior to the beginning of the most recent phase of its development,
+marked by the entry of electricity into the field.
+
+The great confidence of the Tower's builder in his own engineering ability
+can be fully appreciated, however, only when notice is taken of one
+exceptional way in which the project differed from works of earlier
+periods as well as from contemporary ones. In almost every case, these
+other works had evolved, in a natural and progressive way, from a
+fundamental concept firmly based upon precedent. This was true of such
+notable structures of the time as the Brooklyn Bridge and, to a lesser
+extent, the Forth Bridge. For the design of his tower, there was virtually
+no experience in structural history from which Eiffel could draw other
+than a series of high piers that his own firm had designed earlier for
+railway bridges. It was these designs that led Eiffel to consider the
+practicality of iron structures of extreme height.
+
+
+[Illustration: Figure 1.--The Eiffel Tower at the time of the Universal
+Exposition of 1889 at Paris. (From _La Nature_, June 29, 1889, vol. 17, p.
+73.)]
+
+[Illustration: Figure 2.--Gustave Eiffel (1832-1923). (From Gustave
+Eiffel, _La Tour de Trois Cents Mètres_, Paris, 1900, frontispiece.)]
+
+
+There was, it is true, some inspiration to be found in the paper projects
+of several earlier designers--themselves inspired by that compulsion which
+throughout history seems to have driven men to attempt the erection of
+magnificently high structures.
+
+One such inspiration was a proposal made in 1832 by the celebrated but
+eccentric Welsh engineer Richard Trevithick to erect a 1,000-foot,
+conical, cast-iron tower (fig. 3) to celebrate the passing of the Reform
+Bill. Of particular interest in light of the present discussion was
+Trevithick's plan to raise visitors to the summit on a piston, driven
+upward within the structure's hollow central tube by compressed air. It
+probably is fortunate for Trevithick's reputation that his plan died
+shortly after this and the project was forgotten.
+
+One project of genuine promise was a tower proposed by the eminent
+American engineering firm of Clarke, Reeves & Company to be erected at the
+Centennial Exhibition at Philadelphia in 1876. At the time, this firm was
+perhaps the leading designer and erector of iron structures in the United
+States, having executed such works as the Girard Avenue Bridge over the
+Schuylkill at Fairmount Park, and most of New York's early elevated
+railway system. The company's proposal (fig. 4) for a 1,000-foot shaft of
+wrought-iron columns braced by a continuous web of diagonals was based
+upon sound theoretical knowledge and practical experience. Nevertheless,
+the natural hesitation that the fair's sponsors apparently felt in the
+face of so heroic a scheme could not be overcome, and this project also
+remained a vision.
+
+
+
+
+Preparatory Work for the Tower
+
+
+In the year 1885, the Eiffel firm, which also had an extensive background
+of experience in structural engineering, undertook a series of
+investigations of tall metallic piers based upon its recent experiences
+with several lofty railway viaducts and bridges. The most spectacular of
+these was the famous Garabit Viaduct (1880-1884), which carries a railroad
+some 400 feet above the valley of the Truyere in southern France. While
+the 200-foot height of the viaduct's two greatest piers was not startling
+even at that period, the studies proved that piers of far greater height
+were entirely feasible in iron construction. This led to the design of a
+395-foot pier, which, although never incorporated into a bridge, may be
+said to have been the direct basis for the Eiffel Tower.
+
+Preliminary studies for a 300-meter tower were made with the 1889 fair
+immediately in mind. With an assurance born of positive knowledge, Eiffel
+in June of 1886 approached the Exposition commissioners with the project.
+There can be no doubt that only the singular respect with which Eiffel was
+regarded not only by his profession but by the entire nation motivated the
+Commission to approve a plan which, in the hands of a figure of less
+stature, would have been considered grossly impractical.
+
+Between this time and commencement of the Tower's construction at the end
+of January 1887, there arose one of the most persistently annoying of the
+numerous difficulties, both structural and social, which confronted Eiffel
+as the project advanced. In the wake of the initial enthusiasm--on the
+part of the fair's Commission inspired by the desire to create a monument
+to French technological achievement, and on the part of the majority of
+Frenchmen by the stirring of their imagination at the magnitude of the
+structure--there grew a rising movement of disfavor. The nucleus was, not
+surprisingly, formed mainly of the intelligentsia, but objections were
+made by prominent Frenchmen in all walks of life. The most interesting
+point to be noted in a retrospection of this often violent opposition was
+that, although the Tower's every aspect was attacked, there was remarkably
+little criticism of its structural feasibility, either by the engineering
+profession or, as seems traditionally to be the case with bold and
+unprecedented undertakings, by large numbers of the technically uninformed
+laity. True, there was an undercurrent of what might be characterized as
+unease by many property owners in the structure's shadow, but the most
+obstinate element of resistance was that which deplored the Tower as a
+mechanistic intrusion upon the architectural and natural beauties of
+Paris. This resistance voiced its fury in a flood of special newspaper
+editions, petitions, and manifestos signed by such lights of the fine and
+literary arts as De Maupassant, Gounod, Dumas _fils_, and others. The
+eloquence of one article, which appeared in several Paris papers in
+February 1887, was typical:
+
+     We protest in the name of French taste and the national art culture
+     against the erection of a staggering Tower, like a gigantic kitchen
+     chimney dominating Paris, eclipsing by its barbarous mass Notre Dame,
+     the Sainte-Chapelle, the tower of St. Jacques, the Dôme des
+     Invalides, the Arc de Triomphe, humiliating these monuments by an act
+     of madness.[1]
+
+Further, a prediction was made that the entire city would become
+dishonored by the odious shadow of the odious column of bolted sheet iron.
+
+It is impossible to determine what influence these outcries might have had
+on the project had they been organized sooner. But inasmuch as the
+Commission had, in November 1886, provided 1,500,000 francs for its
+commencement, the work had been fairly launched by the time the
+protestations became loud enough to threaten and they were ineffectual.
+
+Upon completion, many of the most vigorous protestants became as vigorous
+in their praise of the Tower, but a hard core of critics continued for
+several years to circulate petitions advocating its demolition by the
+government. One of these critics, it was said--probably apocryphally--took
+an office on the first platform, that being the only place in Paris from
+which the Tower could not be seen.
+
+
+[Illustration: Figure 3.--Trevithick's proposed cast-iron tower (1832)
+would have been 1,000 feet high, 100 feet in diameter at the base, 12 feet
+at the top, and surmounted by a colossal statue. (From F. Dye, _Popular
+Engineering_, London, 1895, p. 205.)]
+
+
+
+
+The Tower's Structural Rationale
+
+
+During the previously mentioned studies of high piers undertaken by the
+Eiffel firm, it was established that as the base width of these piers
+increased in proportion to their height, the diagonal bracing connecting
+the vertical members, necessary for rigidity, became so long as to be
+subject to high flexural stresses from wind and columnar loading. To
+resist these stresses, the bracing required extremely large sections which
+greatly increased the surface of the structure exposed to the wind, and
+was, moreover, decidedly uneconomical. To overcome this difficulty, the
+principle which became the basic design concept of the Tower was
+developed.
+
+The material which would otherwise have been used for the continuous
+lattice of diagonal bracing was concentrated in the four corner columns of
+the Tower, and these verticals were connected only at two widely
+separated points by the deep bands of trussing which formed the first and
+second platforms. A slight curvature inward was given to the main piers to
+further widen the base and increase the stability of the structure. At a
+point slightly above the second platform, the four members converged to
+the extent that conventional bracing became more economical, and they were
+joined.
+
+
+[Illustration: Figure 4.--The proposed 1,000-foot iron tower designed by
+Clarke, Reeves & Co. for the Centennial Exhibition of 1876 at
+Philadelphia. (From _Scientific American_, Jan. 24, 1874, vol. 30, p.
+47.)]
+
+
+That this theory was successful not only practically, but visually, is
+evident from the resulting work. The curve of the legs and the openings
+beneath the two lower platforms are primarily responsible for the Tower's
+graceful beauty as well as for its structural soundness.
+
+The design of the Tower was not actually the work of Eiffel himself but of
+two of his chief engineers, Emile Nouguier (1840-?) and Maurice Koechlin
+(1856-1946)--the men who had conducted the high pier studies--and the
+architect Stéphen Sauvestre (1847-?).
+
+In the planning of the foundations, extreme care was used to ensure
+adequate footing, but in spite of the Tower's light weight in proportion
+to its bulk, and the low earth pressure it exerted, uneven pier settlement
+with resultant leaning of the Tower was considered a dangerous
+possibility.[2] To compensate for this eventuality, a device was used
+whose ingenious directness justifies a brief description. In the base of
+each of the 16 columns forming the four main legs was incorporated an
+opening into which an 800-ton hydraulic press could be placed, capable of
+raising the member slightly. A thin steel shim could then be inserted to
+make the necessary correction (fig. 5). The system was used only during
+construction to overcome minor erection discrepancies.
+
+In order to appreciate fully the problem which confronted the Tower's
+designers and sponsors when they turned to the problem of making its
+observation areas accessible to the fair's visitors, it is first necessary
+to investigate briefly the contemporary state of elevator art.
+
+
+
+
+Elevator Development before the Tower
+
+
+While power-driven hoists and elevators in many forms had been used since
+the early years of the 19th century, the ever-present possibility of
+breakage of the hoisting rope restricted their use almost entirely to the
+handling of goods in mills and warehouses.[3] Not until the invention of a
+device which would positively prevent this was there much basis for work
+on other elements of the system. The first workable mechanism to prevent
+the car from dropping to the bottom of the hoistway in event of rope
+failure was the product of Elisha G. Otis (1811-1861), a mechanic of
+Yonkers, New York. The invention was made more or less as a matter of
+course along with the other machinery for a new mattress factory of which
+Otis was master mechanic.
+
+
+[Illustration: Figure 5.--Correcting erection discrepancies by raising
+pier member--with hydraulic press and hand pump--and inserting shims.
+(From _La Nature_, Feb. 18, 1888, vol. 16, p. 184.)]
+
+[Illustration: Figure 6.--The promenade beneath the Eiffel Tower, 1889.
+(From _La Nature_, Nov. 30, 1889, vol. 17, p. 425.)]
+
+[Illustration: Figure 7.--Teagle elevator in an English mill about 1845.
+Power was taken from the line shafting. (From _Pictorial Gallery of Arts_,
+Volume of Useful Arts, London, n.d. [ca. 1845].)]
+
+
+The importance of this invention soon became evident to Otis, and he
+introduced his device to the public three years later during the second
+season of the New York Crystal Palace Exhibition, in 1854. Here he would
+demonstrate dramatically the perfect safety of his elevator by cutting the
+hoisting rope of a suspended platform on which he himself stood, uttering
+the immortal words which have come to be inseparably associated with the
+history of the elevator--"All safe, gentlemen!"[4]
+
+The invention achieved popularity slowly, but did find increasing favor in
+manufactories throughout the eastern United States. The significance of
+Otis' early work in this field lay strictly in the safety features of his
+elevators rather than in the hoisting equipment. His earliest systems were
+operated by machinery similar to that of the teagle elevator in which the
+hoisting drum was driven from the mill shafting by simple fast and loose
+pulleys with crossed and straight belts to raise, lower, and stop. This
+scheme, already common at the time, was itself a direct improvement on the
+ancient hand-powered drum hoist.
+
+The first complete elevator machine in the United States, constructed in
+1855, was a complex and inefficient contrivance built around an
+oscillating-cylinder steam engine. The advantages of an elevator system
+independent of the mill drive quickly became apparent, and by 1860
+improved steam elevator machines were being produced in some quantity, but
+almost exclusively for freight service. It is not clear when the first
+elevator was installed explicitly for passenger service, but it was
+probably in 1857, when Otis placed one in a store on Broadway at Broome
+Street in New York.
+
+In the decade following the Civil War, tall buildings had just begun to
+emerge; and, although the skylines of the world's great cities were still
+dominated by church spires, there was increasing activity in the
+development of elevator apparatus adapted to the transportation of people
+as well as of merchandise. Operators of hotels and stores gradually became
+aware of the commercial advantages to be gained by elevating their patrons
+even one or two floors above the ground, by machinery. The steam engine
+formed the foundation of the early elevator industry, but as building
+heights increased it was gradually replaced by hydraulic, and ultimately
+by electrical, systems.
+
+
+THE STEAM ELEVATOR
+
+The progression from an elevator machine powered by the line shafting of a
+mill to one in which the power source was independent would appear a
+simple and direct one. Nevertheless, it was about 40 years after the
+introduction of the powered elevator before it became common to couple
+elevator machines directly to separate engines. The multiple belt and
+pulley transmission system was at first retained, but it soon became
+evident that a more satisfactory service resulted from stopping and
+reversing the engine itself, using a single fixed belt to connect the
+engine and winding mechanism. Interestingly, the same pattern was followed
+40 years later when the first attempts were made to apply the electric
+motor to elevator drive.
+
+
+[Illustration: Figure 8.--In the typical steam elevator machine two
+vertical cylinders were situated either above or below the crankshaft, and
+a small pulley was keyed to the crankshaft. In a light-duty machine, the
+power was transmitted by flatbelt from the small pulley to a larger one
+mounted directly on the drum. In heavy-duty machines, spur gearing was
+interposed between the large secondary pulley and the winding drum. (Photo
+courtesy of Otis Elevator Company.)]
+
+[Illustration: Figure 9.--Several manufacturers built steam machines in
+which a gear on the drum shaft meshed directly with a worm on the
+crankshaft. This arrangement eliminated the belt, and, since the drum
+could not drive the engine through the worm gearing, no brake was
+necessary for holding the load. (Courtesy of Otis Elevator Company.)]
+
+
+By 1870 the steam elevator machine had attained its ultimate form, which,
+except for a number of minor refinements, was to remain unchanged until
+the type became completely obsolete toward the end of the century.
+
+By the last quarter of the century, a continuous series of improvements in
+the valving, control systems, and safety features of the steam machine had
+made possible an elevator able to compete with the subsequently appearing
+hydraulic systems for freight and low-rise passenger service insofar as
+smoothness, control, and lifting power were concerned. However, steam
+machinery began to fail in this competition as the increasing height of
+buildings rapidly extended the demands of speed and length of rise.
+
+The limitation in rise constituted the most serious shortcoming of the
+steam elevator (figs. 8-10), an inherent defect that did not exist in the
+various hydraulic systems.
+
+
+[Illustration: Figure 10.--Components of the steam passenger elevator at
+the time of its peak development and use (1876). (From _The First One
+Hundred Years_, Otis Elevator Company, 1953.)]
+
+
+Since the only practical way in which the power of a steam engine could be
+applied to the haulage of elevator cables was through a rotational system,
+the cables invariably were wound on a drum. The travel or rise of the car
+was therefore limited by the cable capacity of the winding drum. As
+building heights increased, drums became necessarily longer and larger
+until they grew so cumbersome as to impose a serious limitation upon
+further upward growth. A drum machine rarely could be used for a lift of
+more than 150 feet.[5]
+
+Another organic difficulty existing in drum machines was the dangerous
+possibility of the car--or the counterweight, whose cables often wound on
+the drum--being drawn past the normal top limit and into the upper
+supporting works. Only safety stops could prevent such an occurrence if
+the operator failed to stop the car at the top or bottom of the shaft, and
+even these were not always effective. Hydraulic machines were not
+susceptible to this danger, the piston or plunger being arrested by the
+ends of the cylinder at the extremes of travel.
+
+
+THE HYDRAULIC ELEVATOR
+
+The rope-geared hydraulic elevator, which was eventually to become known
+as the "standard of the industry," is generally thought to have evolved
+directly from an invention of the English engineer Sir William Armstrong
+(1810-1900) of ordnance fame. In 1846 he developed a water-powered crane,
+utilizing the hydraulic head available from a reservoir on a hill 200 feet
+above.
+
+The system was not basically different from the simple hydraulic press so
+well known at the time. Water, admitted to a horizontal cylinder,
+displaced a piston and rod to which a sheave was attached. Around the
+sheave passed a loop of chain, one end of which was fixed, the other
+running over guide sheaves and terminating at the crane arm with a lifting
+hook. As the piston was pressed into the cylinder, the free end of the
+chain was drawn up at triple the piston speed, raising the load. The
+effect was simply that of a 3-to-1 tackle, with the effort and load
+elements reversed. Simple valves controlled admission and exhaust of the
+water. (See fig. 11.)
+
+
+[Illustration: Figure 11.--Armstrong's hydraulic crane. The main cylinder
+was inclined, permitting gravity to assist in overhauling the hook. The
+small cylinder rotated the crane. (From John H. Jallings, _Elevators_,
+Chicago, 1916, p. 82.)]
+
+
+The success of this system initiated a sizable industry in England, and
+the hydraulic crane, with many modifications, was in common use there for
+many years. Such cranes were introduced in the United States in about 1867
+but never became popular; they did, however, have a profound influence on
+the elevator art, forming the basis of the third generic type to achieve
+widespread use in this country.
+
+The ease of translation from the Armstrong crane to an elevator system
+could hardly have been more evident, only two alterations of consequence
+being necessary in the passage. A guided platform or car was substituted
+for the hook; and the control valves were connected to a stationary
+endless rope that was accessible to an operator on the car.
+
+The rope-geared hydraulic system (fig. 13) appeared in mature form in
+about 1876. However, before it had become the "standard elevator" through
+a process of refinement, another system was introduced which merits notice
+if for no other reason than that its popularity for some years seems
+remarkable in view of its preposterously unsafe design. Patented by Cyrus
+W. Baldwin of Boston in January 1870, this system was termed the
+Hydro-Atmospheric Elevator, but more commonly known as the water-balance
+elevator (fig. 12). It employed water not under pressure but simply as
+mass under the influence of gravity. The elevator car's supporting cables
+ran over sheaves at the top of the shaft to a large iron bucket, which
+traveled in a closed tube or well adjacent to and the same length as the
+shaft. To raise the car, the operator caused a valve to open, filling the
+bucket with water from a roof tank. When the weight of water was
+sufficient to overbalance the loaded car, the bucket descended, raising
+the car. On its ascent the car was stopped at intermediate floors by a
+strong brake that gripped the guides. Upon reaching the top, the operator
+was able to open a valve in the bucket, now at the bottom of its travel,
+and discharge its contents into a basement tank, to be pumped back to the
+roof. No longer counterbalanced, the car could descend, its speed
+controlled solely by the brake.
+
+The great popularity of this novel system apparently was due to its smooth
+operation, high speed, simplicity, and economy of operation. Managed by a
+skillful operator, it was capable of speeds far greater than other
+systems could then achieve--up to a frightening 1,800 feet per minute.[6]
+
+
+[Illustration: Figure 12.--Final development of the Baldwin-Hale water
+balance elevator, 1873. The brake, kept applied by powerful springs, was
+released only by steady pressure on a lever. There were two additional
+controls--the continuous rope that opened the cistern valve to fill the
+bucket, and a second lever to open the valve of the bucket to empty it.
+(From _United States Railroad and Mining Register_, Apr. 12, 1873, vol.
+17, p. 3.)]
+
+
+In addition to the element of potential danger from careless operation or
+failure of the brake, the Baldwin system was extremely expensive to
+install as a result of the second shaft, which of course was required to
+be more or less watertight.
+
+Much of the water-balance elevator's development and refinement was done
+by William E. Hale of Chicago, who also made most of the installations.
+The system has, therefore, come to bear his name more commonly than
+Baldwin's.
+
+The popularity of the water-balance system waned after only a few years,
+being eclipsed by more rational systems. Hale eventually abandoned it and
+became the western agent for Otis--by this time prominent in the
+field--and subsequently was influential in development of the hydraulic
+elevator.
+
+The rope-geared system of hydraulic elevator operation was so basically
+simple that by 1880 it had been embraced by virtually all manufacturers.
+However, for years most builders continued to maintain a line of steam and
+belt driven machines for freight service. Inspired by the rapid increase
+of taller and taller buildings, there was a concentrated effort,
+heightened by severe competition, to refine the basic system.
+
+
+[Illustration: Figure 13.--Vertical cylinder, rope-geared hydraulic
+elevator with 2:1 gear ratio and rope control (about 1880). For higher
+rises and speeds, ratios of up to 10:1 were used, and the endless rope was
+replaced by a lever. (Courtesy of Otis Elevator Company.)]
+
+
+By the late 1880's a vast number of improvements in detail had appeared,
+and this form of elevator was considered to be almost without defect. It
+was safe. Absence of a drum enabled the car to be carried by a number of
+cables rather than by one or two, and rendered overtravel impossible. It
+was fast. Control devices had received probably the most attention by
+engineers and were as perfect and sensitive as was possible with
+mechanical means. Cars with lever control could be run at the high speeds
+required for high buildings, yet they could be stopped with a smoothness
+and precision unattainable earlier with systems in which the valves were
+controlled by an endless rope, worked by the operator. It was almost
+completely silent, and when the cylinder was placed vertically in a well
+near the shaft, practically no valuable floor space was occupied. But most
+important, the length of rise was unlimited because no drum was used. As
+greater rises were required, the multiplication of the ropes and sheaves
+was simply increased, raising the piston-car travel ratio and permitting
+the cylinder to remain of manageable length. The ratio was often as high
+as 10 or 12 to 1, the car moving 10 or 12 feet to the piston's 1.
+
+In addition to its principal advantages, the hydraulic elevator could be
+operated directly from municipal water mains in the many cities where
+there was sufficient pressure, thus eliminating a large investment in
+tanks, pumps and boilers (fig. 14).
+
+By far the greatest development in this specialized branch of mechanical
+engineering occurred in the United States. The comparative position of
+American practice, which will be demonstrated farther on, is indicated by
+the fact that Otis Brothers and other large elevator concerns in the
+United States were able to establish offices in many of the major cities
+of Europe and compete very successfully with local firms in spite of the
+higher costs due to shipment. This also demonstrates the extent of error
+in the oft-heard statement that the skyscraper was the direct result of
+the elevator's invention. There is no question that continued elevator
+improvement was an essential factor in the rapid increase of building
+heights. However, consideration of the situation in European cities, where
+buildings of over 10 stories were (and still are) rare in spite of the
+availability of similar elevator techniques, points to the fundamental
+matter of tradition. The European city simply did not develop with the
+lack of judicial restraint which characterized metropolitan growth in the
+United States. The American tendency to confine mercantile activity to the
+smallest possible area resulted in excessive land values, which drove
+buildings skyward. The elevator followed, or, at most, kept pace with,
+the development of higher buildings.
+
+
+[Illustration: Figure 14.--In the various hydraulic systems, a pump was
+required if pressure from water mains was insufficient to operate the
+elevator directly. There was either a gravity tank on the roof or a
+pressure tank in the basement. (From Thomas E. Brown, Jr., "The American
+Passenger Elevator," _Engineering Magazine_ (New York), June 1893, vol. 5,
+p. 340.)]
+
+
+European elevator development--notwithstanding the number of American
+rope-geared hydraulic machines sold in Europe in the 10 years or so
+preceding the Paris fair of 1889--was confined mainly to variations on the
+direct plunger type, which was first used in English factories in the
+1830's. The plunger elevator (fig. 16), an even closer derivative of the
+hydraulic press than Armstrong's crane, was nothing more than a platform
+on the upper end of a vertical plunger that rose from a cylinder as water
+was forced in.
+
+There were two reasons for this European practice. The first and most
+apparent was the rarity of tall buildings. The drilling of a well to
+receive the cylinder was thus a matter of little difficulty. This well had
+to be equivalent in depth to the elevator rise. The second reason was an
+innate European distrust of cable-hung elevator systems in any form, an
+attitude that will be discussed more fully farther on.
+
+
+THE ELECTRIC ELEVATOR
+
+At the time the Eiffel Tower elevators were under consideration, water
+under pressure was, from a practical standpoint, the only agent capable of
+fulfilling the power and control requirements of this particularly severe
+service. Steam, as previously mentioned, had already been found wanting in
+several respects. Electricity, on the other hand, seemed to hold promise
+for almost every field of human endeavor. By 1888 the electric motor had
+behind it a 10- or 15-year history of active development. Frank J. Sprague
+had already placed in successful operation a sizable electric trolley-car
+system, and was manufacturing motors of up to 20 horsepower in commercial
+quantity. Lighting generators were being produced in sizes far greater.
+There were, nevertheless, many obstacles preventing the translation of
+this progress into machinery capable of hauling large groups of people a
+vertical distance of 1,000 feet with unquestionable dependability.
+
+The first application of electricity to elevator propulsion was an
+experiment of the distinguished German electrician Werner von Siemens,
+who, in 1880, constructed a car that successfully climbed a rack by means
+of a motor and worm gearing beneath its deck (figs. 17, 18)--again, the
+characteristic European distrust of cable suspension. However, the effect
+of this success on subsequent development was negligible. Significant use
+of electricity in this field occurred somewhat later, and in a manner
+parallel to that by which steam was first applied to the elevator--the
+driving of mechanical (belt driven) elevator machines by individual
+motors. Slightly later came another application of the "conversion" type.
+This was the simple substitution of electrically driven pumps (fig. 21)
+for steam pumps in hydraulic installations. It will be recalled that pumps
+were necessary in cases where water main pressure was insufficient to
+operate the elevator directly.
+
+In both of these cases the operational demands on the motor were of course
+identical to those on the prime movers which they replaced; no reversal of
+direction was necessary, the speed was constant, and the load was nearly
+constant. Furthermore, the load could be applied to the motor gradually
+through automatic relief valves on the pump and in the mechanical machines
+by slippage as the belt was shifted from the loose to the fast pulleys.
+The ultimate simplicity in control resulted from permitting the motor to
+run continuously, drawing current only in proportion to its loading. The
+direct-current motor of the 1880's was easily capable of such service, and
+it was widely used in this way.
+
+
+[Illustration: Figure 15.--Rope-geared hydraulic freight elevator using a
+horizontal cylinder (about 1883). (From a Lane & Bodley illustrated
+catalog of hydraulic elevators, Cincinnati, n.d.)]
+
+[Illustration: Figure 16.--English direct plunger hydraulic elevator
+(about 1895). (From F. Dye, _Popular Engineering_, London, 1895, p. 280.)]
+
+
+Adaptation of the motor to the direct drive of an elevator machine was
+quite another matter, the difficulties being largely those of control. At
+this time the only practical means of starting a motor under load was by
+introducing resistance into the circuit and cutting it out in a series of
+steps as the speed picked up; precisely the method used to start traction
+motors. In the early attempts to couple the motor directly to the winding
+drum through worm gearing, this "notching up" was transmitted to the car
+as a jerking motion, disagreeable to passengers and hard on machinery.
+Furthermore, the controller contacts had a short life because of the
+arcing which resulted from heavy starting currents. In all, such systems
+were unsatisfactory and generally unreliable, and were held in disfavor by
+both elevator experts and owners.
+
+
+[Illustration: Figure 17.--Siemens' electric rack-climbing elevator of
+1880. (From Werner von Siemens, _Gesammelte Abhandlungen und Vorträge_,
+Berlin, 1881, pl. 5.)]
+
+
+There was, moreover, little inducement to overcome the problem of control
+and other minor problems because of a more serious difficulty which had
+persisted since the days of steam. This was the matter of the drum and its
+attendant limitations. The motor's action being rotatory, the winding drum
+was the only practical way in which to apply its motive power to hoisting.
+This single fact shut electricity almost completely out of any large-scale
+elevator business until after the turn of the century. True, there was a
+certain amount of development, after about 1887, of the electric
+worm-drive drum machine for slow-speed, low-rise service (fig. 19). But
+the first installation of this type that was considered practically
+successful--in that it was in continuous use for a long period--was not
+made until 1889,[7] the year in which the Eiffel Tower was completed.
+
+Pertinent is the one nearly successful attempt which was made to approach
+the high-rise problem electrically. In 1888, Charles R. Pratt, an elevator
+engineer of Montclair, New Jersey, invented a machine based on the
+horizontal cylinder rope-geared hydraulic elevator, in which the two sets
+of sheaves were drawn apart by a screw and traveling nut. The screw was
+revolved directly by a Sprague motor, the system being known as the
+Sprague-Pratt. While a number of installations were made, the machine was
+subject to several serious mechanical faults and passed out of use around
+1900. Generally, electricity as a practical workable power for elevators
+seemed to hold little promise in 1888.[8]
+
+
+[Illustration: Figure 18.--Motor and drive mechanism of Siemens'
+elevator. (From Alfred R. Urbanitzky, _Electricity in the Service of Man_,
+London, 1886, p. 646.)]
+
+[Illustration:
+
+  _Morse, Williams & Co._,
+
+  BUILDERS OF
+  PASSENGER
+  AND
+  FREIGHT
+  ELEVATORS.
+
+  ELECTRIC ELEVATOR.
+
+  Write us for Circulars and Prices.
+
+  Main Office and Works, 1105 Frankford Avenue,
+  PHILADELPHIA.
+
+
+  New York Office,      108 Liberty Street.
+  New Haven  "          82 Church Street.
+  Pittsburg  "          413 Fourth Avenue.
+  Boston Office         19 Pearl Street.
+  Baltimore  "          Builders' Exchange.
+  Scranton   "          425 Spruce Street.
+
+Figure 19.--The electric elevator in its earliest commercial form (1891),
+with the motor connected directly to the load. By this time, incandescent
+lighting circuits in large cities were sufficiently extensive to make such
+installations practical. However, capacity and lift were severely limited
+by weaknesses of the control system and the necessity of using a drum.
+(From _Electrical World_, Jan. 2, 1897, vol. 20, p. xcvii.)]
+
+[Illustration:
+
+  MILLER'S PATENT
+  LIFE AND LABOR-SAVING
+  SCREW HOISTING MACHINE,
+  FOR THE USE OF
+  Stores, Hotels, Warehouses, Factories, Sugar Refineries,
+      Packing Houses, Mills, Docks, Mines, &c.
+  MANUFACTURED BY
+  CAMPBELL, WHITTIER & CO., ROXBURY, MASS.
+  _Sole Agents for the New England States._
+
+The above Engraving illustrates a very superior Hoisting Machine, designed
+for _Store and Warehouse Hoisting_. It is very simple in its construction,
+compact, durable, and not liable to get out of order. An examination of
+the Engraving will convince any one who has any knowledge of Machinery,
+that the screw is the only safe principle on which to construct a Hoisting
+Machine or Elevator.
+
+Figure 20.--Advertisement for the Miller screw-hoisting machine, about
+1867 (see p. 23). From flyer in the United States National Museum.]
+
+[Illustration: Figure 21.--The first widespread use of electricity in the
+elevator field was to drive belt-type mechanical machines and the pumps of
+hydraulic systems (see p. 14) as shown here. (From _Electrical World_,
+Jan. 4, 1890, vol. 15, p. 4.)]
+
+
+
+
+The Tower's Elevators
+
+
+A great part of the Eiffel Tower's worth and its _raison d'être_ lay in
+the overwhelming visual power by which it was to symbolize to a world
+audience the scientific, artistic, and, above all, the technical
+achievements of the French Republic. Another consideration, in Eiffel's
+opinion, was its great potential value as a scientific observatory. At its
+summit grand experiments and observations would be possible in such fields
+as meteorology and astronomy. In this respect it was welcomed as a
+tremendous improvement over the balloon and steam winch that had been
+featured in this service at the 1878 Paris exposition. Experiments were
+also to be conducted on the electrical illumination of cities from great
+heights. The great strategic value of the Tower as an observation post
+also was recognized. But from the beginning, sight was never lost of the
+structure's great value as an unprecedented public attraction, and its
+systematic exploitation in this manner played a part in its planning,
+second perhaps only to the basic design.
+
+The conveyance of multitudes of visitors to the Tower's first or main
+platform and a somewhat lesser number to the summit was a technical
+problem whose seriousness Eiffel must certainly have been aware of at the
+project's onset. While a few visitors could be expected to walk to the
+first or possibly second stage, 377 feet above the ground, the main means
+of transport obviously had to be elevators. Indeed, the two aspects of the
+Tower with which the Exposition commissioners were most deeply concerned
+were the adequate grounding of lightning and the provision of a reliable
+system of elevators, which they insisted be unconditionally safe.
+
+To study the elevator problem, Eiffel retained a man named Backmann who
+was considered an expert on the subject. Apparently Backmann originally
+was to design the complete system, but he was to prove inadequate to the
+task. As his few schemes are studied it becomes increasingly difficult to
+imagine by what qualifications he was regarded as either an elevator
+expert or designer by Eiffel and the Commission. His proposals appear,
+with one exception, to have been decidedly retrogressive, and, further, to
+incorporate the most undesirable features of those earlier systems he
+chose to borrow from. Nothing has been discovered regarding his work, if
+any, on elevators for the lower section of the Tower. Realizing the
+difficulty of this aspect of the problem, he may not have attempted its
+solution, and confined his work to the upper half where the structure
+permitted a straight, vertical run.
+
+
+[Illustration: Figure 22.--Various levels of the Eiffel Tower. (Adapted
+from Gustave Eiffel, _La Tour de Trois Cents Mètres_, Paris, 1900, pl.
+1.)]
+
+
+The Backmann design for the upper elevators was based upon a principle
+which had been attractive to many inventors in the mid-19th century period
+of elevator development--that of "screwing the car up" by means of a
+threaded element and a nut, either of which might be rotated and the other
+remain stationary. The analogy to a nut and bolt made the scheme an
+obvious one at that early time, but its inherent complexity soon became
+equally evident and it never achieved practical success. Backmann
+projected two cylindrical cars that traveled in parallel shafts and
+balanced one another from opposite ends of common cables that passed over
+a sheave in the upperworks. Around the inside of each shaft extended a
+spiral track upon which ran rollers attached to revolving frames
+underneath the cars. When the frames were made to revolve, the rollers,
+running around the track, would raise or lower one car, the other
+traveling in the opposite direction (fig. 23).
+
+
+[Illustration: Figure 23.--Backmann's proposed helicoidal elevator for the
+upper section of the Eiffel Tower. The cars were to be self-powered by
+electric motors. Note similarity to the Miller system (fig. 20). (Adapted
+from _The Engineer_ (London), Aug. 3, 1888, vol. 66, p. 101.)]
+
+
+In the plan as first presented, a ground-based steam engine drove the
+frames and rollers through an endless fly rope--traveling at high speed
+presumably to permit it to be of small diameter and still transmit a
+reasonable amount of power--which engaged pulleys on the cars. The design
+was remarkably similar to that of the Miller Patent Screw Hoisting
+Machine, which had had a brief life in the United States around 1865. The
+Miller system (see p. 19) used a flat belt rather than a rope (fig. 20).
+This plan was quickly rejected, probably because of anticipated
+difficulties with the rope transmission.[9]
+
+Backmann's second proposal, actually approved by the Commission,
+incorporated the only--although highly significant--innovation evident in
+his designs. For the rope transmission, electric motors were substituted,
+one in each car to drive the roller frame directly. With this
+modification, the plan does not seem quite as unreasonable, and would
+probably have worked. However, it would certainly have lacked the
+necessary durability and would have been extremely expensive. The
+Commission discarded the whole scheme about the middle of 1888, giving two
+reasons for its action: (1) the novelty of the system and the attendant
+possibility of stoppages which might seriously interrupt the "exploitation
+of the Tower," and (2) fear that the rollers running around the tracks
+would cause excessive noise and vibration. Both reasons seem quite
+incredible when the Backmann system is compared to one of those actually
+used--the Roux, described below--which obviously must have been subject to
+identical failings, and on a far greater scale. More likely there existed
+an unspoken distrust of electric propulsion.
+
+That the Backmann system should have been given serious consideration at
+all reflects the uncertainty surrounding the entire matter of providing
+elevator service of such unusual nature. Had the Eiffel Tower been erected
+only 15 years later, the situation would have been simply one of
+selection. As it was, Eiffel and the commissioners were governed not by
+what they wanted but largely by what was available.
+
+
+THE OTIS SYSTEM
+
+The curvature of the Tower's legs imposed a problem unique in elevator
+design, and it caused great annoyance to Eiffel, the fair's Commission,
+and all others concerned. Since a vertical shaftway anywhere within the
+open area beneath the first platform was esthetically unthinkable, the
+elevators could be placed only in the inclined legs. The problem of
+reaching the first platform was not serious. The legs were wide enough and
+their curvature so slight in this lower portion as to permit them to
+contain a straight run of track, and the service could have been designed
+along the lines of an ordinary inclined railway. It was estimated that the
+great majority of visitors would go only to this level, attracted by the
+several international restaurants, bars and other features located there.
+Two elevators to operate only that far were contracted for with no
+difficulty--one to be placed in the east leg and one in the west.
+
+To transport people to the second platform was an altogether different
+problem. Since there was to be a single run from the ground, it would have
+been necessary to form the elevator guides either with a constant
+curvature, approximating that of the legs, or with a series of straight
+chords connected by short segmental curves of small radius. Eiffel planned
+initially to use the first method, but the second was adopted ultimately,
+probably as being the simpler because only two straight lengths of run
+were found to be necessary.
+
+Bids were invited for two elevators on this basis--one each for the north
+and south legs. Here the unprecedented character of the matter became
+evident--there was not a firm in France willing to undertake the work. The
+American Elevator Company, the European branch of Otis Brothers & Company,
+did submit a proposal through its Paris office, Otis Ascenseur Cie., but
+the Commission was compelled to reject it because a clause in the fair's
+charter prohibited the use of any foreign material in the construction of
+the Tower. Furthermore, there was a strong prejudice against foreign
+contractors, which, because of the general background of disfavor
+surrounding the project during its early stages, was an element worth
+serious consideration by the Commission. The bidding time was extended,
+and many attempts were made to attract a native design but none was
+forthcoming.
+
+As time grew short, it became imperative to resolve the matter, and the
+Commission, in desperation, awarded the contract to Otis in July 1887 for
+the amount of $22,500.[10] A curious footnote to the affair appeared much
+later in the form of a published interview[11] with W. Frank Hall, Otis'
+Paris representative:
+
+     "Yes," said Mr. Hall, "this is the first elevator of its kind. Our
+     people for thirty-eight years have been doing this work, and have
+     constructed thousands of elevators vertically, and many on an
+     incline, but never one to strike a radius of 160 feet for a distance
+     of over 50 feet. It has required a great amount of preparatory study
+     and we have worked on it for three years."
+
+     "That was before you got the contract?"
+
+     "Quite so, but we knew that, although the French authorities were
+     very reluctant to give away this piece of work, they would be bound
+     to come to us, and so we were preparing for them."
+
+Such supreme confidence must have rapidly evaporated as events progressed.
+Despite the invaluable advertising to be derived from an installation of
+such distinction, the Otises would probably have defaulted had they
+foreseen the difficulties which preceded completion of the work.
+
+
+[Illustration: Figure 24.--General arrangement of Otis elevator system in
+Eiffel Tower. (From _The Engineer_ (London), July 19, 1889, vol. 68, p.
+58.)]
+
+
+The proposed system (fig. 24) was based fundamentally upon Otis' standard
+hydraulic elevator, but it was recognizable only in basic operating
+principle (fig. 25). Tracks of regular rail section replaced the guides
+because of the incline, and the double-decked cabin (fig. 29) ran on small
+flanged wheels. This much of the apparatus was really not unlike that of
+an ordinary inclined railway. Motive power was provided by the customary
+hydraulic cylinder (fig. 26), set on an angle roughly equal to the incline
+of the lower section of run. Balancing the cabin's dead weight was a
+counterpoise carriage (fig. 27) loaded with pig iron that traveled on a
+second set of rails beneath the main track. Like the driving system, the
+counterweight was rope-geared, 3 to 1, so that its travel was about 125
+feet to the cabin's 377 feet.
+
+
+[Illustration: Figure 25.--Schematic diagram of the rigging of the Otis
+system. (Adapted from Gustave Eiffel, _La Tour de Trois Cents Mètres_,
+Paris, 1900, p. 127.)]
+
+
+Everything about the system was on a scale far heavier than found in the
+normal elevator of the type. The cylinder, of 38-inch bore, was 36 feet
+long. Rather than a simple nest of pulleys, the piston rods pulled a large
+guided carriage or "chariot" bearing six movable sheaves (fig. 28).
+Corresponding were five stationary sheaves, the whole reeved to form an
+immense 12-purchase tackle. The car, attached to the free ends of the
+cables, was hauled up as the piston drew the two sheave assemblies apart.
+
+In examining the system, it is difficult to determine what single element
+in its design might have caused such a problem as to have been beyond the
+engineering ability of a French firm, and to have caused such concern to a
+large, well-established American organization of Otis' wide elevator and
+inclined railway experience. Indeed, when the French system--which served
+the first platform from the east and west legs--is examined, it appears
+curious that a national technology capable of producing a machine at such
+a level of complexity should have been unable to deal easily with the
+entire matter. This can be plausibly explained only on the basis of
+Europe's previously mentioned lack of experience with rope-geared and
+other cable-hung elevator systems. The difficulty attending Otis' work,
+usually true in the case of all innovations, lay unquestionably in the
+multitudes of details--many of them, of course, invisible when only the
+successfully working end product is observed.
+
+More than a matter of detail was the Commission's demand for perfect
+safety, which precipitated a situation typical of many confronting Otis
+during the entire work. Otis had wished to coordinate the entire design
+process through Mr. Hall, with technical matters handled by mail.
+Nevertheless, at Eiffel's insistence, and with some inconvenience, in 1888
+the company dispatched the project's engineer, Thomas E. Brown, Jr., to
+Paris for a direct consultation. Mild conflict over minor details ensued,
+but a gross difference of opinion arose ultimately between the American
+and French engineers over the safety of the system. The disagreement
+threatened to halt the entire project. In common with all elevators in
+which the car hangs by cables, the prime consideration here was a means of
+arresting the cabin should the cables fail. As originally presented to
+Eiffel, the plans indicated an elaborate modification of the standard Otis
+safety device--itself a direct derivative of E. G. Otis' original.
+
+If any one of the six hoisting cables broke or stretched unduly, or if
+their tension slackened for any reason, powerful leaf springs were
+released causing brake shoes to grip the rails. The essential feature of
+the design was the car's arrest by friction between its grippers and the
+rails so that the stopping action was gradual, not sudden as in the
+elevator safety. During proof trials of the safety, made prior to the
+fair's opening by cutting away a set of temporary hoisting cables, the
+cabin would fall about 10 feet before being halted.
+
+
+[Illustration: Figure 26.--Section through the Otis power cylinder.
+(Adapted from Gustave Eiffel, _La Tour de Trois Cents Mètres_, Paris,
+1900, pl. 22.)]
+
+[Illustration: Figure 27.--Details of the counterweight carriage in the
+Otis system. (From Gustave Eiffel, _La Tour de Trois Cents Mètres_, Paris,
+1900, pl. 22{4}.)]
+
+
+Although highly efficient and of unquestionable security, this safety
+device was considered an insufficient safeguard by Eiffel, who, speaking
+in the name of the Commission, demanded the application of a device known
+as the rack and pinion safety that was used to some extent on European cog
+railways. The commissioners not only considered this system more reliable
+but felt that one of its features was a necessity: a device that
+permitted the car to be lowered by hand, even after failure of all the
+hoisting cables. The serious shortcomings of the rack and pinion were its
+great noisiness and the limitation it imposed on hoisting speed. Both
+disadvantages were due to the constant engagement of a pinion on the car
+with a continuous rack set between the rails. The meeting ended in an
+impasse, with Brown unwilling to approve the objectionable apparatus and
+able only to return to New York and lay the matter before his company.
+
+While Eiffel's attitude in the matter may appear highly unreasonable, it
+must be said that during a subsequent meeting between Brown and
+Koechlin, the French engineer implied that a mutual antagonism had
+arisen between the Tower's creator and the Commission. Thus, since his own
+judgment must have had little influence with the commissioners at that
+time, Eiffel was compelled to specify what he well knew were excessive
+safety provisions.
+
+This decision placed Otis Brothers in a decidedly uncomfortable position,
+at the mercy of the Commission. W. E. Hale, promoter of the water balance
+elevator--who by then had a strong voice in Otis' affairs--expressed the
+seriousness of the matter in a letter to the company's president, Charles
+R. Otis, following receipt of Brown's report on the Paris conference.
+Referring to the controversial cogwheel, Hale wrote
+
+     ... if this must be arranged so that the car is effected [sic] in its
+     operation by constant contact with the rack and pinion ... so as to
+     communicate the noise and jar, and unpleasant motion which such an
+     arrangement always produces, I should favor giving up the whole
+     matter rather than allying ourselves with any such abortion.... we
+     would be the laughing stock of the world, for putting up such a
+     contrivance.
+
+This difficult situation apparently was the product of a somewhat general
+contract phrased in terms of service to be provided rather than of
+specific equipment to be used. This is not unusual, but it did leave open
+to later dispute such ambiguous clauses as "adequate safety devices are to
+be provided."
+
+Although faced with the loss not only of all previously expended design
+work but also of an advertisement of international consequence, the
+company apparently concurred with Hale and so advised Paris.
+Unfortunately, there are no Otis records to reveal the subsequent
+transactions, but we may assume that Otis' threat of withdrawal prevailed,
+coupled as it was with Eiffel's confidence in the American equipment. The
+system went into operation as originally designed, free of the odious rack
+and pinion.
+
+That, unfortunately, was not the final disagreement. Before the fair's
+opening in May 1889, the relationship was strained so drastically that a
+mutually satisfactory conclusion to the project must indeed have seemed
+hopeless. The numerous minor structural modifications of the Tower legs
+found necessary as construction progressed had necessitated certain
+equivalent alteration to the Otis design insofar as its dependency upon
+the framework was affected. Consequently, work on the machinery was set
+back by some months. Eiffel was informed that although everything was
+guaranteed to be in full operation by opening day on May 1, the
+contractual deadline of January 1 could not possibly be met. Eiffel, now
+unquestionably acting on his own volition, responded by cable, refusing
+all payment. Charles Otis' reply, a classic of indignation, disclosed to
+Eiffel the jeopardy in which his impetuosity had placed the success of the
+entire project:
+
+     After all else we have borne and suffered and achieved in your
+     behalf, we regard this as a trifle too much; and we do not hesitate
+     to declare, in the strongest terms possible to the English language,
+     that we will not put up with it ... and, if there is to be War, under
+     the existing circumstances, propose that at least part of it shall be
+     fought on American ground. If Mr. Eiffel shall, on the contrary,
+     treat us as we believe we are entitled to be treated, under the
+     circumstances, and his confidence in our integrity to serve him well
+     shall be restored in season to admit of the completion of this work
+     at the time wanted, well and good; but it must be done at once ...
+     otherwise we shall ship no more work from this side, and Mr. Eiffel
+     must charge to himself the consequences of his own acts.
+
+This message apparently had the desired effect and the matter was somehow
+resolved, as the machinery was in full operation when the Exposition
+opened. The installation must have had immense promotional value for Otis
+Brothers, particularly in its contrast to the somewhat anomalous French
+system. This contrast evidently was visible to the technically
+unsophisticated as well as to visiting engineers. Several newspapers
+reported that the Otis elevators were one of the best American exhibits at
+the fair.
+
+In spite of their large over-all scale and the complication of the basic
+pattern imposed by the unique situation, the Otis elevators performed well
+and justified the original judgment and confidence which had prompted
+Eiffel to fight for their installation. Aside from the obvious advantage
+of simplicity when compared to the French machines, their operation was
+relatively quiet, and fast.
+
+The double car, traveling at 400 feet per minute, carried 40 persons, all
+seated because of the change of inclination. The main valve or distributor
+that controlled the flow of water to and from the driving cylinder was
+operated from the car by cables. The hydraulic head necessary to produce
+pressure within the cylinder was obtained from a large open reservoir on
+the second platform. After being exhausted from the cylinder, the water
+was pumped back up by two Girard pumps (fig. 31) in the engine room at
+the base of the Tower's south leg.
+
+
+THE SYSTEM OF ROUX, COMBALUZIER AND LEPAPE
+
+There can be little doubt that the French elevators placed in the east and
+west piers to carry visitors to the first stage of the Tower had the
+important secondary function of saving face. That an engineer of Eiffel's
+mechanical perception would have permitted their use, unless compelled to
+do so by the Exposition Commission, is unthinkable. Whatever the attitudes
+of the commissioners may have been, it must be said--recalling the
+Backmann system--that they did not fear innovation. The machinery
+installed by the firm of Roux, Combaluzier and Lepape was novel in every
+respect, but it was a product of misguided ingenuity and set no precedent.
+The system, never duplicated, was conceived, born, lived a brief and not
+overly creditable life, and died, entirely within the Tower.
+
+Basis of the French system was an endless chain of short, rigid,
+articulated links (fig. 35), to one point of which the car was attached.
+As the chain moved, the car was raised or lowered. Recalling the European
+distrust of suspended elevators, it is interesting to note that the car
+was pushed up by the links below, not drawn by those above, thus the
+active links were in compression. To prevent buckling of the column, the
+chain was enclosed in a conduit (fig. 36). Excessive friction was
+prevented by a pair of small rollers at each of the knuckle joints between
+the links. The system was, in fact, a duplicate one, with a chain on
+either side of the car. At the bottom of the run the chains passed around
+huge sprocket wheels, 12.80 feet in diameter, with pockets on their
+peripheries to engage the joints. Smaller wheels at the top guided the
+chains.
+
+If by some motive force the wheel (fig. 33) were turned counterclockwise,
+the lower half of the chain would be driven upward, carrying the car with
+it. Slots on the inside faces of the lower guide trunks permitted passage
+of the connection between the car and chain. Lead weights on certain links
+of the chains' upper or return sections counterbalanced most of the car's
+dead weight.
+
+
+[Illustration: Figure 28.--Plan and section of the Otis system's movable
+pulley assembly, or chariot. Piston rods are at left. (Adapted from _The
+Engineer_ (London), July 19, 1889, vol. 68, p. 58.)]
+
+
+Two horizontal cylinders rotated the driving sprockets through a mechanism
+whose effect was similar to the rope-gearing of the standard hydraulic
+elevator, but which might be described as chain gearing. The cylinders
+were of the pushing rather than the pulling type used in the Otis system;
+that is, the pressure was introduced behind the plungers, driving them
+out. To the ends of the plungers were fixed smooth-faced sheaves, over
+which were looped heavy quadruple-link pitch chains, one end of each being
+solidly attached to the machine base. The free ends ran under the cylinder
+and made another half-wrap around small sprockets keyed to the main drive
+shaft. As the plungers were forced outward, the free ends of the chain
+moved in the opposite direction, at twice the velocity and linear
+displacement of the plungers. The drive sprockets were thereby revolved,
+driving up the car. Descent was made simply by permitting the cylinders to
+exhaust, the car dropping of its own weight. The over-all gear or ratio of
+the system was the multiplication due to the double purchase of the
+plunger sheaves times the ratio of the chain and drive sprocket diameters:
+2(12.80/1.97) or about 13:1. To drive the car 218 feet to the first
+platform of the Tower the plungers traveled only about 16.5 feet.
+
+To penetrate the inventive rationale behind this strange machine is not
+difficult. Aware of the fundamental dictum of absolute safety before all
+else, the Roux engineers turned logically to the safest known elevator
+type--the direct plunger. This type of elevator, being well suited to low
+rises, formed the main body of European practice at the time, and in this
+fact lay the further attraction of a system firmly based on tradition.
+Since the piers between the ground and first platform could accommodate a
+straight, although inclined run, the solution might obviously have been to
+use an inclined, direct plunger. The only difficulty would have been that
+of drilling a 220-foot, inclined well for the cylinder. While a difficult
+problem, it would not have been insurmountable. What then was the reason
+for using a design vastly more complex? The only reasonable answer that
+presents itself is that the designers, working in a period before the
+Otis bid had been accepted, were attempting to evolve an apparatus capable
+of the complete service to the second platform. The use of a rigid direct
+plunger thus precluded, it became necessary to transpose the basic idea in
+order to adapt it to the curvature of the Tower leg, and at the same time
+retain its inherent quality of safety. Continuing the conceptual sequence,
+the idea of a plunger made in some manner flexible apparently suggested
+itself, becoming the heart of the Roux machines.
+
+
+[Illustration: Figure 29.--Section through cabin of the Otis elevator.
+Note the pivoted floor-sections. As the car traveled, these floor-sections
+were leveled by the operator to compensate for the change of inclination;
+however, they were soon removed because they interfered with the loading
+and unloading of passengers. (From _La Nature_, May 4, 1889, vol. 17, p.
+360.)]
+
+
+Here then was a design exhibiting strange contrast. It was on the one hand
+completely novel, devised expressly for this trying service; yet on the
+other hand it was derived from and fundamentally based on a thoroughly
+traditional system. If nothing else, it was safe beyond question. In
+Eiffel's own words, the Roux lifts "not only were safe, but appeared
+safe; a most desirable feature in lifts traveling to such heights and
+carrying the general public."[12]
+
+The system's shortcomings could hardly be more evident. Friction resulting
+from the more than 320 joints in the flexible pistons, each carrying two
+rollers, plus that from the pitch chains must have been immense. The noise
+created by such multiplicity of parts can only be imagined. Capacity was
+equivalent to that of the Otis system. About 100 people could be carried
+in the double-deck cabin, some standing. The speed, however, was only 200
+feet per minute, understandably low.
+
+If it had been the initial intention of the designers to operate their
+cars to the second platform, they must shortly have become aware of the
+impracticability of this plan, caused by an inherent characteristic of the
+apparatus. As long as the compressive force acted along the longitudinal
+axis of the links, there was no lateral resultant and the only load on the
+small rollers was that due to the dead weight of the link itself. However,
+if a curve had been introduced in the guide channels to increase the
+incline of the upper run, as done by Otis, the force on those links
+traversing the bend would have been eccentric--assuming the car to be in
+the upper section, above the bend. The difference between the two sections
+(based upon the Otis system) was 78°9' minus 54°35', or 23°34', the
+tangent of which equals 0.436. Forty-three percent of the unbalanced
+weight of the car and load would then have borne upon the, say, 12 sets of
+rollers on the curve. The immense frictional load thus added to the entire
+system would certainly have made it dismally inefficient, if not actually
+unworkable.
+
+In spite of Eiffel's public remarks regarding the safety of the Roux
+machinery, in private he did not trouble to conceal his doubts. Otis'
+representative, Hall, discussing this toward the end of Brown's previously
+mentioned report, probably presented a fairly accurate picture of the
+situation. His comments were based on conversations with Eiffel and
+Koechlin:
+
+     Mr. Gibson, Mr. Hanning [who were other Otis employees] and myself
+     came to the unanimous conclusion that Mr. Eiffel had been forced to
+     order those other machines, from outside parties, against his own
+     judgment: and that he was very much in doubt as to their being a
+     practical success--and was, therefore, all the more anxious to put in
+     our machines (which he did have faith in) ... and if the others ate
+     up coal in proportions greatly in excess of ours, he would have it to
+     say ... "Gentlemen, these are my choice of elevators, those are yours
+     &c." There was a published interview ... in which Eiffel stated ...
+     that he was to meet some American gentlemen the following day, who
+     were to provide him with elevators--grand elevators, I think he
+     said....
+
+
+[Illustration: Figure 30.--Upperworks and passenger platforms of the Otis
+system at second level. (From _La Nature_, Aug. 10, 1889, vol. 17, p.
+169.)]
+
+
+The Roux and the Otis systems both drew their water supply from the same
+tanks; also, each system used similar distributing valves (fig. 32)
+operated from the cars. Although no reports have been found of actual
+controlled tests comparing the efficiencies of the Otis and Roux systems,
+a general quantitative comparison may be made from the balance figures
+given for each (p. 40), where it is seen that 2,665 pounds of excess
+tractive effort were allowed to overcome the friction of the Otis
+machinery against 13,856 pounds for the Roux.
+
+
+THE EDOUX SYSTEM
+
+The section of the Tower presenting the least difficulty to elevator
+installation was that above the juncture of the four legs--from the second
+platform to the third, or observation, enclosure. There was no question
+that French equipment could perform this service. The run being perfectly
+straight and vertical, the only unusual demand upon contemporary elevator
+technology was the length of rise--525 feet.
+
+The system ultimately selected (fig. 37) appealed to the Commission
+largely because of a similar one that had been installed in one tower of
+the famous Trocadero[13] and which had been operating successfully for 10
+years. It was the direct plunger system of Leon Edoux, and was, for the
+time, far more rationally contrived than Backmann's helicoidal system.
+Edoux, an old schoolmate of Eiffel's, had built thousands of elevators in
+France and was possibly the country's most successful inventor and
+manufacturer in the field. It is likely that he did not attempt to obtain
+the contract for the elevator equipment in the Tower legs, as his
+experience was based almost entirely on plunger systems, a type, as we
+have seen, not readily adaptable to that situation. What is puzzling was
+the failure of the Commission's members to recognize sooner Edoux's
+obvious ability to provide equipment for the upper run. It may have been
+due to their inexplicable confidence in Backmann.
+
+
+[Illustration: Figure 31.--The French Girard pumps that supplied the Otis
+and Roux systems. (From _La Nature_, Oct. 5, 1889, vol. 17, p. 292.)]
+
+
+The direct plunger elevator was the only type in which European practice
+was in advance of American practice at this time. Not until the beginning
+of the 20th century, when hydraulic systems were forced into competition
+with electrical systems, was the direct plunger elevator improved in
+America to the extent of being practically capable of high rises and
+speeds. Another reason for its early disfavor in the United States was the
+necessity for drilling an expensive plunger well equal in length to the
+rise.[14]
+
+As mentioned, the most serious problem confronting Edoux was the extremely
+high rise of 525 feet. The Trocadero elevator, then the highest plunger
+machine in the world, traveled only about 230 feet. A secondary
+difficulty was the esthetic undesirability of permitting a plunger
+cylinder to project downward a distance equal to such a rise, which would
+have carried it directly into the center of the open area beneath the
+first platform (fig. 6). Both problems were met by an ingenious
+modification of the basic system. The run was divided into two equal
+sections, each of 262 feet, and two cars were used. One operated from the
+bottom of the run at the second platform level to an intermediate platform
+half-way up, while the other operated from this point to the observation
+platform near the top of the Tower. The two sections were of course
+parallel, but offset. A central guide, on the Tower's center-line, running
+the entire 525 feet served both cars, with shorter guides on either
+side--one for the upper and one for the lower run. Thus, each car traveled
+only half the total distance. The two cars were connected, as in the
+Backmann system, by steel cables running over sheaves at the top,
+balancing each other and eliminating the need for counterweights. Two
+driving rams were used. By being placed beneath the upper car, their
+cylinders extended downward only the 262 feet to the second platform and
+so did not project beyond the confines of the system itself.[15] In making
+the upward or downward trip, the passengers had to change from one car to
+the other at the intermediate platform, where the two met and parted (fig.
+39). This transfer was the only undesirable feature of what was, on the
+whole, a thoroughly efficient and well designed work of elevator
+engineering.
+
+
+[Illustration: Figure 32.--The Otis distributor, with valves shown in
+motionless, neutral position. Since the main valve at all times was
+subjected to the full operating pressure, it was necessary to drive this
+valve with a servo piston. The control cable operated only the servo
+piston's valve. (Adapted from Gustave Eiffel, _La Tour de Trois Cents
+Mètres_, Paris, 1900, p. 130.)]
+
+[Illustration: Figure 33.--General arrangement of the Roux Combaluzier and
+Lepape elevator.]
+
+[Illustration: Figure 34.--Roux, Combaluzier and Lepape machinery and
+cabin at the Tower's base. (From _La Nature_, Aug. 10, 1889, vol. 17, p.
+168.)]
+
+
+In operation, water was admitted to the two cylinders from a tank on the
+third platform. The resultant hydraulic head was sufficient to force out
+the rams and raise the upper car. As the rams and car rose, the rising
+water level in the cylinders caused a progressive reduction of the
+available head. This negative effect was further heightened by the fact
+that, as the rams moved upward, less and less of their length was
+buoyed by the water within the cylinders, increasing their effective
+weight. These two factors were, however, exactly compensated for by the
+lengthening of the cables on the other side of the pulleys as the lower
+car descended. Perfect balance of the system's dead load for any position
+of the cabins was, therefore, a quality inherent in its design. However,
+there were two extreme conditions of live loading which required
+consideration: the lower car full and the upper empty, or vice versa. To
+permit the upper car to descend under the first condition, the plungers
+were made sufficiently heavy, by the addition of cast iron at their lower
+ends, to overbalance the weight of a capacity load in the lower car. The
+second condition demanded simply that the system be powerful enough to
+lift the unbalanced weight of the plungers plus the weight of passengers
+in the upper car.
+
+As in the other systems, safety was a matter of prime importance. In this
+case, the element of risk lay in the possibility of the suspended car
+falling. The upper car, resting on the rams, was virtually free of such
+danger. Here again the influence of Backmann was felt--a brake of his
+design was applied (fig. 38). It was, true to form, a throwback, similar
+safety devices having proven unsuccessful much earlier. Attached to the
+lower car were two helically threaded vertical rollers, working within
+the hollow guides. Corresponding helical ribs in the guides rotated the
+rollers as the car moved. If the car speed exceeded a set limit, the
+increased resistance offered by the apparatus drove the rollers up into
+friction cups, slowing or stopping the car.
+
+
+[Illustration: Figure 35.--Detail of links in the Roux system. (From
+Gustave Eiffel, _La Tour de Trois Cents Mètres_, Paris, 1900, p. 156.)]
+
+[Illustration: Figure 36.--Section of guide trunks in the Roux system.
+(From Gustave Eiffel, _La Tour de Trois Cents Mètres_, Paris, 1900, p.
+156.)]
+
+
+The device was considered ineffectual by Edoux and Eiffel, who were aware
+that the ultimate safety of the system resulted from the use of supporting
+cables far heavier than necessary. There were four such cables, with a
+total sectional area of 15.5 square inches. The total maximum load to
+which the cables might be subjected was about 47,000 pounds, producing a
+stress of about 3,000 pounds per square inch compared to a breaking stress
+of 140,000 pounds per square inch--a safety factor of 46![16]
+
+
+[Illustration: Figure 37.--Schematic diagram of the Edoux system. (Adapted
+from Gustave Eiffel, _La Tour de Trois Cents Mètres_, Paris, 1900, p.
+175.)]
+
+[Illustration: Figure 38.--Vertical section through lower (suspended)
+Edoux car, showing Backmann helicoidal safety brake. (Adapted from Gustave
+Eiffel, _La Tour Eiffel en 1900_, Paris, 1902, p. 12.)]
+
+
+A curiosity in connection with the Edoux system was the use of Worthington
+(American) pumps (fig. 40) to carry the water exhausted from the cylinders
+back to the supply tanks. No record has been found that might explain why
+this particular exception was made to the "foreign materials" stipulation.
+This exception is even more strange in view of Otis' futile request for
+the same pumps and the fact that any number of native machines must have
+been available. It is possible that Edoux's personal influence was
+sufficient to overcome the authority of the regulation.
+
+
+[Illustration: Figure 39.--Passengers changing cars on Edoux elevator at
+intermediate platform. (From _La Nature_, May 4, 1889, vol. 17, p. 361.)]
+
+[Illustration: Figure 40.--Worthington tandem compound steam pumps, at
+base of the Tower's south pier, supplied water for the Edoux system. The
+tank was at 896 feet, but suction was taken from the top of the cylinders
+at 643 feet; therefore, the pumps worked against a head of only about 250
+feet. (From _La Nature_, Oct. 5, 1889, vol. 17, p. 293.)]
+
+[Illustration: Figure 41.--Recent view of lower car of the Edoux system,
+showing slotted cylindrical guides that enclose the cables.]
+
+
+
+
+Epilogue
+
+
+In 1900, after the customary 11-year period, Paris again prepared for an
+international exposition, about 5 years too early to take advantage of the
+great progress made by the electric elevator. When the Roux machines, the
+weakest element in the Eiffel Tower system, were replaced at this time, it
+was by other hydraulics. Built by the well known French engineering
+organization of Fives-Lilles, the new machines were the ultimate in power,
+control, and general excellence of operation. As in the Otis system, the
+cars ran all the way to the second platform.
+
+The Fives-Lilles equipment reflected the advance of European elevator
+engineering in this short time. The machines were rope-geared and
+incorporated the elegant feature of self-leveling cabins which compensated
+for the varying track inclination. For the 1900 fair, the Otis elevator in
+the south pier was also removed and a wide stairway to the first platform
+built in its place. In 1912, 25 years after Backmann's startling proposal
+to use electricity for his system, the remaining Otis elevator was
+replaced by a small electric one. This innovation was reluctantly
+introduced solely for the purpose of accommodating visitors in the winter
+when the hydraulic systems were shut down due to freezing weather. The
+electric elevator had a short life, being removed in 1922 when the number
+of winter visitors increased far beyond its capacity. However, the two
+hydraulic systems were modified to operate in freezing
+temperatures--presumably by the simple expedient of adding an
+antifreezing chemical to the water--and operation was placed on a
+year-round basis.
+
+Today the two Fives-Lilles hydraulic systems remain in full use; and
+visitors reach the Tower's summit by Edoux's elevator (fig. 41), which is
+all that remains of the original installation.

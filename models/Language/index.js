@@ -18,11 +18,12 @@ const NEW_DATASET_NAME = 'New Dataset';
  */
 
 module.exports = async ({
+  name,
   dataset,
   files,
   bootstrap = false
 } = {}) => {
-  let datasetName = NEW_DATASET_NAME;
+  let datasetName = name || NEW_DATASET_NAME;
   let trainingData = null;
   let decoder;
 
@@ -49,6 +50,7 @@ module.exports = async ({
      */
 
     if (dataset?.name) {
+      datasetName = dataset.name;
 
       // concatenate and store all reference text
 
@@ -117,10 +119,13 @@ module.exports = async ({
 
     if (files) {
       await textTransformer.train({
-        name: datasetName,
+        name,
         files
       });
     } else {
+
+      // Default to bootstrap
+
       await textTransformer.train({
         name: DEFAULT_DATASET.name,
         files: DEFAULT_DATASET.files

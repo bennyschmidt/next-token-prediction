@@ -39,13 +39,24 @@ const NOTIF_END_OF_STATEMENT = 'End of sequence.';
 const NOTIF_UNKNOWN_TOKEN = 'Skipping unrecognized token.';
 const NOTIF_END_OF_DATA = 'End of training data.';
 const NOTIF_CREATING_EMBEDDING = 'Creating model embedding...';
+const PARAMETER_CHUNK_SIZE = 50000;
+
+// Generator function to chunk arrays
+// Use with `PARAMETER_CHUNK_SIZE` for models
+// with many parameters to avoid memory errors
+
+function* chunkArray (array, chunkSize) {
+  for (let i = 0; i < array.length; i += chunkSize) {
+    yield array.slice(i, i + chunkSize);
+  }
+}
 
 module.exports = () => {
   let trainingText = '';
   let trainingTokens = [];
   let trainingTokenSequences = [];
   let embedding = {};
-  let model;
+  let model = {};
 
   /**
    * getSingleTokenPrediction
@@ -301,7 +312,17 @@ module.exports = () => {
     // deep merge all token sequences into
     // a single hierarchy (for speed and convenience)
 
-    model = merge(...sequenceEmbeddings);
+    const embeddingsCollection = [
+      ...chunkArray(sequenceEmbeddings, PARAMETER_CHUNK_SIZE)
+    ];
+
+    for (const embeddings of embeddingsCollection) {
+      const modelFragment = merge(...embeddings);
+
+      for (const key in Object.keys(modelFragment)) {
+        model[key] = modelFragment[key];
+      }
+    }
 
     console.log('Done.');
   };
