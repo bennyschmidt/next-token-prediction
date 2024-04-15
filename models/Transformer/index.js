@@ -3,11 +3,19 @@ const __root = dirname(require.main.filename);
 const fs = require('fs').promises;
 
 const { merge } = require('lodash');
+const dotenv = require('dotenv');
 
 const {
   combineDocuments,
   isLowerCase
 } = require('../../utils');
+
+dotenv.config();
+
+const {
+  RANKING_BATCH_SIZE = 50,
+  MAX_RESPONSE_LENGTH = 240
+} = process.env;
 
 // Tokenizer utils. Designed for words and phrases.
 
@@ -31,8 +39,6 @@ const NOTIF_END_OF_STATEMENT = 'End of sequence.';
 const NOTIF_UNKNOWN_TOKEN = 'Skipping unrecognized token.';
 const NOTIF_END_OF_DATA = 'End of training data.';
 const NOTIF_CREATING_EMBEDDING = 'Creating model embedding...';
-const MAX_RESPONSE_LENGTH = 240;
-const RANKING_BATCH_SIZE = 10;
 
 module.exports = () => {
   let trainingText = '';
@@ -327,18 +333,6 @@ module.exports = () => {
     trainingText = await combineDocuments(files);
 
     trainingTokens = trainingText.split(' ');
-
-    trainingTokens = trainingTokens
-      .map((token, tokenIndex) => {
-        const nextToken = trainingTokens[tokenIndex + 1];
-
-        if (!nextToken) return token;
-
-        return (
-          !isLowerCase(token.charAt(0)) &&
-          !isLowerCase(nextToken.charAt(0))
-        ) ? `${token} ${nextToken}`: token
-      });
 
     const tokens = [...trainingTokens];
 

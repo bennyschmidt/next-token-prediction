@@ -1,6 +1,6 @@
 {
   "name": "next-token-prediction",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "bennyschmidt",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,7 @@
     "example": "node ./examples/readline-completion/index.js"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "lodash": "^4.17.21"
   }
 }
