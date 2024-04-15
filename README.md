@@ -129,15 +129,13 @@ Watch: [YouTube](https://www.youtube.com/watch?v=wjZofJX0v4M)
 
 ## Goals
 
-1. Provide a high-quality token prediction library for:
+1. Provide a high-quality text prediction library for:
   - auto-completion
   - auto-correct
   - spell checking
   - search/lookup
 
-2. Create decoders for other types for:  
-  - reverse image lookup
-  - reverse audio lookup
+2. Create pixel and audio transformers for other prediction formats
 
 3. Demystify LLMs & simplify methodologies
 

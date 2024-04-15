@@ -15,33 +15,9 @@ const withDataset = async (dataset, query) => {
   // Log next token prediction
 
   console.log(
-    'getSingleTokenPrediction >>',
+    'getTokenPrediction >>',
     `query: ${query}`,
-    agent.getSingleTokenPrediction(query)
-  );
-
-  // Log next token sequence prediction (5 tokens)
-
-  console.log(
-    'getTokenSequencePrediction >>',
-    `query: ${query}`,
-    agent.getTokenSequencePrediction(query, 5)
-  );
-
-  // Log completions
-
-  console.log(
-    'getCompletions >>',
-    `query: ${query}`,
-    agent.getCompletions(query)
-  );
-
-  // Log chat completion
-
-  console.log(
-    'complete >>',
-    `query: ${query}`,
-    agent.complete(query)
+    agent.getTokenPrediction(query)
   );
 };
 
@@ -77,6 +53,7 @@ const withFiles = async (files, query) => {
 
 const runTests = async () => {
   // Unit: Run different queries in isolation
+  //       with different datasets
 
   await withDataset(OpenSourceBooksDataset, 'what');
 
@@ -84,15 +61,15 @@ const runTests = async () => {
 
   await withDataset(OpenSourceBooksDataset, 'tree');
 
-  await withDataset(OpenSourceBooksDataset, 'hopefully');
+  await withDataset(OpenSourceBooksDataset, 'happily');
 
   await withDataset(ParisDataset, 'Parisians');
 
-  // e2e: Run training from bootstrap then query
+  // // e2e: Run training from bootstrap then query
 
   await withBootstrap('sun');
 
-  // e2e: Run full training on user provided files
+  // // e2e: Run training on user provided files
 
   await withFiles(['brave-new-world'], 'Society');
 };
