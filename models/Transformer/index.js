@@ -286,16 +286,6 @@ module.exports = () => {
       const words = sequence.split(' ');
 
       const sequenceEmbedding = words
-        .map((word, wordIndex) => {
-          const nextWord = words[wordIndex + 1];
-
-          if (!nextWord) return word;
-
-          return (
-            !isLowerCase(word.charAt(0)) &&
-            !isLowerCase(nextWord.charAt(0))
-          ) ? `${word} ${nextWord}`: word
-        })
         .reduce((a, b) => {
           if (typeof(cursor) === 'object') {
             cursor = cursor[b] = {};
@@ -312,16 +302,15 @@ module.exports = () => {
     // deep merge all token sequences into
     // a single hierarchy (for speed and convenience)
 
-    const embeddingsCollection = [
-      ...chunkArray(sequenceEmbeddings, PARAMETER_CHUNK_SIZE)
-    ];
+    // const embeddingKeys = Object.keys(sequenceEmbeddings);
+    // const embeddingValues = Object.values(sequenceEmbeddings);
+
+    const embeddingsCollection = (
+      chunkArray(sequenceEmbeddings, PARAMETER_CHUNK_SIZE)
+    );
 
     for (const embeddings of embeddingsCollection) {
-      const modelFragment = merge(...embeddings);
-
-      for (const key in Object.keys(modelFragment)) {
-        model[key] = modelFragment[key];
-      }
+      model = merge(model, ...embeddings);
     }
 
     console.log('Done.');
