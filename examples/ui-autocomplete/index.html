@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Auto-complete (next-token-prediction)</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        font: normal normal 14px/21px sans-serif;
+        background: #131314;
+        color: #4e4c53;
+      }
+
+      input {
+        appearance: none;
+        padding: 1rem;
+        border: none;
+        font: normal normal 14px/21px sans-serif;
+        background: black;
+        border-radius: 1rem;
+        color: #4e4c53;
+        outline: none;
+        width: inherit;
+      }
+
+      h1, h2 {
+        color: white;
+        font-weight: 200;
+        margin: 0;
+      }
+
+      h1 {
+        margin: 2rem 0;
+      }
+
+      h2 {
+        font-size: 1em;
+      }
+
+      #root {
+        padding: 1rem;
+      }
+
+      #root,
+      #form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+      }
+
+      #form {
+        justify-content: flex-start;
+        margin: 4rem;
+        width: calc(100% - 8rem);
+      }
+
+      #form > * {
+        flex: 1;
+        width: 100%;
+      }
+
+      #suggestions {
+        background: #0b080c;
+        align-items: flex-start;
+        border-radius: 1rem;
+        box-shadow: 0 0 2rem black;
+        font-style: italic;
+        height: 10rem;
+        overflow-y: auto;
+      }
+
+      #suggestions,
+      #suggestions > li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+      }
+
+      #suggestions > li {
+        flex: 1;
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: .5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <h1>Next-Token Prediction</h1>
+      <div id="form">
+        <h2>Share your thoughts:</h2>
+        <input id="input" placeholder="Type something..." />
+        <ul id="suggestions"></ul>
+      </div>
+    </div>
+    <script>
+
+      // App state
+
+      const state = {
+        value: '',
+        completion: '',
+        completions: []
+      };
+
+      // Handle input change
+
+      const onChange = async ({ key, target: { value } }) => {
+        const input = document.getElementById('input');
+
+        state.value = input.value = value;
+
+        if (key !== ' ') return;
+
+        const response = await fetch('/complete', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ input: value })
+        });
+
+        if (response?.ok) {
+          const result = await response.json();
+
+          if (result) {
+            const {
+              completion,
+              completions,
+              rankedTokenList
+            } = result;
+
+            state.completion = completion.split(' ')[0];
+            state.completions = [...new Set(completions.slice(-5).map(phrase => phrase.split(' ')[0]))];
+
+            const suggestions = document.getElementById('suggestions');
+
+            suggestions.innerHTML = state.completions.map(suggestion => (
+              `<li>${suggestion}</li>`
+            )).join('');
+          }
+        }
+      };
+
+      // Handle page load
+
+      const onLoad = () => {
+        const input = document.getElementById('input');
+
+        input.onkeydown = onChange;
+      };
+
+      // Page load
+
+      onLoad();
+    </script>
+  </body>
+</html>

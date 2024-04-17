@@ -1,0 +1,1383 @@
+
+In lexical terms Akkadian is one of the largest Semitic languages. It possesses a
+vast vocabulary of Semitic words augmented by borrowings from other languages,
+both Semitic and unrelated. During its long history the various dialects of Akkadian
+absorbed many foreign words from the several tongues with which, at one or other
+time and place, they shared speakers and writers. These were chiefly Sumerian,
+Amorite, Hurrian, Aramaic, Old Persian and Greek. The first four, especially, were
+much spoken in parts of the Akkadian linguistic area. Bilingualism in Akkadian and
+one of these other languages is a conspicuous feature of the linguistic history of
+ancient Mesopotamia.
+
+The vocabulary of Akkadian is still in the process of elucidation, for while we
+now possess either complete or nearly so two exhaustive modern dictionaries
+(Wolfram von Soden's Akkadisches Handworterbuch and the Assyrian Dictionary of
+the University of Chicago), the exact meaning of many words last spoken two
+millennia ago continues to give difficulty. The process of refinement of our
+understanding of the Akkadian lexical stock will continue to exercise linguists and
+philologists for many generations. Akkadian was also a very long-lived language.
+Varieties of Akkadian were spoken in what is now Iraq from at least the middle of the
+3rd millennium to the middle of the 1st millennium BC, and a written form of the
+language continued in use until the 1st century AD, perhaps even later.
+
+A consequence of the long history of Akkadian, and the durability of the clay
+tablets on which it was written, is that we possess an enormous body of Akkadian
+texts. These texts fall into of all kinds of different categories and document a huge
+range of human activities and intellectual pursuits (Table 1). Three principal avenues
+of research stretch out before the Assyriologist as a result. First, the superabundance
+of letters and other archival documents permits the reconstruction of ancient
+institutions and societies with a detail that is impossible for many periods of more
+recent civilizations, including much of medieval Europe. The existence of multiple
+manuscripts of texts passed down in the scribal tradition holds out hope for the
+eventual recovery of the entire corpus of lst-millennium Babylonian literature and
+Sumero-Babylonian scholarly achievement, alongside the earlier 2nd-millennium
+Sumerian corpus. Finally, the considerable variation in dialects of Akkadian over
+time and space (Table 2) offers lexicographers and historical grammarians almost
+unlimited scope for diachronic and synchronic linguistic study.
+
+These prospects of new knowledge make competence in Akkadian an exciting
+tool to possess. It is not possible here to describe all avenues of research in Akkadian,
+nor to cover every aspect of Akkadian as a language. Others have written brief
+summaries of Akkadian grammar (Bergstrasser 1983: 25-49, Campbell 1991: 32-6,
+Bucceliati 1997, Huehnergard and Woods 2004). One more would seem superfluous.
+Instead of adding to their number, it is enough here to draw attention to three salient
+
+
+
+
+
+features of Akkadian that distinguish it from most other Semitic: (a) the range of
+consonants is sharply reduced, probably under the influence of Sumerian, (b) word
+order in prose is subject - object - verb (SOV) as in Sumerian (Semitic is usually
+VSO), and (c) the verbal conjugations are put to uses different from their counterparts
+in other Semitic. Here the purpose is rather to examine the history and development
+of Akkadian based on current knowledge. What emerges is an account of the spread
+and usage of Akkadian: who spoke it, who wrote it, where, when and for what
+purpose.
+
+This history is not definitive, however, for there is a caveat. Even in later
+periods, written forms of language tend to favour one variety of the language over
+another and so hide from us the full picture of dialectal diversity. When we also take
+into account the sporadic and uneven nature of the extant documentation, both in time
+and space, it will be obvious that any current history of Akkadian and its dialects will
+be provisional. New discoveries will force regular revisions.
+
+
+
+Akkadian and Akkade
+
+The adjective akkadum "Akkadian" derives from the place name Akkade (in older
+literature Agade). Akkade was the ancient capital of the dynasty founded by S argon,
+whose kings were the first to make extensive use of written Akkadian. Its exact site
+has not yet been located on the ground but there is strong documentary evidence that
+it lay on the Tigris in the vicinity of modern Baghdad (McEwan 1982: 11-12, Wall-
+Romana 1990). Some have sought it further upstream (e.g. Westenholz 1999: 31-4)
+but an unpublished Old Babylonian letter from Mari records an itinerary that places
+Akkade ([a-ka]-de kl ) between the towns of Sippar (modern Abu Habba and Tell ed-
+Der) and Tutub (Khafajah) on the route to Eshnunna (Tell Asmar) (Charpin 1988:
+150 fn. 68). l The direct route from Sippar to Eshnunna heads north-east to the Tigris
+and then up the river Diyala. This suggests a location for Akkade a little downstream
+of Baghdad, near the confluence of the two rivers. Since other evidence from Mari
+places Akkade at a river-crossing, it seems the strategic importance of Akkade lay in
+its control of a vital ferry over the Tigris.
+
+Akkade gave its name to the area around it, mat Akkade "the land of A."; in Sumerian
+this country was called ki-Uri "the land of Uri". Uri is a toponym that in Old
+Babylonian Akkadian appears as WarVum. Warium was the land east and north of the
+confluence of the Tigris and Diyala rivers, later centred on the important city of
+Eshnunna. In the 18th-century royal archives of Mari the gentilic adjective akkadum
+"Akkadian" refers most often (but not exclusively) to people from the kingdom of
+
+
+
+Eshnunna, i.e. the Tigris-Diyala basin (e.g. Durand 1992: 123, Birot 1993: 224).
+Similarly a year-name of Samsuiluna of Babylon refers to the troops of Eshnunna as
+the "army of Akkade" (year 11, see Charpin 2004: 341). This usage demonstrates a
+correct understanding of the historical geography. As already noted, however, when
+the ancients used the adjective akkadum with reference to language, they meant the
+Semitic language of wider southern Mesopotamia, i.e. Babylonian. The ancient
+nomenclature suggests that the people of ancient Iraq considered the area around
+Akkade, broadly speaking the north-eastern fringe of Babylonia, to be the historical
+heartland of the Babylonian language. As we shall see, this was not exactly the case,
+but the notion reflects the special place occupied by the era and legacy of the kings of
+Akkade in the intellectual culture of later Babylonia.
+
+In traditional surveys of the history and periodization of Akkadian it has been
+conventional to speak of Old Akkadian until the end of the 3rd millennium, and then
+a division into Assyrian in the north and Babylonian in the south, each neatly
+subdivided into three stages, Old, Middle and New (Neo-Assyrian and Neo-
+Babylonian), all six roughly synchronized in pairs, with a prolongation of the
+southern dialect as Late Babylonian (Reiner 1966: 20-1, Ungnad 1992: 4-6, von
+Soden 1995: 2-5, Buccellati 1996: 1-2, Caplice 1988: 3, Huehnergard 1997: xxiii-
+xxv). This picture is over-simplistic (as many of these scholars intimate), especially
+in the light of increasing evidence, particularly from the 3rd millennium. A detailed
+survey yields a much more complex history.
+
+
+
+Akkadian and East Semitic in the mid-3rd millennium
+
+The earliest traces of Akkadian are found predominantly in texts written in Old
+Sumerian, the principal written language of southern Iraq in the Early Dynastic
+period. Mid-3rd-millennium tablets from such Sumerian towns as Shuruppak (Fara)
+and Tell Abu Salabikh attest the existence of individuals bearing names of East
+Semitic derivation, in a society where personal names were predominantly Sumerian.
+At Abu Salabikh some of the scribes who wrote the famous Early Dynastic literary
+tablets bore East Semitic names, demonstrating that such names were part of the
+onomastic repertoire drawn on by the educated elites. These names do not, therefore,
+necessarily represent the infiltration into southern society of foreign elements from
+north Babylonia, but instead speak for a long history of linguistic symbiosis
+stretching back several centuries, perhaps well into prehistory. Many loanwords from
+East Semitic appear in Old Sumerian and reinforce the impression of what has been
+called a Sprachbund, a Sumerian -Akkadian linguistic area (Edzard 2003: 173-8).
+Interaction between Sumerian and Akkadian has also been documented in
+morphology and syntax; this is evidence of linguistic convergence, implying a
+growing similarity over time (Pedersen 1989).
+
+Alongside the evidence for early Akkadian embedded in Sumerian texts are
+documents that seem to have been drawn up in an early form (or forms) of Akkadian.
+
+
+
+
+
+
+
+Contemporaneous with the Old Sumerian tablets from Fara and Abu Salabikh, they
+are predominantly written in Sumerian logograms but the presence of Semitic
+prepositions, pronouns, numbers and other particles betrays the language of
+composition. These documents include land deeds, votive inscriptions, a sale contract
+and administrative documents, and come predominantly from Kish and elsewhere in
+northern Babylonia, but also from as far north as Mari and Terqa on the middle
+Euphrates and as far south as Abu Salabikh. On the basis of orthography, language,
+system of dating, names of months and persons, this Semitic cultural tradition of the
+mid-3rd millennium has been termed the "Kish civilization" (Gelb 1981, 1992).
+
+The votive inscriptions of northern kings of the pre-Sargonic era document the
+use of the Semitic language of the Kish civilization in the wielding of political power
+at the very beginning of history. An instructive example is the short inscription from
+Girsu, in the deep south of Sumer, on a macehead dedicated to Ningirsu by Mesalim,
+"king of Kish", who was overlord of much of Sumer about 2600 BC. The inscription
+is ostensibly written in Sumerian, but the order of the signs shows that they are
+logograms to be read in an East Semitic dialect, presumably an early form of
+Akkadian (Wilcke 1993: 35 fn. 32). In this era we must reckon with a situation in
+which the south of Babylonia (Sumer) was predominantly Sumerian-speaking, and
+the north predominantly Semitic-speaking. Central towns like Nippur and Abu
+Salabikh were widely bilingual. Probably this pattern of distribution was already
+established in late prehistory. Among the East Semitic languages of 3rd-millennium
+and earlier Mesopotamia were ancestral dialects of Akkadian; indeed, much more is
+now known of the early history of East Semitic than was the case a few decades ago.
+
+The use of Semitic language in administration, law and displays of royal power
+was complemented by literary creativity. Among the many Early Dynastic literary
+tablets from Abu Salabikh was a text written not in the conventional Sumerian, as
+were the huge majority of extant early literary compositions, but in East Semitic.
+Knowledge of this text was much improved by the discoveries at Ebla (Tell Mardikh,
+south of Aleppo in Syria). At this site were found copies of late Early Dynastic-
+period literature that to some extent replicate the literary corpus attested in Babylonia,
+including two important compositions in Semitic, one of them a duplicate of the text
+from Abu Salabikh (Lambert 1989, 1992, Krebernik 1992). Between them these early
+works of East Semitic literature offer a glimpse of the literary traditions of northern
+Babylonia in the pre-Sargonic era, that is, of the literature of the Kish civilization.
+
+By the mid-3rd millennium these literary traditions had spread from north
+Babylonia upstream to Mari and thence further into Syria. It appears probable that a
+pattern familiar from later eras was already in place: "a written Babylonian-based
+Semitic 'high language' with local variations was used and understood throughout
+Syro-Mesopotamia, and local spoken Semitic dialects [were] arrayed along a
+linguistic continuum stretching from Babylonia across upper Mesopotamia to Ebla,
+varying from the written 'high language' to greater or lesser degrees" (Cooper 2000:
+69). A Semitic language of south Mesopotamia, whether we know it as East Semitic,
+
+
+
+
+
+
+
+Akkadian or Babylonian, remained the predominant language of writing in Syria for
+the best part of a millennium and a half.
+
+The local dialect of Ebla, called Eblaite or Eblaic, is only partly visible to us
+because the writing system was predominantly logographic. Most scholars now
+consider it to have been an East Semitic language closely related to Akkadian (e.g.
+Huehnergard 1995: 2120, Huehnergard and Woods 2004). The language of Ebla has
+much in common with what may be called "Mariote", the contemporaneous but little-
+known language of pre-Sargonic Mari (Gelb 1992). Some suppose that Eblaite was
+imported from Mesopotamia, specifically from Kish and northern Babylonia, where a
+"linguistic heterogeneity" is suspected (Michalowski 1987). Others view it as a local,
+Syrian variety of Akkadian that speaks for an early distribution of East Semitic
+outside Mesopotamia proper (Krebernik 1996),
+
+The later 3rd millennium: Old Akkadian and Ur III Akkadian
+
+Old Akkadian was the term once used to signify all 3rd-millennium Akkadian, and
+some choose still to use the phrase thus, despite the increasing evidence for diversity
+in the Semitic of pre-Sargonic Mesopotamia. Others use the label to refer only to the
+best-known East Semitic of the 3rd-millennium, which can be defined in historical
+terms as the official language of the empire established by Sargon of Akkade. The
+latter position is taken here: for present purposes Old Akkadian is the Akkadian of the
+Sargonic state (otherwise known as Sargonic Akkadian).
+
+Apart from Eblaite, Mariote and the literary East Semitic of the Kish
+civilization, little has survived of the linguistic diversity postulated in the preceding
+section. Nevertheless, against such a background it would be foolish to assume that as
+the 3rd millennium wore on East Semitic was represented in Mesopotamia proper
+only by the ancestor of Old Akkadian, The existence of other dialects, contemporary
+with Old Akkadian and near relatives of it, can also be postulated on the grounds that,
+in linguistic terms, neither the Babylonian nor the Assyrian form of the language is a
+direct, lineal descendant of Old Akkadian (Sommerfeld 2003). The two main
+varieties of Akkadian evidently had other ancestors.
+
+Old Akkadian. The prominence of Old Akkadian in linguistic history is owed to a
+particular circumstance: its use as a written language in the chanceries of Sargon of
+Akkade and his successors. Old Akkadian was the official language of record of the
+Sargonic state, the vehicle of its monumental inscriptions, administrative texts, and
+official correspondence (Text sample 1). It also occurs in private letters and a little
+literature. Presumably it was chosen because it was the common tongue of Sargon
+and the men of Akkade who governed his dominions. Accordingly it can be defined
+in geographical terms as an East Semitic dialect of Uri (Warium) in the Tigris-Diyala
+basin, which was the land around Akkade. This marks it as a peripheral dialect
+(Sommerfeld 2003). Many other earlier and contemporaneous dialects of East
+
+
+
+Babylonian and Assyrian
+
+Ur HI Akkadian, Following the eclipse of the Sargonic kingdom, kings of the
+Gutian interregnum emulated Sargonic monumental inscriptions. Power was prised
+from the Gutians by a dynasty from Uruk in the Sumerian-speaking south. Choosing
+as their capital the nearby city of Ur, they presided over a Sumerian cultural
+swansong. In the administration of their state Sumerian took preference over
+Akkadian, which was little used in official communication, even if, as many suspect,
+it was rapidly ousting Sumerian as the vernacular in the deep south as well as further
+north. The Akkadian of this, the Ur III period, used to be considered a continuation of
+Old Akkadian. Recent study of what little survives, however, has revised that view,
+and the current consensus is that, beneath a mask of 3rd-millennium spelling
+conventions, Ur III Akkadian exhibits much greater continuity with what came
+afterwards than with what went before. Some describe it as "essentially an archaic
+version of Old Babylonian" (Westenholz 1999: 33), even as the ''earliest, precisely
+identifiable developmental stage of the Babylonian dialect" (Hilgert 2003: 11). Many
+historians now judge the interval between the Sargonic and Ur III periods, the Gutian
+interregnum, to have endured for perhaps only a single generation, so that Sargonic
+and Ur III Akkadian can be considered nearly contemporaneous. The conclusion has
+been drawn that Old Akkadian, originating in northern Babylonia, and Ur III
+Akkadian, known mostly from the far south, are geographical variants of Akkadian,
+rather than diachronic or sequential forms of the language (Buccellati 2004: 108).
+The Akkadian of the Ur III period is now studied by Hilgert 2002.
+
+Archaic north-west Akkadian. From the middle Euphrates region we get a
+glimpse of Akkadian as it had developed outside Babylonia. At Mari (Tell Hariri) and
+Terqa (Tell al-'Ashara), near Deir ez-Zor, tablets and clay models of livers are extant
+from what is known as the period of the military governors (Akk. sakkanakku),
+formerly dated after the fall of Ur. These military governors were a succession of
+local rulers initially subservient to Akkade but soon independent of first Akkade and
+then Ur (Durand 1995). The texts (administrative records and liver omens) exhibit a
+form (or forms) of early Akkadian sometimes identified as Old Akkadian (e.g. Edzard
+1985). What is meant by this term is not, however, the specific dialect of Warium
+used by Sargon and Naram-Sin. The language written at Mari was already
+distinctively East Semitic in the Early Dynastic period (see above), and evidently
+evolved as an Akkadian dialect. Study of the language of the sakkanakku-psriod at
+Mari shows that it still exhibits little evidence of West Semitic influence. This
+indicates that Akkadian was more entrenched on the middle Euphrates in the 3rd
+millennium than it was in the early 2nd millennium, when Amorite became the
+regional vernacular. The dialect of the sakkanakku-pexiod is nevertheless distinct
+from the Akkadian of the south and represents a marginal, north-western form of the
+
+
+
+
+
+
+
+language (Westenholz 1978). Archaic north-west Akkadian would be a better term
+for this and other early forms of the language from this area.
+
+
+
+The early 2nd millennium: archaic Old Babylonian
+and Old Assyrian
+
+At the turn of the 3rd millennium the kingdom of Ur collapsed under the onslaught of
+Amorite nomads and Elamite invaders. In Babylonia itself, increasing numbers of
+written sources enable us to observe the local Akkadian in the period immediately
+following the fall of Ur. On the middle Tigris Assyrian emerged as a distinctive local
+form of Akkadian.
+
+Archaic Old Babylonian. In the south, the bureaucrats of the successor states of
+Ur III continued to use Sumerian as the written language of administration and
+government, but in the north Akkadian texts became common again. The principal
+evidence comes from Eshnunna in the Diyala basin, where two groups of private
+letters document the transition from "archaic Old Babylonian" to classical Old
+Babylonian (Whiting 1987). The earlier letters show that here the southern dialect of
+Akkadian had ousted the local Old Akkadian by the turn of the millennium. They use
+a form of the language barely distinguishable from that written further south in the Ur
+III period; in some respects it seems slightly older (Heimpel 2004). The later letters
+indicate that this language quickly developed into the classic Old Babylonian dialect,
+for they display a form of it found in other corpora of early Old Babylonian texts
+(Whiting 1987, 16-19). Very early Old Babylonian royal inscriptions, such as those
+of Ashduniarim of Kish, exhibit an archaic subjunctive that may be a mark of an
+elevated, literary style.
+
+Old Assyrian. A much larger and more productive body of material is the tablets
+from Cappadocia, which hold texts written in an early form of the Assyrian dialect of
+Akkadian that we call Old Assyrian. These tablets have been dug up in their
+thousands and, as excavations proceed, the number continues to grow at a steady rate.
+More than 21,500 are now extant (Michel 2001: 30). They constitute the private
+archives of members of Assyrian merchant colonies based mostly at Kanesh, modern
+Kultepe, near Kayseri (Text sample 2). Similar tablets have been found in smaller
+numbers elsewhere in Anatolia, at Hattusa (Bogazkoy) and Ali§ar, and in and around
+Assyria, at Ashur itself and at Gasur, and illustrate the use of Old Assyrian by
+businesses across a wide area. Local rulers in Cappadocia could also use Old
+Assyrian as a medium of communication. However, documents of an Assyrian
+merchant based at Sippar in Babylonia, though dated in Assyrian style, are written in
+Old Babylonian (Walker 1980).
+
+
+
+
+
+
+
+Text sample 2. Old Assyrian. Letter of Lamassi to her husband, Pushu-ken
+
+tasammema tanestum iltemin ahum ana ahim ana halatim izzaz kutabbitma u
+alkamma kurslka parrir . . . ahatka amtam ana slmim taddinma andku ana arbesarat
+siqil aptursi Salim-ahum sina beten istu atta tus 'u etapas ninuma ana mati neppas
+
+Garelli 1965: 159
+
+You know, of course, how bad folk here have got. One fellow stands ready to eat the
+other alive! Treat yourself right: come home [to Ashur] and throw off your shackles!
+.... Your sister went and sold one of the slavegirls, so I had to get her back at a cost
+of fourteen shekels. Since you went away that Shalim-ahum has set himself up with
+two houses. How about us? When shall we ever do that?
+
+Letters and memoranda predominate in the archives of the colony at Kanesh,
+but rare copies of royal texts, spells and literary compositions offer a glimpse of other
+registers of Old Assyrian. A few Old Assyrian royal inscriptions also survive from
+Assyria itself. The Old Assyrian dialect is nearer to Old Akkadian than to Ur III
+Akkadian, unsurprisingly given Assyria's northerly location on the middle Tigris, but
+a closer kinship has been observed between Assyrian and the pre-Sargonic language
+of Ebla and Mari (Parpola 1988). Old Assyrian can be seen as a local development of
+one of the East Semitic dialects postulated as spoken in northern Mesopotamia and
+Syria in the mid-3rd millennium. Assyrian as a whole differs considerably from
+Babylonian in grammar and vocabulary, and maintains many of these distinctions
+throughout its history. Orthography, as well as dialect, was distinctive: Old Assyrian
+scribes used a restricted syllabary of only about one hundred and thirty signs and
+avoided all but a few common logograms. Old Assyrian language and writing have
+been well described by Hecker 1968.
+
+
+
+The Old Babylonian period
+
+The period when Babylonia, and for a time all Mesopotamia, was dominated by
+Babylon under its 1st dynasty is known as the Old Babylonian period (1894-1595 BC
+in the conventional chronology), and the Akkadian of the time is called Old
+Babylonian.
+
+Old Babylonian. Old Babylonian is considered the classic manifestation of
+Akkadian, and is the dialect usually taught to beginners. This is because in its
+southern form it shows great regularity, exhibits little contamination by other Semitic
+languages, and is the vehicle for a very extensive body of texts. Most famous of these
+is the laws of King Hammurapi (18th century), inscribed on a great stone stele found
+in 1901 at Susa, where it had been taken as booty in antiquity. Hammurapi' s
+monument is widely celebrated as the world's first law code, though it is neither a
+
+
+
+
+
+
+
+code nor the oldest collection of laws. It is certainly the Akkadian text most widely
+read in the original language, for beginners in Akkadian customarily grapple with it
+in universities worldwide. Old Babylonian is the normative form of Akkadian
+described in most standard reference grammars (Ungnad 1992, von Soden 1995,
+Buccellati 1996) and teaching manuals (Marcus 1978, Caplice 1988, Huehnergard
+1997). It also presents a useful corpus for linguistic research (e.g. Kaplan 2002).
+
+Alongside the many building inscriptions and several edicts of Hammurapi's
+dynasty are masses of archival documents (letters, memoranda, legal and
+administrative documents) from the same period (Text sample 3). These come
+especially from Sippar, Ur and Larsa (Senkereh). Twenty-five years ago they were
+thought already to number nearly fifteen thousand texts (Lieberman 1977: 10-11), but
+this was probably too conservative an estimate. Extant in far smaller numbers are
+monumental texts, both royal and private, e.g. funerary and votive inscriptions, and
+other genres of text that use plain Old Babylonian: compendia of omens for use in
+divination, astrology etc., with their associated ritual texts; vocabularies and other
+pedagogical lists; and other practical texts, such as mathematical problems, medical
+therapies, culinary recipes etc.
+
+Text sample 3. Old Babylonian. Letter of Huzalum to his sister, Nishi-inishu
+
+summa ina kindtim athutam tarammi eqlam asarsani la tanaddinima la anazziq
+eqlam idnimma andku lupus eli qdtim ahitim sa tub libblki lupus u dummuqi amri
+
+Altbabylonische Brief e XI 41
+
+If you truly have a sister's love for me, don't give the land away to somebody else,
+don't make me upset! Give the land to me and let me work it. I'll do what pleases you
+better than any stranger. You just see how well I'll do!
+
+Literary Old Babylonian. Literary forms of Akkadian begin to be better attested in the
+Old Babylonian period, though the number of extant tablets and texts remains very
+small. The scarcity of Old Babylonian literature, and of narrative poetry in particular,
+is explained by the fact that in scribal schools Sumerian remained the language of
+instruction to the late 18th century. It was still the old literature in Sumerian that
+provided most of the copy-books and was most written down. The Old Babylonian
+literary corpus includes magic spells and incantations; omen compendia of all kinds;
+hymns, prayers and laments; proverbs, fables and other wisdom literature, love
+poetry, and mythological and narrative poetry. Enough survives of the last to show
+that the poems of Atram-hasis, Gilgamesh, Anzu and Etana were already present,
+alongside compositions about the ancient kings of Akkade. Literary texts in Old
+Babylonian display a vibrant poetic language unburdened by the scholasticism that
+came later, and give us an inkling of the style and content of what must have been a
+very extensive oral literature in Old Babylonian. The most recent studies of literary
+Old Babylonian style are Metzler 2002, Wasserman 2003, Izre'el and Cohen 2004.
+
+
+
+Babylonian and Assyrian
+
+
+
+46
+
+
+
+
+
+
+
+Some Old Babylonian literary texts use an elevated register of the poetic
+language that is often known as "hymno-epic dialect" (Text sample 4). This is not a
+true dialect but literary Old Babylonian embellished with archaizing features,
+especially of morphology and vocabulary (von Soden 1931-3, Groneberg 1971, 1978-
+9). Some of these features are observed in older forms of Akkadian, not only Old
+Akkadian but also the archaic Old Babylonian of the earlier group of letters from
+Eshnunna (Whiting 1987: 18).
+
+Text sample 4. Old Babylonian. From a hymn to Ishtar on behalf of King
+
+Ammiditana
+
+saptin dussupat baldtum pisa
+
+simtissa ihannima slhdtum
+sarhat irimmu ramu resussa
+
+bani'd simtdsa bitrdmd indsa sit 'drd
+
+Thureau-Dangin 1925: 172
+
+Syrup-sweet her lips, her mouth is life itself,
+upon her complexion bloom the smiles.
+So noble she, that charms of love do dwell upon her head,
+beauteous her colouring, iridescent her eyes and lustrous.
+
+Old Babylonian literary texts in Akkadian come not only from Babylonia but
+also, in smaller quantities, from peripheral areas. The Sumero-Babylonian scribal
+tradition is well attested at Susa in Elam, so the presence there of a few Akkadian
+literary texts is unsurprising. More revealing is group of late Old Babylonian omen
+tablets, whose spellings attest to a peripheral orthographic tradition (Labat 1974).
+Some of these texts' curious spelling conventions also occur in the roughly
+contemporaneous omen tablets from Tigunanum on the upper Tigris below
+Diyarbakir, which were certainly not composed in Babylonia. Fragments of late Old
+Babylonian omen texts recovered at Hazor in modern Israel show just how far abroad
+this typically Akkadian genre travelled. Another text composed in the periphery was
+a Babylonian heroic poem to the glory of king Zimri-Lim of Mari. The discovery of
+Old Babylonian cuneiform outside Babylonia sheds light on the diffusion of
+Babylonian intellectual culture to peripheral areas, on its reception and adaptation
+there, and on Babylonian Akkadian as a vehicle of original literary expression outside
+Babylonia. It also reveals the varieties of Akkadian used in peripheral areas at this
+time.
+
+
+
+Provincial and barbarized Old Babylonian. Visible in the extant records for a
+timespan of three centuries, Old Babylonian is not monolithic: differences in
+phonology, grammar, syntax and spelling do arise from era to era, place to place and
+
+
+
+
+
+
+
+register to register (viz. literary vs. vernacular), but they are comparatively small and
+the dialect can be said to be a coherent, though evolving, whole. For the most part
+local and diachronic variants of vernacular Old Babylonian remain to be studied in
+detail; a good example of one such local variant is the provincial Akkadian written in
+this period in Elam, where a significant Akkadian-speaking population may have
+been descendants of immigrants from southern Babylonia (Lambert 1991). The
+Akkadian of Old Babylonian Elam has been studied by De Meyer 1962 and Salonen
+1962.
+
+A special place, however, is occupied by the Old Babylonian dialects of the
+middle Euphrates and beyond. The extensive royal archives of Mari, excavated in the
+1930s and since, number about twenty thousand pieces, and have been supplemented
+by smaller finds at Tell al-Rimah and other sites in upper Mesopotamia. These texts
+exhibit a form of provincial Old Babylonian also current in the Diyala region but
+more affected by the local West Semitic vernacular, Amorite, especially in
+vocabulary. Possibly it was never spoken, but used only as a written language in
+chancery. It has been described by Finet 1956 and Charpin 1989. A variety of Old
+Babylonian similar to that current in Mari was also written in the southern Levant, as
+demonstrated by tablets from Hazor, Shechem and Hebron in Palestine (Rainey 1999:
+154*-5*). A purer form of Old Babylonian was used for royal building inscriptions
+by kings of Mari, notably Yahdun-Lim, and by other upper Mesopotamian kings of
+this period, especially Shamshi-Adad I.
+
+More barbarized forms of Akkadian undoubtedly existed on the periphery. At
+Shusharra (Tell Shemshara), in the upland valley of the Lesser Zab in Iraqi Kurdistan,
+was found a modest archive of letters and administrative texts left by a local ruler
+who was a correspondent of Shamshi-Adad I. The letters from Shamshi-Adad exhibit
+a dialect close to that written at Mari. Those of more local origin display another
+provincial dialect of Old Babylonian (Kupper 2001). Personal names indicate the
+predominance here of Hurrian, a regional vernacular increasingly found across a large
+area of upper Mesopotamia, north Syria and Kurdistan. An early glimpse of
+Humanized Akkadian can be seen in the older group of texts excavated by Woolley
+at Alalah (Tell Acana) in the Turkish Hatay. The chancery of Yarim-Lim of Alalah
+(17th century) could write excellent formal Old Babylonian, but the imprint of
+Hurrian is increasingly observed in archival documents (Aro 1954-6, Giacumakis
+1970).
+
+In its variety the Babylonian written in the western and eastern peripheries
+early in the 2nd millennium conforms to the pattern already noted for the mid-3rd
+millennium. Provincial chanceries imported the technology of cuneiform writing
+from Babylonia, and with it texts of the scribal tradition written in good Babylonian.
+These provided a linguistic model for official inscriptions and international
+correspondence. Less permanent documents exhibited a greater influence of
+vernacular forms, whether West Semitic (Amorite) or Hurrian. The language of
+writing, whatever the register, was not a local vernacular. Later in the 2nd millennium
+the Akkadian of the western periphery is exposed in still greater variety.
+
+
+
+
+
+
+
+The later 2nd millennium: Middle Babylonian, Middle Assyrian
+
+and international Akkadian
+
+The end of Hammurapi's dynasty came when Babylon fell to a raid by the Hittite
+adventurer Mursili I, a date conventionally fixed at 1595 BC This was a cataclysmic
+event: the city was abandoned and probably remained so for many years. In the
+current scheme of linguistic history the fall of Babylon marks the end of the Old
+Babylonian dialect. The political vacuum was filled by a dynasty of kings of Kassite
+origin and by the little-known rulers of the Sealand, already established as a power in
+the far south. After an interval of uncertain length the Kassite dynasty imposed their
+dominion over all Babylonia and remained in power until the twelfth century. The
+throne then fell into the hands of a sequence of rulers known as the 2nd dynasty of
+Isin (1157-1026 BC). The language of Babylonia under these three dynasties,
+especially the Kassite era, is called Middle Babylonian.
+
+Middle Babylonian. The development of Old into Middle Babylonian was a slow
+evolution, at least in southern Mesopotamia. The application of a different term for
+Babylonian as it appeared in the latter part of the 2nd millennium arose not because
+Middle Babylonian is radically different from late Old Babylonian but because a long
+gap intrudes between the fall of Babylon and the reappearance in the south of
+documentation on a large scale. This interval is often characterized as a Dark Age.
+The darkness is gradually dispersing, however, for several large caches of tablets of
+the period immediately following the fall of Babylon have recently come to light and
+await publication. As the gap in documentation fills, so more will be known of the
+development of Akkadian in the mid-2nd millennium. It is already apparent that
+many of those traits thought characteristic of Middle Babylonian appear sporadically
+in later Old Babylonian (Lieberman 1977: 8-9 fn. 21). Legal texts from Tell
+Muhammad in the Diyala basin that post-date the fall and resettlement of Babylon are
+reported to continue Old Babylonian traditions. Clearly the transition was gradual.
+
+The corpus of texts in Middle Babylonian has been estimated at fifteen
+thousand documents but the vast majority still awaits publication (Brinkman 1976:
+3). Finds from 14th and 13th-century Nippur predominate, numbering about twelve
+thousand. These are mostly letters and legal and administrative documents, some of
+them connected with the personnel of the temple of Enlil at Nippur and with the
+management of its estates and income. Smaller groups of Middle Babylonian archival
+documents come from Ur, Dur-Kurigalzu and Babylon and date mostly to the 13th
+and 12th centuries. Other well-known Babylonian cities have yielded isolated finds;
+from provincial Tell Imlihiye on the Diyala comes the small 13th-century archive of a
+farming family (Kessler 1982). Letters of diplomacy sent by two 14th-century Kassite
+kings, Kadashman-Enlil I and Burnaburiash II, turned up in the Egyptian royal
+
+
+
+
+
+
+
+archives found at El-Amarna in the 1880s and '90s. Letters of other Kassite kings
+survive in later copies. Royal building and votive inscriptions in Akkadian are
+comparatively rare, for an artificial form of Sumerian was favoured here, but a typical
+product of the royal chancery of this period are land grants written in Middle
+Babylonian and inscribed on beautiful stone monuments called kudurrus. Middle
+Babylonian has been described by Aro 1955.
+
+The late 2nd millennium is known as a time of considerable literary creativity
+and also of scholarly editorial work that brought old compositions up to date and
+standardized them. Very little literature of the period has survived on Middle
+Babylonian tablets, however, and it is best known from lst-millennium copies.
+Pedagogical texts and other tablets from scribal schooling preserve scraps of the
+standard Kassite-period copy-books, enough to show that the old Sumerian texts had
+largely been abandoned and their place taken by works in Akkadian, some of them
+new compositions, others already known in the Old Babylonian period. These, again,
+are mostly from Nippur, with a smattering from Ur and Babylon. Narrative poetry is
+represented by Gilgamesh and Atram-hasis, professional literature by an increasing
+number of omen compendia and medical tablets. The vehicle for some of this corpus
+is Middle Babylonian similar to the contemporaneous letters, but the poetic
+compositions, especially, were written (or rewritten) in a literary register of the
+language that English-speaking scholars call Standard Babylonian {Jungbabylonisch
+in German). The chief evidence for Standard Babylonian is lst-millennium copies of
+literary texts and the royal inscriptions composed for the Sargonid kings of Assyria,
+and it will be discussed below, in the section on the early 1st millennium.
+
+
+
+Middle Assyrian. Akkadian continued to be spoken and written in Assyria, where
+it is known in the late 2nd millennium as Middle Assyrian. Here there is a much
+longer hiatus between the Old and Middle forms of the local dialect. Middle Assyrian
+documents come principally from Ashur, excavated before the 1st world war. The
+many archives of letters, legal and administrative documents found there stem from
+the 14th to 11th centuries, with a predominant number dating to the 13th. Other such
+texts come from Shibaniba (Tell Billa) near Nineveh, Tell al-Rimah and other sites in
+the Jezirah, where they document the presence of Assyrian officials posted locally.
+
+From about the time of Adad-narari I (1307-1275) the royal inscriptions of
+Assyrian kings are mostly written in slightly Assyrianizing Middle Babylonian,
+demonstrating the continuing prestige of the Babylonian dialect in Assyria first
+observed when the region was ruled by Shamshi-Adad I. Middle Babylonian copies
+of southern literary compositions were imported to Assyria, especially as booty by
+Tukulti-Ninurta I when he sacked Babylon (about 1230 BC). From this time on
+Assyria, so often mightier than Babylonia in war and political influence, was under
+the cultural domination of its southern neighbour. More or less the entire Babylonian
+scribal tradition seems to have been known in 11th-century Assyria. Narrative poetry
+such as the poem of Etana, Ishtar's Descent and the Sumerian Lugale and
+
+
+
+Babylonian and Assyrian
+
+
+
+50
+
+
+
+
+
+
+
+Angimdimma (by this time in bilingual SumeroBaby Ionian format), other literary
+compositions and scholarly texts - hymns, omens, incantations, rituals, medical texts,
+hemerologies, Hammurapi's laws, lexical lists - were handed down in Assyrian
+copies that survive today. Over generations some of this Babylonian literature
+became more or less Assyrianized. New literature in praise of Assyrian might was
+composed locally, also in Babylonian; this includes the Tukulti-Ninurta epic.
+
+The great Middle Assyrian law code, the unique palace edicts that regulate
+conduct at the Assyrian court, the Assyrian coronation ritual, however, all these had
+no literary pretensions and were written in pure Middle Assyrian, as was one of King
+Ashur-uballit' s two letters to pharaoh, found at El-Amarna. Middle Assyrian has been
+studied by Mayer 1971.
+
+
+
+
+
+
+
+
+
+ys
+
+
+
+so
+
+
+
+Fig. 3.3 The Middle Assyrian Laws, Tablet A §18, copied by O. Schroeder
+
+
+
+
+
+
+
+Text sample 5. Middle Assyrian. From the laws
+
+summa a 'llu ana tappa 'esu lu ina puzre lit ina salte iqbi ma assatka ittinikku ma
+andku ubdr ba"ura Id ila"e Id uba"er a'lla su'dtu arbd ina handle imahhusils ilten
+urah umdte sipar sarre eppas igaddimus u iltet bilat annaka iddan
+
+MA Law §18
+
+If a man says to his friend, whether in private or in a fight, "Your wife sleeps
+around," and adds, "I shall prove it," but he cannot prove it and does not prove it, that
+man shall be flogged forty strokes of the rod, shall do the king's labour for a full
+month, have his head shaved and pay a fine of one talent of tin {or lead).
+
+
+
+Peripheral Akkadian. Akkadian continued to be employed beyond the bounds of
+Babylonia and Assyria proper. In the latter part of the 2nd millennium there is
+extensive evidence for peripheral dialects of Akkadian and for the continuing spread
+of literary Babylonian outside Mesopotamia. Legal documents from Terqa on the
+middle Euphrates and private archives from Ekalte (Tell Munbaqa) further upstream
+exhibit a continuation of Old Babylonian traditions of writing. However, by the early
+Kassite period (16th century) the Babylonian written at Terqa contained provincial
+traits, including loans from West Semitic and the occasional Assyrianism (Podany
+1991-3). Middle Assyrian eventually prevailed here as the language of writing.
+
+Archives excavated at Gasur, at this time known as Nuzi, in the 1920s and '30s
+yielded about seven thousand tablets distributed among perhaps as many as forty
+archives, institutional and private. Similar tablets also came from nearby Arrapha
+(Kirkuk) and Tell al-Fakhar. They hold legal and juridical documents, letters and
+administrative texts written in a form of Akkadian much influenced by the local
+Hurrian vernacular and dating to the 15th and 14th centuries. This is the period just
+before the rise of the Middle Assyrian state under Ashur-uballit I, who was probably
+responsible for Nuzi's destruction. The local suzerain was the king of Arrapha, a
+vassal in turn of Mittanni, at that time a greater power than Assyria. The use of
+Akkadian by kings of Mittanni is well documented (Adler 1976) and speaks for the
+continuing dominance of Babylonian as a written means of communication in upper
+Mesopotamia, outside Assyria proper. Unsurprisingly, therefore, the Humanized
+Akkadian of Nuzi is more akin to early Middle Babylonian than to Assyrian, though
+it shows occasional Assyrianisms. The language of the Nuzi texts has been studied by
+Berkooz 1937 and Wilhelm 1970.
+
+Our knowledge of the Akkadian written in Levantine Syria in the same period
+formerly rested on 15th-century tablets from Alalah, treaties involving the local
+rulers, Idrimi and his son Niqmepa, and Idrimf s autobiographical statue inscription.
+The Humanized Akkadian of these texts is described by Rowe 1998. Also extant, but
+less informative linguistically, was an archive of inventories unearthed by a pre-war
+
+
+
+
+
+
+
+French expedition at Qatna (Tell Mishrife), further up the Orontes valley in Syria.
+The evidence has been much augmented by the discovery of an important 14th-
+century royal archive during the new excavations at Qatna. This archive of letters and
+administrative documents will shed fascinating new light on the political relations of
+this small Syrian city-state with the major powers, at a time when Mittanni was
+retreating before the expansion of the Hittite empire. As regards the study of
+language, the epigraphists deciphering the archive report the use of a new variety of
+Humanized Akkadian (Richter 2002). Extensive glossing in Hurrian shows very
+clearly that Hurrian was the local vernacular.
+
+Further south, at Taanach (Tell Ti'innik) near Megiddo in Palestine, 15th-
+century letters and administrative documents are early evidence for a form of local
+Babylonian under West Semitic influence (Rainey 1999). In Elam, east of Babylonia,
+scribes were briefly writing Akkadian again, as shown by 14th-century archives from
+Kabnak (Haft Tepe), near Susa (Glassner 1991). The texts are mostly administrative
+but an omen list is evidence for the Babylonian scribal tradition and curious
+orthographies again speak for a local tradition of cuneiform scholarship (Herrero and
+Glassner 1996). The local vernacular of Elam at this time was Middle Elamite, but
+the prestige of Babylonian is also seen in its use in several monumental inscriptions
+of King Untash-napirisha (13th century). This ruler was evidently what might be
+called a Babylonophile, for he gave his new ceremonial cult-centre an Akkadian
+name, Al-Untash "Untash-town" (now Choga Zambil). A century later, however,
+Shutruk-Nahhunte and his sons Kutir-Nahhunte and Shilhak-Inshushinak, the
+vanquishers of Babylon (sacked in 1 157 BC), had their inscriptions written in Elamite
+alone.
+
+By the floruit of the Nuzi and Qatna archives scribes were writing Akkadian in
+Anatolia again. As elsewhere in the West the Babylonian scribal tradition had been
+imported wholesale to the Hittite capital at Hattusa along with the technology of
+cuneiform writing. This was most probably not a single event but a continuing
+process. One reason for suspecting this is that texts of the scribal tradition can be seen
+there at several stages in their development. For example, the Babylonian Epic of
+Gilgamesh occurs first in an early 14th-century copy very close to an Old Babylonian
+version known from Babylonia, then as a partly garbled Akkadian paraphrase (13th-
+century copy), probably composed locally or in north Syria, and also as a story retold
+in Hittite and in Hurrian.
+
+International Akkadian. Already employed at Hattusa during the Hittite Old
+Kingdom, when royal texts of Hattusili I were furnished with Akkadian translations
+(Gaiter 1995: 36-7), Akkadian is most visible there as an international language for
+diplomatic correspondence and treaty-writing in the service of the Hittite state
+(described by Labat 1932, Durham 1976, Marazzi 1986). In this the Hittites were
+falling into line with the rest of the East Mediterranean. What might be called
+"international" Akkadian is best known from the Egyptian royal archives of El-
+Amarna (ancient Akhetaten), the short-lived capital of the 14th-century pharaoh
+
+
+
+
+
+
+
+Akhenaten (Amenophis IV), from smaller archives of the same period, such as that at
+Kumidi (Kamid el-Loz) in Lebanon, and from isolated finds such as those of Sidon,
+on the Lebanese coast, and of Hazor, Tell Aphek, Gezer and Beth Shean in modern
+Israel. These demonstrate that during the Late Bronze Age a very extensive network
+of diplomatic links was in place between the major and minor powers of the Near
+East and their vassals, and Akkadian was the medium of international
+communication. The Hittite monarch and the kings of Babylonia and Assyria, the
+ruler of Alashiya (Cyprus), Egyptian vassals like Abdi-Ashirta of Amurru, Rib-Hadda
+of Byblos and Abi-Milku of Tyre: all wrote to pharaoh in forms of Akkadian and
+received his reply in Akkadian.
+
+Royal letters from kings of the Kassite dynasty of Babylon have already been
+mentioned in discussing Middle Babylonian, and the Middle Assyrian letter of an
+Assyrian ruler has also been noted. The language of most of the Amarna
+correspondence, however, was far from these pure Mesopotamian dialects, exhibiting
+many provincial archaisms and very considerable influence of local tongues. It was
+not homogeneous. Letters from Hittite, north Syrian and Egyptian chanceries indicate
+greater or lesser influence of Hurrian, and are held to represent a northern, Hurro-
+Akkadian tradition of writing and language. In the southern Levant various forms of
+pidgin- Akkadian were used, more or less combining Babylonian vocabulary with
+local West Semitic (Canaanite) grammar (Moran 1992: xviii-xxii, Rainey 1996,
+Izre'el 1998). Akkadian dialects of the Amarna period have lately been given
+renewed attention (Sivan 1984, Gianto 1990, Izre'el 1991, Moran 2003, Cochavi-
+Rainey 2003).
+
+Like the cuneiform scribes of Hattusa, the writers of the letters of the Amarna
+archives learnt to master cuneiform in the traditional way, so that texts of the
+Babylonian scribal tradition have been recovered from El- Amarna. These are mostly
+lexical texts but include also poems on mythological and heroic subjects, such as
+Adapa, Nergal and Ereshkigal, and Sargon King of Battle. The Egyptians were taught
+cuneiform writing by Hittites of the Old Kingdom (16th- 15th centuries), and some
+Akkadian literature found at Amarna bears a Hurro-Hittite cultural imprint. This
+means that though in Egypt cuneiform writing has so far only turned up at 14th-
+century Amarna, older finds are to be expected. Other compositions, handed down at
+Amarna in good Middle Babylonian recensions, imply continuing influence, either
+directly from Mesopotamia or through Syro-Mesopotamian intermediaries. There was
+certainly a tradition of cuneiform learning in the southern Levant well before the
+tablets from Amarna. The presence of Old Babylonian at Hazor has already been
+mentioned, as has the early Middle Babylonian archive from Taanach. Megiddo can
+also be cited, where a Middle Babylonian paraphrase of Gilgamesh was already
+known in perhaps the 15th century. So in writing Akkadian, Akhenaten 's chancery at
+Amarna was following the trend, not leading it. While we talk of the Amarna period
+as exemplifying the widespread use of international Akkadian in the eastern
+Mediterranean region of the 14th century, it should be remembered that this was not
+an innovation of this period, even in Egypt.
+
+
+
+
+
+
+
+Later evidence reveals the full extent of cuneiform learning and Akkadian
+writing in the West. Towards the end of the 2nd millennium much of the Near East,
+particularly around the eastern Mediterranean, suffered in the catastrophes that
+brought the Late Bronze Age to an end. Among cities that fell at that time were
+Alalah, Ugarit (Ras Shamra) on the Mediterranean seaboard, and Emar (Meskene) on
+the Euphrates downstream of Carchemish. Destruction levels at Ugarit and Emar,
+especially, have yielded many archives of cuneiform tablets, large and small, ranging
+across the 14th to 12th centuries. Their texts demonstrate again the use in the
+periphery of local forms of written Akkadian for practical communication and
+documentation - the familiar combination of letters, legal, juridical and administrative
+texts - built on an education in the scribal tradition imported from Babylonia. The
+latter is represented by lexical texts, scholarly compendia, fables and wisdom
+literature, Middle Babylonian Gilgamesh and an account of the flood, no doubt a
+fragment of the poem of Atram-hasis. The Akkadian of Ugarit has been much
+researched (Swaim 1962, Huehnergard 1989, van Soldt 1991), and linguistic studies
+of Emar Akkadian are fast catching up (Ikeda 1995, 1998, Seminara 1998, Pentiuc
+2001).
+
+The end of the Late Bronze Age in the eastern Mediterranean brought with it a
+breakdown in international communications that spelled the termination of local
+traditions of Akkadian writing in Mediterranean Syria, Egypt and Anatolia, and, after
+perhaps 1500 years, the end in the west of the cultural domination of Babylonian
+language and scribal traditions.
+
+
+
+The early 1st millennium: Neo-Assyrian,
+Standard and Neo-Baby Ionian
+
+The transition to the Iron Age coincides with a loss of documentation that intervenes
+in the history of Akkadian. The turn of the millennium marks the beginning of a
+period of confusion in Mesopotamia, as a flowing tide of Arameans overran the
+north, for all the earlier efforts of Tiglath-pileser I (1114-1076) to stem it, leading to
+the eventual collapse of Assyrian power. Recovery lay two centuries away.
+Babylonia, already weakened by Assyrian invasion, succumbed first to famine and
+then to more Arameans.
+
+Until recently this interval of silence was a convenient point to divide Middle
+Babylonian and Middle Assyrian from the later dialects, but new discoveries sharpen
+the picture. A ninth-century diplomatic letter, sent to the king of Hama in Syria from
+Anat (now Ana) on the middle Euphrates, gives a rare glimpse of the southern
+language late in the evolution of Middle to Neo-Baby Ionian (Parpola 1990). The
+transition from Middle to Neo-Assyrian was explored by Postgate 1997. Evidence
+from provincial centres adds to the picture, demonstrating that the evolution of
+Middle to Neo-Assyrian had already begun in the early 11th century. Inscriptions of
+Ashur-ketti-leshir, a king of Mari and vassal of Tiglath-pileser I, are couched in
+
+
+
+
+
+
+
+heavily Assyrianized Babylonian, and some of their Assyrianisms anticipate Neo-
+Assyrian grammar and spelling (Maul 1992: 18-19). A small archive of legal
+documents excavated in south-eastern Turkey at Giricano, on the upper Tigris
+(ancient Dunnu-sha-Uzibi), dates to the same era, and exhibits what is clearly a
+transitional dialect, already partly Neo-Assyrian (Radner 2004: 53-4).
+
+The darkness lifts gradually: as the nation states of Mesopotamia reasserted
+their authority, economic stability increased and written sources grow in number.
+Assyria was the first to recover its political and military might, especially under kings
+Ashurnasirpal II (883-859) and Shalmaneser III (858-824), who campaigned
+vigorously and successfully pushed back the frontiers of the Assyrian state on all
+sides. In this era of renewed Assyrian strength it is significant that the long
+inscriptions that report these kings' campaigns are written in a form of Babylonian
+under heavy Assyrian influence (Deller 1957a, b). Further west and north, the local
+ascendancy of Assyrian over Babylonian is clearer still. A statue of Hadad-yis'i, an
+Aramean who became Assyrian provincial governor of Bit-Bahiyani in the mid-9th
+century, was found at Tell Fekheriye in the Habur triangle, inscribed with text in both
+Akkadian and Aramaic. The Akkadian is partly Assyrian and partly an Assyrianized
+literary Babylonian (Fales 1983). In Urartu, a short-lived but troublesome kingdom
+based near Lake Van, royal inscriptions of the late 9th century were couched in
+Assyrian, though this experiment soon gave way to Assyrian-Urartian bilingualism
+and monolingual Urartian texts (Wilhelm 1986, Gaiter 1995: 37-9).
+
+Neo-Assyrian. In Assyria itself archival documents appear again in the 9th century
+(at Shibaniba) and become more common in the late 8th century, turning into a flood
+by the reigns of Sargon II (721-705), Esarhaddon (680-669) and Ashurbanipal (668-
+627). Private and public documents occur, but texts from the great institutions of state
+predominate, especially archives from the successive royal capitals of Kalah
+(Nimrud) and Nineveh (Kuyunjik). Among the twenty thousand tablets and fragments
+excavated at Nineveh in the 1850s and subsequently, it is estimated that archival
+documents - letters, legal and administrative documents, royal grants and decrees,
+officials' reports, especially from diviners, astrologers and other scholars, and
+oracular questions on matters of state - add up to more than 5,500 (Parpola 1986:
+228). These derive overwhelmingly from the period 721 to 645 and document the
+history and politics of imperial Assyria in extraordinary detail (Text sample 6).
+
+Smaller quantities of tablets come from other Assyrian cities, especially Ashur,
+and from provincial centres across the Jazira (Guzana-Tell Halaf, Til-Barsip, Dur-
+Katlimmu etc.). Isolated discoveries from more distant provinces of the empire are
+the Neo-Assyrian tablets found at Tarsus in Cilicia (Goetze 1939), at Samaria, the
+capital of Israel taken by Shalmaneser V in 722 BC (Pedersen 1998: 225), and further
+south at Gezer (Macalister 1911: 22-30). These document the activities of expatriate
+bureaucrats and are legacies of imperial administration and practice. They do not
+speak for any re-establishment in the west of cuneiform and Akkadian as media of
+local communication and intellectual activity.
+
+
+
+
+
+
+
+The language of all these documents is Neo-Assyrian. In Neo-Assyrian the
+influence of Aramaic on Akkadian is seen for the first time. In the written form of the
+language Aramaisms are very limited but Aramaic notes written on many tablets
+indicate the growing currency of Aramaic as the vernacular language. In a multi-
+ethnic empire where natives of Assyria were hugely outnumbered by Aramaic-
+speakers from upper Mesopotamia and Levantine Syria, many of them forcibly
+resettled in the heartland of Assyria itself, the native dialect was fast losing ground as
+a spoken language. It continued to be written, however, where tradition dictated that
+it was the proper medium of communication. This was so even after the collapse of
+the empire, for legal texts from Dur-Katlimmu (Tell Sheikh Hamad) on the river
+Habur, dated to the reign of Nebuchadnezzar II of Babylon, document the survival of
+written Assyrian a little after the fall of Nineveh and the demise of the imperial
+Assyrian government (Radner 2002). The Neo-Assyrian scribal tradition lived on at
+Harran, one of the old imperial cities, to influence the monumental inscriptions of
+Nabonidus (555-539) (Schaudig 2001: 72-3). Neo-Assyrian letters were early the
+subject of special grammatical study (Ylvisaker 1912) and the dialect has met with
+renewed attention more recently (Hameen-Anttila 2000, Luukko 2004).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fig. 3.4. Neo-Assyrian letter (SAA XVI 105= K 11; © Trustees of the British Museum)
+
+
+
+
+
+
+
+Text sample 6. Neo- Assyrian. Letter of Ubru-Nabu to the king of Assyria,
+
+probably Esarhaddon
+
+ina pdneya izakkar abu 'a ina mat nakire met ma hansd sdbe sa qdtesu sinserat slse
+ina qatesunu issabtuni ittalkuni ina battibatti sa Ninua kammusu ma andku
+aqtibassunu ma abu' a lu met massartu sa sarre atd turamme'd tallikdni uma annurig
+ina pan sarre beleya ussebilassu sarru bell lis'alsu ki sa abutuni ana sarre beleya
+liqbi
+
+State Archives of Assyria XVI 105
+
+(Shumma-ilu) declared in my presence, "My father died in enemy territory. The fifty
+men who were under his command took twelve horses and came back. They are
+staying near Nineveh. I told them, 'My father may be dead, but why did you forsake
+the king's duty and come back?'" I am sending him right now to the king my lord.
+Let the king my lord question him, so he tells the king my lord how the matter stands.
+
+Alongside the masses of archival documents in the Neo-Assyrian dialect, the
+early 1st millennium also bears witness to a brief flowering of Assyrian court
+literature and religious poetry. The long tradition of native scholarship in Sumero-
+Babylonian textual analysis began also to spawn academic works in the Neo-Assyrian
+dialect. Though short-lived, these are further signs of the growing prestige of
+Assyrian in intellectual culture during the hegemony of the Assyrian empire.
+
+
+
+Standard Babylonian. Notwithstanding the Assyrians' literary creativity in their
+own dialect, Babylonian maintained its position as the foremost language of literary
+expression. The Sargonid kings, especially, opted to produce royal building
+inscriptions and annals in the literary register of Babylonian, introduced above as
+Standard Babylonian. This is the dialect of Akkadian in which was phrased much of
+the literature handed down in the scribal tradition of the 1 st millennium, ranging from
+mythological and other narrative poetry, through hymns and poetic prayers, fables
+and wisdom literature, pseudo-autobiography and didactic poetry, and the occasional
+folktale, to scholarly compendia (e.g. omens), professional literature (e.g. exorcistic
+and therapeutic texts), calendar lore and technical treatises. Some of this literature
+was very old, being traceable back to Old Babylonian recensions. Examples are
+narrative poems in comparatively plain style: Anzu, Atram-hasis, Etana, Ishtar's
+Descent to the Netherworld and Gilgamesh (Text sample 7). Other compositions
+derived from later in the 2nd millennium, often displaying the more recherche
+vocabulary and learned touches of Middle Babylonian scholar poets. The Creation
+epic (Enuma elis) comes under this category, as does the poem of the Righteous
+Sufferer (Ludlul bel nemeqi).
+
+
+
+
+
+For his friend Enkidu Gilgamesh
+
+was weeping bitterly as he roamed the wild:
+"I shall die, and shall I not then be like Enkidu?
+
+Sorrow has entered my heart.
+I became afraid of death, so go roaming the wild,
+
+to Uta-napishti, son of Ubar-Tutu,
+
+I am on the road and travelling swiftly."
+
+Almost all of Standard Babylonian literature is currently known only from lst-
+millennium copies. These derive from Assyrian royal, temple and private libraries of
+the 8th to 7th centuries and from Babylonian private and temple libraries of later
+centuries. Isolated finds at Hama in Syria (Laess0e 1956) and Tarsus in Cilicia
+(Goetze 1939: No. 8) demonstrate that agents of the Assyrian empire had such tablets
+in the west, but these were surely exports and not evidence of any local engagement
+with Babylonian culture. The practice of copying texts from the Sumero-Baby Ionian
+scribal tradition was in this period restricted to Mesopotamia proper, and from the 6th
+century confined to Babylonia alone. By this era, and probably for some time before,
+the Standard Babylonian corpus was no longer living literature, but the preserve
+chiefly of the scholars and students engaged in teaching and learning cuneiform and
+in writing ceremonial texts in traditional literary language. At the Assyrian and
+Babylonian courts and in the market place the more vital language of literary
+expression and oral literary tradition was undoubtedly Aramaic.
+
+Nevertheless, Standard Babylonian remained a productive dialect throughout
+the 1st millennium, alongside new developments in style that were less successful
+(Lambert 1968). Most inscriptions of Nabopolassar and his successors display
+Standard Babylonian language and word order, even if they are often falsely
+characterized as Neo- or Late Babylonian. The prose of Nabonidus (555-539) exults
+in a particularly high literary Standard Babylonian that occasionally reads almost as
+poetry. Among later rulers, Cyrus of Persia (538-530) and the Seleucid Antiochus I
+Soter (281-261) both put out commemorative inscriptions in the traditional style.
+
+
+
+
+
+
+
+Standard Babylonian is not a homogeneous dialect. The modes of expression
+range from self-consciously ornate and highly archaizing, reminiscent of the "hymno-
+epic" style of some Old Babylonian poetry, to much plainer modes of expression that
+are nevertheless old. For example, a stylistic device favoured especially by the
+composers of the Sargonid annals was the placing of the verb in penultimate position
+in its clause, a feature of prose style met above in Old Akkadian monumental texts.
+The grammar of all forms of Standard Babylonian, allowing for variations in spelling
+and the occasional intrusion of vernacular, exhibits a recognizable affinity with Old
+Babylonian. Perhaps its greatest unifying feature is that this was always elevated, old-
+fashioned language, distinct from any kind of vernacular Akkadian in lexicon,
+phrasing and word order. The standard treatment is Reiner 1966. Studies of different
+kinds of Standard Babylonian have concentrated on the epic poetry (Hecker 1974),
+"hymnic" literature (Groneberg 1987) and royal inscriptions (Stein 2000, Schaudig
+2001).
+
+Neo-Babylonian. The vernacular form of the southern dialect, Neo-Babylonian,
+was also used at the imperial Assyrian court, for after the final annexation of
+Babylonia under Sennacherib in 689 BC, many Babylonian officials, scholars and
+administrators employed it in their dealings with the government and received letters
+back in the same dialect (Text sample 8). The language of the Neo-Babylonian letters
+from Nineveh has been explored in Woodington 1982 and de Vaan 1995.
+
+Text sample 8. Neo-Babylonian. Letter of King Sargon II of Assyria to Sin-iddina
+
+[sa taspura umma . . . ] kl pan sarri mahru ina libbi sipri armdyi luspirma ana sarri
+lusebila mlnamma ina sipirti akkadattu la tasattarma la tusebbila kitta sipirtu sa ina
+libbi tasattaru ki pi agannltimma idat lu saknat
+
+State Archives of Assyria XVII 2
+
+Regarding the message you wrote . . . , "If it is acceptable to the king I will write a
+letter to the king in Aramaic style," why can you not write a letter to me in Akkadian
+style? Be sure that the document you write is like this one [i.e. in cuneiform]. It is the
+custom. Let it remain so!
+
+In the south, a glimpse of early Neo-Babylonian is given by the governor's
+archive from 8th-century Nippur, which contains a mix of letters with texts from the
+Sumero-Babylonian scribal tradition. Neo-Babylonian archival documents begin to
+become common in the late 7th century. As Babylon gained economic power as the
+seat of a new empire, and other southern cities such as Sippar, Cutha, Borsippa,
+Dilbat, Nippur, Ur and Uruk prospered with it, the extant documentation increases.
+Twenty years ago it was estimated that more than thirteen thousand archival
+documents - letters, economic, business, juridical and legal documents - dating to the
+Neo-Babylonian and Persian periods had already been published (Dandamayev 1986:
+
+
+
+
+
+
+
+274). This is only a small fraction of the extant whole, however: the administrative
+archive of the temple of Shamash at Sippar excavated by Rassam between 1878 and
+1882 numbers at least twice that quantity of pieces on its own. At perhaps ten
+thousand tablets even the archive of Eanna at Uruk (7th to 5th centuries) looks small
+by comparison. Alongside huge institutional archives of this kind are extensive
+dossiers that document over several generations the activities of families of
+businessmen, such as the Murashu family at Nippur and the Egibi family at Babylon.
+Here attempts to understand the form and function of the archives have taken
+precedence over grammatical research. The language of the business documents was
+studied by Tallqvist 1890. More recently scholars have concentrated on individual
+aspects of the dialect (e.g. Dietrich 1969, Streck 1995).
+
+The empire of Nabopolassar (625-605) and his successors took many
+Babylonians abroad, in the service of the imperial administration and on private
+ventures. Tablets from expatriates' archives have surfaced in several Levantine cities
+but, as in the Neo-Assyrian period, they speak only of the use there of Akkadian
+cuneiform by people of Mesopotamian origin, not of any local revival of cuneiform
+writing (Dalley 1993: 141-3). One Babylonian family left an archive of Neo-
+Babylonian legal documents at Nereb (Neirab), near Aleppo, where they lived in the
+mid-6th century. Some of their tablets were glossed with Aramaic notations. This
+practice became more common in Babylonia itself in the 5th century, when it speaks
+for a growing reliance on Aramaic among the record-keeping classes. As in Assyria,
+Aramaic was strongly entrenched in the Babylonian south early in the imperial
+period, boosted by a large population of Aramean and Chaldean descent. The
+prevalence of Aramaic surely had a greater effect on spoken Babylonian than on the
+written language, which remained remarkably impervious to Aramaic loanwords. The
+loss of inflected endings on nouns was probably a development speeded up by
+analogy with Aramaic. The writing of cuneiform was also affected by the advent of
+bilingual literacy. Changes in spelling conventions can be attributed to the influence
+of Aramaic writing practices.
+
+It was not all one-way traffic: Babylonian had some influence on Aramaic too
+(Kaufman 1974), but the suspicion is that it was steadily losing ground as a
+vernacular, spoken language when Nebuchadnezzar II (604-562) made Babylon great
+again. The strength of the cuneiform tradition kept it alive as a written language for
+centuries more.
+
+
+
+
+
+
+
+The end of Akkadian: Late Babylonian
+and cuneiform scholarship
+
+Babylon fell to Cyrus the Great of Persia in 539 BC. This date marks the end in
+ancient history of independent nation states in Mesopotamia, but Babylonian
+civilization was far from spent. Religious life and intellectual culture continued much
+as before, perpetuating by many centuries the ancient languages that were their
+vehicles (Oelsner 2002b). Under the Achaemenid Persians, Akkadian found use as
+one of several languages of state display, most famously in the trilingual rock
+inscription of Darius I (521-486) at Bisutun (Behistun) in Iran. Only a single Neo-
+Babylonian tablet was found among the large archive excavated in the fortification
+wall at Darius' capital, Persepolis, for this king's use of Akkadian was ceremonial not
+practical. Imperial Aramaic was the official lingua franca of the Persian empire.
+From the time of Xerxes I (485-465) there is across Babylonia generally a marked
+decrease in the number of Neo-Baby Ionian archival documents now extant. It seems
+that increasingly more communication and record-keeping were being done in
+Aramaic alone. The great temple of Shamash at Sippar abandoned cuneiform writing
+early in Xerxes' reign, presumably in favour of the alternative technology. Private
+letters become very rare after about 450 BC, a development that signals for most
+scholars the final extinction of a vernacular Babylonian tongue, after a long decline.
+
+The death of the Akkadian language was much prolonged, however, for it was
+bound up with the death of cuneiform writing. The persistence of the ancient script
+kept Akkadian alive among the scribal classes long after it ceased to be anybody's
+first language. From the extant documentation the general trend of the later 1st
+millennium is clear: as in private life Aramaic writing was adopted more widely, and
+as in public life successive non-native governments demanded expertise first in
+Aramaic and then in Greek, so cuneiform was used for an ever more restricted set of
+purposes. This in turn steadily diminished the number of those who had occasion to
+learn and use the Akkadian language.
+
+
+
+Late Babylonian. The convention is to divide the vernacular Babylonian of the 1st
+millennium into Neo-Baby Ionian and Late Babylonian. There is no consensus as to
+where in time the division should occur. Some place it at the accession of
+Nabopolassar, others at the capture of Babylon by Cyrus eighty-six years later. Both
+are manifestly dates of political rather than linguistic significance and neither marks a
+clear discontinuity in the history of the southern dialect. However, the Babylonian
+written under Alexander the Great, his successors the Seleucid kings, and then the
+Parthian dynasty of Iran, shows a definite evolution from 7th-century language, and
+rightly deserves the label Late Babylonian.
+
+At Babylon and Uruk legal documents composed in Babylonian on clay
+continue through the reigns of Alexander the Great (330-323 BC), his short-lived
+
+
+
+
+
+
+
+dynasty and the Seleucid kings that succeeded it, but are little in evidence after the
+Parthian conquest (140 BC). The same can be said for texts that capture in writing the
+daily rituals of the great temples, a genre of Late Babylonian writing whose rise is
+symptomatic of anxiety about the future of these venerable institutions. At Borsippa
+an archive of letter-orders (memoranda from temple administrators) records the
+activities of the temple brewers' office at the beginning of the Hellenistic era. The
+last surviving archives from the great temples of Uruk date from the early to mid-2nd
+century, but an isolated tablet records the temples' existence as late as 108 BC.
+Administrative records are more plentiful at Babylon, where they continue beyond
+the Seleucid domination into the early 1st century BC. In reporting the continuing
+existence of several temples at the old capital, they document the careers of
+individual astronomers maintained out of temple funds (Text sample 9).
+Astronomical diaries written at Babylon straddle the Persian and Seleucid periods but
+fail in the mid- 1st century BC.
+
+
+
+Text sample 9. Late-Babylonian. Protocol of the temple assembly of Babylon (127
+
+BC)
+
+ultu umi anna sa sattussu sina mana kaspu kurummat Itti-Marduk-balatu a abisunu
+ana Bel-ahhe-usur u Nabu-musetiq-uddi ultu hisihtlni ninamdin libbu mimma sa Itti-
+Marduk-balatu abusunu issu sa nasari inassaru u terseti sa sattussu inamdinu itti
+Belsunu Labasi Murdnu Iddin-Bel Bel-ndsirsu tupsar Ud-An-Enlilla u tupsar Ud-An-
+Enlilla sanuti
+
+Pinches 1889-90: 132
+
+The pronunciation of this passage, based on the evidence of roughly
+contemporaneous Greek transcriptions of Akkadian, might be something like this:
+ultu uw anna sa sattus sina mana kasap kuruwat Ittiwardukbaldt a ablsun ana
+Belahhusur u Nabuwusetiqud ultu hisihtin ninamdin libbu miwa sa Ittiwardukbaldt
+abusun issu sa nasdr inassaru u terset sa sattus inamdinu itti Belsun Ldbds Wurdn
+Iddinbel Belndsirs tupsar Ud-An-Enlilla u tupsar Ud-An-Enlilla sanut
+
+From this day forth, every year, we shall pay from our resources two shekels of
+silver, the expenses of the aforementioned Itti-Marduk-balatu, their father, to Bel-
+ahhe-usur and Nabu-mushetiq-uddi, in accordance with what their father Itti-Marduk-
+balatu drew. They will make [diaries of] observations and produce the yearly
+astronomical tables together with the astronomers Belshunu, La-abash, Muranu,
+Iddin-Bel, Bel-nasirshu, and other astronomers.
+
+
+
+
+
+
+
+Cuneiform scholarship. The number of extant cuneiform tablets of the
+Hellenistic period has been estimated at more than two thousand, of which well over
+one thousand are of astronomical content (Oelsner 1986: 138). This gives a good
+indication of the predominant use to which Akkadian was put in the last centuries of
+the cuneiform tradition. Astrologer-astronomers must have formed the majority of
+scholars still writing the language at this time. Akkadian in the Seleucid and Parthian
+periods was, like Sumerian before it, a scholars' language that had to be learned by a
+long apprenticeship. The art of writing it was inextricably bound up with the survival
+of the ancient temples and the duties of their personnel, especially the astronomers.
+As populations moved away from the old cities to the new royal capitals at Seleucia
+and then Ctesiphon, and royal patronage and funding came to an end, these buildings
+became increasingly difficult to maintain. At the same time the people that staffed
+them and otherwise relied on them for support must have decreased rapidly.
+
+Alongside the diminishing archival documentation of the Persian, Seleucid and
+Parthian periods, production of new copies of texts of the old Sumero-Babylonian
+scribal tradition continued, especially at Babylon, Borsippa and Uruk. Much of this
+was carried out as part of their education by boys and young men learning to write in
+order to enter the literate professions. Though few new texts were written, there is
+plentiful evidence that in the 4th century BC Akkadian was still the vehicle for a
+flourishing intellectual culture, particularly in the exegesis of professional lore
+(Frahm 2002). By the Parthian era, however, cuneiform learning was much less
+widespread. It was the preserve only of a few families of learned scholars, mostly
+astronomers, clinging to the ancient ways in cities that history had passed by. The
+latest dated copy of a text of the old scribal tradition known at present was written at
+Babylon in 35 BC (Oelsner 2002a: 12). It is an apprentice's manuscript of a literary
+prayer to Marduk. Undated copies of literary texts far outnumber dated exemplars
+and it is not improbable that we possess many other literary tablets of the same
+period. Some may even date from as late as the astronomical almanacs. These
+almanacs are, at present, our very last dated cuneiform documents. The most recent of
+them contains predictions of planetary movements and other events for AD 75. The
+almanacs are ostensibly written in Akkadian and prefaced with a standard scribal
+prayer in Babylonian, but whether they had to be read in that language is uncertain:
+the stereotyped and abbreviated formulae in which they are couched is a kind of
+scholarly code, readable in any language by anyone with a little training.
+
+Whoever wrote the almanacs, however, must have had some grasp of the
+Akkadian language, for they were surely trained to write cuneiform in the time-
+honoured way, by exposure to the Sumero-Babylonian scribal tradition. Relics from
+their education may even survive in the form of school tablets from Babylon that hold
+passages of Sumerian and Akkadian texts in cuneiform accompanied by Greek
+transcriptions. These have been dated on the basis of palaeography mostly to the two
+centuries either side of the turn of the era, but one or two examples may be later still.
+Partly on this evidence it has been argued that cuneiform culture, and thus written
+Babylonian, survived to the 2nd century AD and even into the 3rd, when many old
+
+
+
+
+
+
+
+traditions were finally extinguished by the religious reforms of the Sasanian Persians,
+who had put an end to Parthian rule in Mesopotamia by AD 230 (Geller 1997).
+
+Without a breakthrough in cuneiform palaeography it remains to be seen
+whether any of the many undated cuneiform copies of texts from the Late Babylonian
+scribal tradition could be as late as the 2nd century AD. As matters stand, this seems
+unlikely but it would be unwise completely to discount it. Two events, perhaps
+interconnected, contributed greatly to the end of the cuneiform tradition of native
+scholarship in Babylonia, and so to the final demise of Akkadian. The transfer of
+astronomical writing to a medium other than cuneiform was one (Brown
+forthcoming). The decline of the venerable cult-centres was the other. Though there is
+evidence that the cults of some of the old gods survived into the 3rd century AD, they
+must by then have been relocated. Archaeological excavation shows that the great
+temple buildings of Uruk were abandoned and built over soon after about 100 BC, at
+all events early in the Parthian period. At Babylon the ancient cult-centre of Marduk
+(Bel) and other sanctuaries endured longer. Marduk' s temple was ruined, levelled
+into a mound and redeveloped as a residential quarter some time before the Parthian
+era closed in the early 3rd century AD.
+
+Some have speculated that a tradition of Sumero-Baby Ionian scholarship —
+and with it a reading knowledge of Akkadian — survived the death of the cuneiform
+script in Greek and Aramaic transcriptions written on scrolls of papyrus and leather,
+now perished (e.g. Oelsner 2002a: 30-1). Late allusions to Babylonian language and
+learning, for example by the scholiast who credits the Greek novelist Iamblichus (fl.
+AD 200), a native-speaker of Syriac, with a knowledge of the "Babylonian language"
+(Geller 1997: 50), might speak for a continuing endurance of learned Akkadian,
+whether read from cuneiform tablets or from scrolls. Others have argued, however,
+that allusions to Mesopotamian learning in the Roman period refer not to the old
+Sumero- Akkadian tradition but to a contemporaneous "pagan Aramaic literature" that
+is now lost (Houston et al. 2003: 456). We will probably never know. The end of
+written Akkadian, then, is not clearly visible in history.
