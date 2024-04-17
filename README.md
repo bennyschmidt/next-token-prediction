@@ -119,6 +119,12 @@ https://github.com/bennyschmidt/next-token-prediction/assets/45407493/cd4a1102-5
 
 https://github.com/bennyschmidt/next-token-prediction/assets/45407493/033e8260-6a8c-4627-9195-9a6c8bd843bd
 
+### Browser example: Fast auto-complete
+
+With more training data you can get more suggestions, eventually hitting a tipping point where it can complete anything.
+
+https://github.com/bennyschmidt/next-token-prediction/assets/45407493/59c2cd8e-3218-447b-aa33-ea91004a9fdd
+
 ## Inspiration
 
 3Blue1Brown video on YouTube:
