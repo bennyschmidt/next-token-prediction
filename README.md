@@ -139,4 +139,4 @@ Watch: [YouTube](https://www.youtube.com/watch?v=wjZofJX0v4M)
 
 3. Demystify LLMs & simplify methodologies
 
-4. Make a high-quality, free/open LLM in JavaScript. Working on this [here](https://github.com/bennyschmidt/llimo).
+4. Make a high-quality, free/open chat-focused LLM in JavaScript, and an equally sophisticated image-focused diffusion model. Working on this [here](https://github.com/bennyschmidt/llimo).
