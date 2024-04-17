@@ -109,6 +109,8 @@ Run tests
 
 [Readline Completion](./examples/readline-completion/index.js)
 
+[UI Autocomplete](https://github.com/bennyschmidt/next-token-prediction/tree/master/examples/ui-autocomplete)
+
 ## Videos
 
 https://github.com/bennyschmidt/next-token-prediction/assets/45407493/68c070bd-ee03-4b7e-8ba3-3885f77fd9f9
@@ -119,7 +121,7 @@ https://github.com/bennyschmidt/next-token-prediction/assets/45407493/cd4a1102-5
 
 https://github.com/bennyschmidt/next-token-prediction/assets/45407493/033e8260-6a8c-4627-9195-9a6c8bd843bd
 
-### Browser example: Fast auto-complete
+### Browser example: Fast autocomplete
 
 With more training data you can get more suggestions, eventually hitting a tipping point where it can complete anything.
 
@@ -136,8 +138,8 @@ Watch: [YouTube](https://www.youtube.com/watch?v=wjZofJX0v4M)
 ## Goals
 
 1. Provide a high-quality text prediction library for:
-  - auto-completion
-  - auto-correct
+  - autocomplete
+  - autocorrect
   - spell checking
   - search/lookup
 
