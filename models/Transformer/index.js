@@ -147,7 +147,7 @@ module.exports = () => {
 
       if (singleTokenPrediction) {
         return {
-          token: singleTokenPrediction.replace(/\\n/g, '').trim(),
+          token: singleTokenPrediction.replace(/\\n/g, ' ').trim(),
           rankedTokenList: singleTokenPredictionList
         };
       }
@@ -191,7 +191,7 @@ module.exports = () => {
 
       if (prediction) {
         const sanitizedPrediction = prediction
-          .replace(/\\n/g, '')
+          .replace(/\\n/g, ' ')
           .trim();
 
         result += ` ${sanitizedPrediction}`;
@@ -273,7 +273,7 @@ module.exports = () => {
     // split text into token sequences
     // and do some text formatting
 
-    trainingTokenSequences = trainingText.replace(/\n/g, '')
+    trainingTokenSequences = trainingText.replace(/\n/g, ' ')
       .replace(MATCH_TERMINATORS, '$1|')
       .split('|')
       .map(toPlainText);
@@ -424,7 +424,7 @@ module.exports = () => {
       text.charAt(0).toUpperCase()
     )
     .replace(MATCH_LOWER_UPPER, '$1 $2')
-    .replace(MATCH_NEW_LINES, '')
+    .replace(MATCH_NEW_LINES, ' ')
     .replace(FORMAT_PLAIN_TEXT[0], ' ')
     .replace(FORMAT_PLAIN_TEXT[1], ' ')
     .replace(FORMAT_PLAIN_TEXT[2], ' ')
