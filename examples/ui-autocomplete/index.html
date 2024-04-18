@@ -13,7 +13,7 @@
       body {
         margin: 0;
         font: normal normal 14px/21px sans-serif;
-        background: #131314;
+        background: #ebebef;
         color: #4e4c53;
       }
 
@@ -22,7 +22,7 @@
         padding: 1rem;
         border: none;
         font: normal normal 14px/21px sans-serif;
-        background: black;
+        background: white;
         border-radius: 1rem;
         color: #4e4c53;
         outline: none;
@@ -30,13 +30,15 @@
       }
 
       h1, h2 {
-        color: white;
+        color: #3d3747;
         font-weight: 200;
         margin: 0;
       }
 
       h1 {
         margin: 2rem 0;
+        display: block;
+        width: 100%;
       }
 
       h2 {
@@ -57,9 +59,10 @@
         width: 100%;
       }
 
-      #form {
+      #form,
+      h1 {
         justify-content: flex-start;
-        margin: 4rem;
+        margin: 2rem 4rem;
         width: calc(100% - 8rem);
       }
 
@@ -69,10 +72,10 @@
       }
 
       #suggestions {
-        background: #0b080c;
+        background: white;
         align-items: flex-start;
         border-radius: 1rem;
-        box-shadow: 0 0 2rem black;
+        box-shadow: 0 0 3rem #3d374725;
         font-style: italic;
         height: 10rem;
         overflow-y: auto;
@@ -84,7 +87,6 @@
         margin: 0;
         padding: 0;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: flex-start;
         gap: 1rem;
@@ -93,10 +95,21 @@
       #suggestions > li {
         flex: 1;
         width: 100%;
-        flex-direction: row;
+        max-width: 10rem;
         align-items: flex-start;
-        justify-content: flex-start;
-        padding: .5rem;
+        justify-content: center;
+        text-align: center;
+        padding: .5rem 1rem;
+        color: white;
+        margin: .5rem;
+        background: dodgerblue;
+        border-radius: .5rem;
+      }
+
+      #suggestions > li:hover {
+        background: dodgerblue;
+        color: white;
+        cursor: pointer;
       }
     </style>
   </head>
@@ -105,8 +118,8 @@
     <div id="root">
       <h1>Next-Token Prediction</h1>
       <div id="form">
-        <h2>Share your thoughts:</h2>
-        <input id="input" placeholder="Type something..." />
+        <h2>Use <strong>TAB</strong> to autocomplete:</h2>
+        <input autofocus id="input" placeholder="Type something..." />
         <ul id="suggestions"></ul>
       </div>
     </div>
@@ -120,12 +133,40 @@
         completions: []
       };
 
+      // Handle suggestion click
+
+      const onClick = value => () => value && (
+        onChange({
+          key: ' ',
+          target: {
+            value: `${state.value.trim()} ${value.trim()}`
+          }
+        })
+      );
+
       // Handle input change
 
-      const onChange = async ({ key, target: { value } }) => {
+      const onChange = async event => {
+        const {
+          key,
+          target: {
+            value
+          }
+        } = event;
+
         const input = document.getElementById('input');
+        const suggestions = document.getElementById('suggestions');
 
         state.value = input.value = value;
+
+        if (key === 'Tab') {
+          event.preventDefault();
+          event.stopPropagation();
+
+          const suggestion = suggestions.children[0]?.innerHTML.trim();
+
+          return onClick(suggestion)();
+        }
 
         if (key !== ' ') return;
 
@@ -149,13 +190,26 @@
             } = result;
 
             state.completion = completion.split(' ')[0];
-            state.completions = [...new Set(completions.slice(-5).map(phrase => phrase.split(' ')[0]))];
+
+            state.completions = [
+              ...new Set(completions.slice(-5).map(phrase => phrase.split(' ')[0]))
+            ];
 
             const suggestions = document.getElementById('suggestions');
 
-            suggestions.innerHTML = state.completions.map(suggestion => (
-              `<li>${suggestion}</li>`
-            )).join('');
+            suggestions.innerHTML = state.completions.map(suggestion => suggestion.trim() && (
+              `<li class="suggestion">${suggestion.trim()}</li>`
+            )).filter(Boolean).join('');
+
+            requestAnimationFrame(() => {
+              const suggestionElements = [
+                ...document.getElementsByClassName('suggestion')
+              ];
+
+              for (const element of suggestionElements) {
+                element.onclick = onClick(element.innerHTML.trim());
+              }
+            });
           }
         }
       };
