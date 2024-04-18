@@ -125,7 +125,7 @@ https://github.com/bennyschmidt/next-token-prediction/assets/45407493/033e8260-6
 
 With more training data you can get more suggestions, eventually hitting a tipping point where it can complete anything.
 
-https://github.com/bennyschmidt/next-token-prediction/assets/45407493/59c2cd8e-3218-447b-aa33-ea91004a9fdd
+https://github.com/bennyschmidt/next-token-prediction/assets/45407493/942bdabf-4bf5-4d7a-b0db-2331d8c3dd18
 
 ## Inspiration
 
