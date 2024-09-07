@@ -25,9 +25,9 @@ module.exports = {
     return text;
   },
 
-  fetchEmbeddingByName: async name => {
+  fetchNgramByName: async name => {
     const embeddingFile = await fs.readFile(
-      `${__root}/training/embeddings/${name}.json`
+      `${__root}/training/bigrams/${name}.json`
     );
 
     const embedding = JSON.parse(embeddingFile.toString());

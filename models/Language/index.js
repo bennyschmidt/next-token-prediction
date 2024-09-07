@@ -5,7 +5,7 @@ const Transformer = require('../Transformer');
 
 const {
   combineDocuments,
-  fetchEmbeddingByName
+  fetchNgramByName
 } = require('../../utils');
 
 const DEFAULT_DATASET = require(`${__root}/training/datasets/OpenSourceBooks`);
@@ -58,7 +58,7 @@ module.exports = async ({
 
       // load the corresponding embedding file
 
-      const embedding = await fetchEmbeddingByName(dataset.name);
+      const embedding = await fetchNgramByName(dataset.name);
 
       // build training data object
 

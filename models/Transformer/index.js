@@ -6,8 +6,7 @@ const { merge } = require('lodash');
 const dotenv = require('dotenv');
 
 const {
-  combineDocuments,
-  isLowerCase
+  combineDocuments
 } = require('../../utils');
 
 dotenv.config();
@@ -33,12 +32,12 @@ const FORMAT_PLAIN_TEXT = [
 
 const MATCH_TERMINATORS = new RegExp(/([.?!])\s*(?=[A-Z])/g);
 const MATCH_NON_ALPHANUMERIC = new RegExp(/[^a-zA-Z0-9]/);
-const MISSING_EMBEDDING_ERROR = 'Failed to look up embedding.';
+const MISSING_NGRAM_ERROR = 'Failed to look up n-gram.';
 const NOTIF_TRAINING = 'Training...';
 const NOTIF_END_OF_STATEMENT = 'End of sequence.';
 const NOTIF_UNKNOWN_TOKEN = 'Skipping unrecognized token.';
 const NOTIF_END_OF_DATA = 'End of training data.';
-const NOTIF_CREATING_EMBEDDING = 'Creating model embedding...';
+const NOTIF_CREATING_CONTEXT = 'Creating context...';
 const PARAMETER_CHUNK_SIZE = 50000;
 
 // Generator function to chunk arrays
@@ -55,8 +54,9 @@ module.exports = () => {
   let trainingText = '';
   let trainingTokens = [];
   let trainingTokenSequences = [];
-  let embedding = {};
+  let bigrams = {};
   let model = {};
+  let wordToVec8 = {};
 
   /**
    * getSingleTokenPrediction
@@ -65,9 +65,9 @@ module.exports = () => {
 
   const getSingleTokenPrediction = token => {
 
-    // lookup token in embeddings
+    // lookup token in bigrams
 
-    const tokens = embedding[token];
+    const tokens = bigrams[token];
 
     if (tokens) {
       const rankedTokens = [];
@@ -95,7 +95,7 @@ module.exports = () => {
       }
     }
 
-    const message = MISSING_EMBEDDING_ERROR;
+    const message = MISSING_NGRAM_ERROR;
 
     return {
       error: {
@@ -152,7 +152,7 @@ module.exports = () => {
         };
       }
 
-      const message = MISSING_EMBEDDING_ERROR;
+      const message = MISSING_NGRAM_ERROR;
 
       return {
         error: {
@@ -261,14 +261,19 @@ module.exports = () => {
 
   /**
    * createEmbedding
-   * Create a model embedding. Designed for words and
+   * Create Vec8s from n-grams. Designed for words and
    * phrases.
    */
 
-  const createEmbedding = updatedEmbedding => {
-    console.log(NOTIF_CREATING_EMBEDDING);
+  const createEmbedding = data => {
+    console.log(NOTIF_CREATING_CONTEXT);
 
-    embedding = updatedEmbedding;
+    bigrams = data;
+
+    // Preprocess vector embeddings with initial bigram
+    // assumptions and provide methods to the model
+
+    wordToVec8 = require('./wordToVec8')(bigrams);
 
     // split text into token sequences
     // and do some text formatting
@@ -278,14 +283,14 @@ module.exports = () => {
       .split('|')
       .map(toPlainText);
 
-    // create embeddings for known sequences
+    // create n-grams for known sequences
 
-    const sequenceEmbeddings = trainingTokenSequences.map(sequence => {
+    const ngrams = trainingTokenSequences.map(sequence => {
       let cursor;
 
       const words = sequence.split(' ');
 
-      const sequenceEmbedding = words
+      const ngram = words
         .reduce((a, b) => {
           if (typeof(cursor) === 'object') {
             cursor = cursor[b] = {};
@@ -296,21 +301,18 @@ module.exports = () => {
           return a;
         }, {});
 
-        return sequenceEmbedding;
+        return ngram;
     });
 
     // deep merge all token sequences into
     // a single hierarchy (for speed and convenience)
 
-    // const embeddingKeys = Object.keys(sequenceEmbeddings);
-    // const embeddingValues = Object.values(sequenceEmbeddings);
-
-    const embeddingsCollection = (
-      chunkArray(sequenceEmbeddings, PARAMETER_CHUNK_SIZE)
+    const bigramCollection = (
+      chunkArray(ngrams, PARAMETER_CHUNK_SIZE)
     );
 
-    for (const embeddings of embeddingsCollection) {
-      model = merge(model, ...embeddings);
+    for (const bigram of bigramCollection) {
+      model = merge(model, ...bigram);
     }
 
     console.log('Done.');
@@ -318,7 +320,7 @@ module.exports = () => {
 
   /**
    * lookup
-   * Look up embedding sequence
+   * Look up n-gram
    */
 
   const lookup = sequence => (
@@ -329,8 +331,8 @@ module.exports = () => {
 
   /**
    * train
-   * Rank tokens then create embeddings and save
-   * files as needed. Designed for words and phrases.
+   * Rank tokens then create embeddings.
+   * Designed for words and phrases.
    */
 
   const train = async dataset => {
@@ -373,32 +375,32 @@ module.exports = () => {
         return;
       }
 
-      if (!embedding[token]?.[nextToken]) {
-        embedding[token] = {
-          ...embedding[token],
+      if (!bigrams[token]?.[nextToken]) {
+        bigrams[token] = {
+          ...bigrams[token],
 
           [nextToken]: 0
         };
       }
 
-      embedding[token][nextToken]++;
+      bigrams[token][nextToken]++;
 
-      console.log(`Token "${nextToken}" ranked: ${embedding[token][nextToken]} (when following ${token}).`);
+      console.log(`Token "${nextToken}" ranked: ${bigrams[token][nextToken]} (when following ${token}).`);
     });
 
-    const embeddingPath = `${__root}/training/embeddings/${name}.json`;
+    const bigramsPath = `${__root}/training/bigrams/${name}.json`;
 
     await fs.writeFile(
-      embeddingPath, JSON.stringify(embedding)
+      bigramsPath, JSON.stringify(bigrams)
     );
 
-    console.log(`Wrote to file: ${embeddingPath}.`);
+    console.log(`Wrote to file: ${bigramsPath}.`);
 
     console.log(
-      `Training completed in ${(Date.now() - startTime) / 1000} seconds. The embedding for this data is located at "${embeddingPath}".`
+      `Training completed in ${(Date.now() - startTime) / 1000} seconds. The bigrams for this data is located at "${bigramsPath}".`
     );
 
-    createEmbedding(embedding);
+    createEmbedding(bigrams);
   };
 
   /**
@@ -434,6 +436,8 @@ module.exports = () => {
   // Transformer API
 
   return {
+    ...wordToVec8,
+
     getSingleTokenPrediction,
     getTokenPrediction,
     getTokenSequencePrediction,
