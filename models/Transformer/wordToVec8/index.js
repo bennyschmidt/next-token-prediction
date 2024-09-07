@@ -1,72 +1,56 @@
+const posSpecificityList = require('./pos');
+const { alphabet, vowels } = require('./letters');
+
 module.exports = bigrams => {
-  const posSpecificityList = [
-    'TO',
-    'CD',
-    'UH',
-    'FW',
-    'CC',
-    'EX',
-    'LS',
-    'RP',
-    'SYM',
-    'DT',
-    'WDT',
-    'MD',
-    'IN',
-    'POS',
-    'PRP',
-    'PRP$',
-    'RB',
-    'RBR',
-    'RBS',
-    'WRB',
-    'PDT',
-    'JJ',
-    'JJR',
-    'JJS',
-    'VB',
-    'VBD',
-    'VBG',
-    'VBN',
-    'VBP',
-    'VBZ',
-    'WP',
-    'WP$',
-    'NN',
-    'NNS',
-    'NNP',
-    'NNPS'
-  ];
 
-  const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
-  const vowels = 'aeiou'.split('');
+  /**
+   * N-gram
+   *
+   * getTokenPrevalence
+   * getMaxTokenPrevalence
+   * getMostFrequentNextToken
+   * getMostFrequentNextTokenValue
+   * getMaxTokenFrequency
+   * getMaxFrequency
+   */
 
-  const getTokenPrevalence = token => Object.keys(bigrams[token]).length;
+  const getTokenPrevalence = token => bigrams.hasOwnProperty(token)
+    ? Object.keys(bigrams[token]).length
+    : 0;
 
   const getMaxTokenPrevalence = () => Object.keys(bigrams)
     .map(key => getTokenPrevalence(key))
     .sort((a, b) => a > b ? 1 : -1)
     .pop();
 
-  const getMostFrequentNextToken = token => Object
+  const getMostFrequentNextToken = token => bigrams.hasOwnProperty(token) && Object
     .keys(bigrams[token])
-    .sort((a, b) => bigrams[token][a] > bigrams[token][b] ? 1 : -1)
+    .sort((a, b) => bigrams[token][a] - bigrams[token][b])
     .pop();
 
-  const getMostFrequentNextTokenValue = token => (
-    bigrams[token][getMostFrequentNextToken(token)]
-  );
+  const getMostFrequentNextTokenValue = token => bigrams.hasOwnProperty(token)
+    ? bigrams[token][getMostFrequentNextToken(token)]
+    : -1;
 
-  const getMaxTokenFrequency = token => Object
-    .values(bigrams[token])
-    .sort((a, b) => a > b ? 1 : -1)
-    .pop();
+  const getMaxTokenFrequency = token => bigrams.hasOwnProperty(token)
+    ? Object
+      .values(bigrams[token])
+      .sort((a, b) => a > b ? 1 : -1)
+      .pop()
+    : 0;
 
   const getMaxFrequency = () => Object
     .keys(bigrams)
     .map(getMaxTokenFrequency)
     .sort((a, b) => a > b ? 1 : -1)
     .pop();
+
+  /**
+   * Parts-of-speech
+   *
+   * getFirstVowel
+   * getPOSSpecificity
+   */
 
   const getFirstVowel = string => {
     const isVowel = character => (
@@ -82,7 +66,16 @@ module.exports = bigrams => {
 
   const getPOSSpecificity = tag => posSpecificityList.indexOf(tag);
 
-  const getSequenceEmbeddings = (sequence = '') => {
+  /**
+   * Embeddings
+   *
+   * toVecs
+   * getSum
+   * getDotProduct
+   * getSimilarityIndexByToken
+   */
+
+  const toVecs = (sequence = '') => {
     const embeddings = {};
 
     // tokenize
@@ -186,7 +179,7 @@ module.exports = bigrams => {
   );
 
   const getSimilarityIndexByToken = (token, sequence) => {
-    const embeddings = getSequenceEmbeddings(sequence);
+    const embeddings = toVecs(sequence);
 
     const products = {};
     const tokenEmbedding = embeddings[token];
@@ -206,15 +199,23 @@ module.exports = bigrams => {
   };
 
   return {
+    // N-gram prediction
+
     getTokenPrevalence,
     getMaxTokenPrevalence,
     getMostFrequentNextToken,
     getMostFrequentNextTokenValue,
     getMaxTokenFrequency,
     getMaxFrequency,
+
+    // Parts-of-speech analysis
+
     getFirstVowel,
     getPOSSpecificity,
-    getSequenceEmbeddings,
+
+    // Vector embeddings
+
+    toVecs,
     getSum,
     getDotProduct,
     getSimilarityIndexByToken

@@ -48,7 +48,7 @@ MyLanguageModel();
 
 Put this [`/training/`](https://github.com/bennyschmidt/next-token-prediction/tree/master/training) directory in the root of your project.
 
-Because training data was committed to this repo, you can optionally skip training, and just use the bootstrapped dataset and embeddings, like this:
+Because training data was committed to this repo, you can optionally skip training, and just use the bootstrapped training data, like this:
 
 ```javascript
 const { dirname } = require('path');

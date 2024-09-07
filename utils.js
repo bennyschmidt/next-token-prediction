@@ -26,13 +26,13 @@ module.exports = {
   },
 
   fetchNgramByName: async name => {
-    const embeddingFile = await fs.readFile(
+    const file = await fs.readFile(
       `${__root}/training/bigrams/${name}.json`
     );
 
-    const embedding = JSON.parse(embeddingFile.toString());
+    const ngram = JSON.parse(file.toString());
 
-    return embedding;
+    return ngram;
   },
 
   isLowerCase: letter => (

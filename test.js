@@ -65,11 +65,11 @@ const runTests = async () => {
 
   await withDataset(ParisDataset, 'Parisians');
 
-  // // e2e: Run training from bootstrap then query
+  // e2e: Run training from bootstrap then query
 
   await withBootstrap('sun');
 
-  // // e2e: Run training on user provided files
+  // e2e: Run training on user provided files
 
   await withFiles(['brave-new-world'], 'Society');
 };

@@ -25,7 +25,7 @@ module.exports = async ({
 } = {}) => {
   let datasetName = name || NEW_DATASET_NAME;
   let trainingData = null;
-  let decoder;
+  let transformer;
 
   /**
    * init
@@ -56,61 +56,60 @@ module.exports = async ({
 
       const text = await combineDocuments(dataset.files);
 
-      // load the corresponding embedding file
+      // load the corresponding bigrams
 
-      const embedding = await fetchNgramByName(dataset.name);
+      const bigrams = await fetchNgramByName(dataset.name);
 
       // build training data object
 
       trainingData = {
         text,
-        embedding
+        bigrams
       };
     }
 
     /**
-     * Instantiate a text decoder either from
+     * Instantiate a text transformer either from
      * existing training data or by providing files
      */
 
     if (trainingData) {
 
       // Skips initial extraction and training
-      // just instantiates the model with embeddings
+      // just instantiates the model with bigrams
 
-      decoder = fromTrainingData(trainingData);
+      transformer = fromTrainingData(trainingData);
     } else {
 
       // Performs an intensive training operation
       // using provided files, creating an elaborate
       // model structure and corresponding values
-      // (embeddings)
 
-      decoder = await fromFiles(files);
+      transformer = await fromFiles(files);
     }
   };
 
   /**
    * fromTrainingData
-   * Create a new decoder model with new text
-   * and embedding
+   * Create a new transformer model with new text
+   * and embeddings
    */
 
   const fromTrainingData = ({
     text,
-    embedding: updatedEmbedding
+    bigrams
   }) => {
     const textTransformer = Transformer();
 
     textTransformer.ingest(text);
-    textTransformer.createEmbedding(updatedEmbedding);
+    textTransformer.createEmbedding(bigrams);
 
     return textTransformer;
   };
 
   /**
    * fromFiles
-   * Create a new decoder model from .txt files
+   * Create a new transformer model from .txt files
    * (if none, default to the bootstrap)
    */
 
@@ -119,7 +118,7 @@ module.exports = async ({
 
     if (files) {
       await textTransformer.train({
-        name,
+        name: datasetName,
         files
       });
     } else {
@@ -137,18 +136,20 @@ module.exports = async ({
 
   /**
    * complete
-   * Pass query to the decoder and return
+   * Pass query to the transformer and return
    * the highest-ranked completion
    */
 
-  const complete = query => decoder.getCompletions(query).completion;
+  const complete = query => (
+    transformer.getCompletions(query).completion
+  );
 
   // Language API (extends Transformer)
 
   await init();
 
   return {
-    ...decoder,
+    ...transformer,
 
     fromTrainingData,
     fromFiles,

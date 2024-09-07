@@ -5,6 +5,8 @@ const fs = require('fs').promises;
 const { merge } = require('lodash');
 const dotenv = require('dotenv');
 
+const WordToVec8 = require('./wordToVec8');
+
 const {
   combineDocuments
 } = require('../../utils');
@@ -50,29 +52,41 @@ function* chunkArray (array, chunkSize) {
   }
 }
 
+// In-memory representation of context data
+
+const Context = {
+  trie: {},
+  bigrams: {}
+};
+
 module.exports = () => {
   let trainingText = '';
   let trainingTokens = [];
   let trainingTokenSequences = [];
-  let bigrams = {};
-  let model = {};
   let wordToVec8 = {};
 
   /**
    * getSingleTokenPrediction
    * Predict the next token (agnostic)
+   *
+   * Uses n-gram and wordToVec8.
    */
 
   const getSingleTokenPrediction = token => {
+    // wordToVec8 transform
 
-    // lookup token in bigrams
+    const wordToVec8Prediction = (
+      wordToVec8.getMostFrequentNextToken(token)
+    );
 
-    const tokens = bigrams[token];
+    // n-gram lookup
+
+    const tokens = Context.bigrams[token];
 
     if (tokens) {
       const rankedTokens = [];
 
-      for (const rankedToken in tokens) {
+      for (const rankedToken of tokens) {
         rankedTokens.push([rankedToken, tokens[rankedToken]]);
       }
 
@@ -83,14 +97,16 @@ module.exports = () => {
       const highest = rankedTokens[0];
       const highestRankedToken = highest[0];
 
-      // return the highest ranked token and a top k sample
+      // return the highest ranked token & top k sample
+      // and a wordToVec8 prediction for comparison
 
       if (highestRankedToken) {
         return {
           token: highestRankedToken,
           rankedTokenList: rankedTokens
             .map(([_token]) => _token)
-            .slice(-RANKING_BATCH_SIZE)
+            .slice(-RANKING_BATCH_SIZE),
+          wordToVec8Prediction
         };
       }
     }
@@ -102,7 +118,8 @@ module.exports = () => {
         message
       },
       token: null,
-      rankedTokenList: []
+      rankedTokenList: [],
+      wordToVec8Prediction
     };
   };
 
@@ -110,10 +127,11 @@ module.exports = () => {
    * getTokenPrediction
    * Predict the next token or token sequence
    * (agnostic)
+   *
+   * Uses n-gram and wordToVec8.
    */
 
   const getTokenPrediction = token => {
-
     // lookup token in model
 
     const rankedTokens = Object.keys(
@@ -131,24 +149,28 @@ module.exports = () => {
 
     const highest = rankedTokens[0];
 
+    const {
+      token: singleTokenPrediction,
+      rankedTokenList: singleTokenPredictionList,
+      wordToVec8Prediction
+    } = getSingleTokenPrediction(token);
+
+
     // return highest ranked token and a top k sample
     // along with an error message (if any)
 
     if (highest) {
       return {
         token: highest,
-        rankedTokenList: rankedTokens.slice(-RANKING_BATCH_SIZE)
+        rankedTokenList: rankedTokens.slice(-RANKING_BATCH_SIZE),
+        wordToVec8Prediction
       };
     } else {
-      const {
-        token: singleTokenPrediction,
-        rankedTokenList: singleTokenPredictionList
-      } = getSingleTokenPrediction(token);
-
       if (singleTokenPrediction) {
         return {
           token: singleTokenPrediction.replace(/\\n/g, ' ').trim(),
-          rankedTokenList: singleTokenPredictionList
+          rankedTokenList: singleTokenPredictionList,
+          wordToVec8Prediction
         };
       }
 
@@ -159,7 +181,8 @@ module.exports = () => {
           message
         },
         token: null,
-        rankedTokenList: []
+        rankedTokenList: [],
+        wordToVec8Prediction: null
       };
     }
   };
@@ -168,6 +191,8 @@ module.exports = () => {
    * getTokenSequencePrediction
    * Predict the next sequence of tokens.
    * Designed for words and phrases.
+   *
+   * Uses n-gram.
    */
 
   const getTokenSequencePrediction = (token, sequenceLength = 2) => {
@@ -221,6 +246,8 @@ module.exports = () => {
    * getCompletions
    * Complete an input and provide a ranked list
    * of alternatives. Designed for words and phrases.
+   *
+   * Uses n-gram.
    */
 
   const getCompletions = input => {
@@ -261,19 +288,17 @@ module.exports = () => {
 
   /**
    * createEmbedding
-   * Create Vec8s from n-grams. Designed for words and
-   * phrases.
+   * Bigram-to-Vec8, designed for words
+   * and phrases.
    */
 
-  const createEmbedding = data => {
+  const createEmbedding = bigrams => {
     console.log(NOTIF_CREATING_CONTEXT);
 
-    bigrams = data;
+    // Pre-process vector embeddings with initial
+    // bigram assumptions
 
-    // Preprocess vector embeddings with initial bigram
-    // assumptions and provide methods to the model
-
-    wordToVec8 = require('./wordToVec8')(bigrams);
+    wordToVec8 = WordToVec8(bigrams);
 
     // split text into token sequences
     // and do some text formatting
@@ -312,7 +337,7 @@ module.exports = () => {
     );
 
     for (const bigram of bigramCollection) {
-      model = merge(model, ...bigram);
+      Context.trie = merge(Context.trie, ...bigram);
     }
 
     console.log('Done.');
@@ -320,13 +345,13 @@ module.exports = () => {
 
   /**
    * lookup
-   * Look up n-gram
+   * Look up n-gram by token sequence
    */
 
   const lookup = sequence => (
     sequence
       .split(/ /)
-      .reduce((a, b) => a?.[b], model) || {}
+      .reduce((a, b) => a?.[b], Context.trie) || {}
   );
 
   /**
@@ -336,6 +361,8 @@ module.exports = () => {
    */
 
   const train = async dataset => {
+    // load data
+
     const { name, files } = dataset;
 
     const startTime = Date.now();
@@ -344,9 +371,12 @@ module.exports = () => {
 
     trainingText = await combineDocuments(files);
 
+    // tokenize
+
     trainingTokens = trainingText.split(' ');
 
     const tokens = [...trainingTokens];
+    const bigrams = {};
 
     tokens.forEach((token, index) => {
       // End statement on punctuation
@@ -388,10 +418,12 @@ module.exports = () => {
       console.log(`Token "${nextToken}" ranked: ${bigrams[token][nextToken]} (when following ${token}).`);
     });
 
+    // save weights to file
+
     const bigramsPath = `${__root}/training/bigrams/${name}.json`;
 
     await fs.writeFile(
-      bigramsPath, JSON.stringify(bigrams)
+      bigramsPath, JSON.stringify(Context.bigrams)
     );
 
     console.log(`Wrote to file: ${bigramsPath}.`);
@@ -399,6 +431,13 @@ module.exports = () => {
     console.log(
       `Training completed in ${(Date.now() - startTime) / 1000} seconds. The bigrams for this data is located at "${bigramsPath}".`
     );
+
+    // keep a reference in memory for some NLP
+    // tasks
+
+    Context.bigrams = bigrams;
+
+    // create vector embeddings from weights
 
     createEmbedding(bigrams);
   };
@@ -436,14 +475,21 @@ module.exports = () => {
   // Transformer API
 
   return {
-    ...wordToVec8,
+    // Utilities
+
+    ingest,
+    train,
+    createEmbedding,
+
+    // N-gram prediction
 
     getSingleTokenPrediction,
     getTokenPrediction,
     getTokenSequencePrediction,
     getCompletions,
-    createEmbedding,
-    train,
-    ingest
+
+    // wordToVec8 prediction
+
+    ...wordToVec8
   };
 };
