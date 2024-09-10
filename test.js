@@ -3,7 +3,6 @@ const __root = dirname(require.main.filename);
 
 const { Language: LanguageModel } = require('./models');
 const OpenSourceBooksDataset = require(`${__root}/training/datasets/OpenSourceBooks`);
-const ParisDataset = require(`${__root}/training/datasets/Paris`);
 
 const withDataset = async (dataset, query) => {
   const agent = await LanguageModel({
@@ -55,23 +54,21 @@ const runTests = async () => {
   // Unit: Run different queries in isolation
   //       with different datasets
 
-  await withDataset(OpenSourceBooksDataset, 'what');
+  await withDataset(OpenSourceBooksDataset, 'luckily');
 
-  await withDataset(OpenSourceBooksDataset, 'dolphins');
+  await withDataset(OpenSourceBooksDataset, 'with all');
 
-  await withDataset(OpenSourceBooksDataset, 'tree');
+  await withDataset(OpenSourceBooksDataset, 'night');
 
-  await withDataset(OpenSourceBooksDataset, 'happily');
-
-  await withDataset(ParisDataset, 'Parisians');
+  await withDataset(OpenSourceBooksDataset, 'unless');
 
   // e2e: Run training from bootstrap then query
 
-  await withBootstrap('sun');
+  await withBootstrap('people');
 
   // e2e: Run training on user provided files
 
-  await withFiles(['brave-new-world'], 'Society');
+  await withFiles(['liber-primus'], 'eloquence');
 };
 
 runTests();

@@ -5,7 +5,7 @@ const fs = require('fs').promises;
 const { merge } = require('lodash');
 const dotenv = require('dotenv');
 
-const WordToVec8 = require('./wordToVec8');
+const WordToVec9 = require('./wordToVec9');
 
 const {
   combineDocuments
@@ -40,6 +40,7 @@ const NOTIF_END_OF_STATEMENT = 'End of sequence.';
 const NOTIF_UNKNOWN_TOKEN = 'Skipping unrecognized token.';
 const NOTIF_END_OF_DATA = 'End of training data.';
 const NOTIF_CREATING_CONTEXT = 'Creating context...';
+const NOTIF_CREATING_EMBEDDINGS = 'Creating embeddings...';
 const PARAMETER_CHUNK_SIZE = 50000;
 
 // Generator function to chunk arrays
@@ -56,86 +57,29 @@ function* chunkArray (array, chunkSize) {
 
 const Context = {
   trie: {},
-  bigrams: {}
+  bigrams: {},
+  tokens: [],
+  sequences: [],
+  embeddings: []
 };
 
 module.exports = () => {
   let trainingText = '';
-  let trainingTokens = [];
-  let trainingTokenSequences = [];
-  let wordToVec8 = {};
-
-  /**
-   * getSingleTokenPrediction
-   * Predict the next token (agnostic)
-   *
-   * Uses n-gram and wordToVec8.
-   */
-
-  const getSingleTokenPrediction = token => {
-    // wordToVec8 transform
-
-    const wordToVec8Prediction = (
-      wordToVec8.getMostFrequentNextToken(token)
-    );
-
-    // n-gram lookup
-
-    const tokens = Context.bigrams[token];
-
-    if (tokens) {
-      const rankedTokens = [];
-
-      for (const rankedToken of tokens) {
-        rankedTokens.push([rankedToken, tokens[rankedToken]]);
-      }
-
-      // rank tokens by weight
-
-      rankedTokens.sort((a, b) => a[1] - b[1]);
-
-      const highest = rankedTokens[0];
-      const highestRankedToken = highest[0];
-
-      // return the highest ranked token & top k sample
-      // and a wordToVec8 prediction for comparison
-
-      if (highestRankedToken) {
-        return {
-          token: highestRankedToken,
-          rankedTokenList: rankedTokens
-            .map(([_token]) => _token)
-            .slice(-RANKING_BATCH_SIZE),
-          wordToVec8Prediction
-        };
-      }
-    }
-
-    const message = MISSING_NGRAM_ERROR;
-
-    return {
-      error: {
-        message
-      },
-      token: null,
-      rankedTokenList: [],
-      wordToVec8Prediction
-    };
-  };
+  let wordToVec9 = {};
 
   /**
    * getTokenPrediction
    * Predict the next token or token sequence
    * (agnostic)
    *
-   * Uses n-gram and wordToVec8.
+   * Uses n-gram and wordToVec9.
    */
 
   const getTokenPrediction = token => {
-    // lookup token in model
+    // ngram search
 
     const rankedTokens = Object.keys(
-      lookup(
+      ngramSearch(
         token.replace(
           token.charAt(0),
           token.charAt(0).toUpperCase()
@@ -143,34 +87,31 @@ module.exports = () => {
       )
     );
 
-    // rank tokens by weight
+    // rank by weight
 
     rankedTokens.sort((a, b) => a[1] - b[1]);
 
-    const highest = rankedTokens[0];
+    const highestRankedToken = rankedTokens[0];
 
-    const {
-      token: singleTokenPrediction,
-      rankedTokenList: singleTokenPredictionList,
-      wordToVec8Prediction
-    } = getSingleTokenPrediction(token);
+    // wordToVec9 search
 
+    const wordToVec9Prediction = (
+      wordToVec9.getMostFrequentNextToken(token) || ''
+    ).replace(/\\n/g, ' ').trim();
 
     // return highest ranked token and a top k sample
     // along with an error message (if any)
 
-    if (highest) {
+    if (highestRankedToken) {
       return {
-        token: highest,
-        rankedTokenList: rankedTokens.slice(-RANKING_BATCH_SIZE),
-        wordToVec8Prediction
+        token: highestRankedToken,
+        rankedTokenList: rankedTokens.slice(-RANKING_BATCH_SIZE)
       };
     } else {
-      if (singleTokenPrediction) {
+      if (wordToVec9Prediction) {
         return {
-          token: singleTokenPrediction.replace(/\\n/g, ' ').trim(),
-          rankedTokenList: singleTokenPredictionList,
-          wordToVec8Prediction
+          token: wordToVec9Prediction,
+          rankedTokenList: [wordToVec9Prediction]
         };
       }
 
@@ -181,8 +122,7 @@ module.exports = () => {
           message
         },
         token: null,
-        rankedTokenList: [],
-        wordToVec8Prediction: null
+        rankedTokenList: []
       };
     }
   };
@@ -287,68 +227,70 @@ module.exports = () => {
   };
 
   /**
-   * createEmbedding
-   * Bigram-to-Vec8, designed for words
-   * and phrases.
+   * createContext
+   * Designed for words and phrases.
    */
 
-  const createEmbedding = bigrams => {
+  const createContext = (bigrams, embeddings) => {
+    // Store current context in memory as a trie
+
     console.log(NOTIF_CREATING_CONTEXT);
 
-    // Pre-process vector embeddings with initial
-    // bigram assumptions
+    // split sequences
 
-    wordToVec8 = WordToVec8(bigrams);
-
-    // split text into token sequences
-    // and do some text formatting
-
-    trainingTokenSequences = trainingText.replace(/\n/g, ' ')
+    Context.sequences = trainingText.replace(/\n/g, ' ')
       .replace(MATCH_TERMINATORS, '$1|')
       .split('|')
       .map(toPlainText);
 
-    // create n-grams for known sequences
+    // create n-grams of all sequences and
+    // vectorize each word of each sequence
 
-    const ngrams = trainingTokenSequences.map(sequence => {
+    const ngrams = Context.sequences.map(sequence => {
       let cursor;
 
       const words = sequence.split(' ');
 
-      const ngram = words
-        .reduce((a, b) => {
-          if (typeof(cursor) === 'object') {
-            cursor = cursor[b] = {};
-          } else {
-            cursor = a[b] = {};
-          }
+      const ngram = words.reduce((a, b) => {
+        if (typeof(cursor) === 'object') {
+          cursor = cursor[b] = {};
+        } else {
+          cursor = a[b] = {};
+        }
 
-          return a;
-        }, {});
+        return a;
+      }, {});
 
-        return ngram;
+      return ngram;
     });
 
-    // deep merge all token sequences into
-    // a single hierarchy (for speed and convenience)
+    // deep merge all n-gram sequences
 
     const bigramCollection = (
       chunkArray(ngrams, PARAMETER_CHUNK_SIZE)
     );
 
+    // keep references in memory
+
     for (const bigram of bigramCollection) {
       Context.trie = merge(Context.trie, ...bigram);
     }
+
+    if (!wordToVec9?.toVecs) {
+      wordToVec9 = WordToVec9(bigrams);
+    }
+
+    Context.embeddings = embeddings;
 
     console.log('Done.');
   };
 
   /**
-   * lookup
+   * ngramSearch
    * Look up n-gram by token sequence
    */
 
-  const lookup = sequence => (
+  const ngramSearch = sequence => (
     sequence
       .split(/ /)
       .reduce((a, b) => a?.[b], Context.trie) || {}
@@ -361,8 +303,6 @@ module.exports = () => {
    */
 
   const train = async dataset => {
-    // load data
-
     const { name, files } = dataset;
 
     const startTime = Date.now();
@@ -373,18 +313,22 @@ module.exports = () => {
 
     // tokenize
 
-    trainingTokens = trainingText.split(' ');
+    Context.trainingTokens = trainingText.split(' ');
 
-    const tokens = [...trainingTokens];
+    // Weights
+
+    const tokens = [...Context.trainingTokens];
     const bigrams = {};
 
-    tokens.forEach((token, index) => {
+    for (const token of tokens) {
+      const index = tokens.indexOf(token);
+
       // End statement on punctuation
 
       if (token.match(MATCH_PUNCTUATION)) {
         console.log(NOTIF_END_OF_STATEMENT);
 
-        return;
+        continue;
       }
 
       // Skip unparsable tokens
@@ -392,7 +336,7 @@ module.exports = () => {
       if (MATCH_NON_ALPHANUMERIC.test(token)) {
         console.log(NOTIF_UNKNOWN_TOKEN);
 
-        return;
+        continue;
       }
 
       let nextToken = tokens[index + 1];
@@ -402,7 +346,7 @@ module.exports = () => {
       if (!nextToken) {
         console.log(NOTIF_END_OF_DATA);
 
-        return;
+        continue;
       }
 
       if (!bigrams[token]?.[nextToken]) {
@@ -416,30 +360,71 @@ module.exports = () => {
       bigrams[token][nextToken]++;
 
       console.log(`Token "${nextToken}" ranked: ${bigrams[token][nextToken]} (when following ${token}).`);
-    });
+    }
 
     // save weights to file
 
-    const bigramsPath = `${__root}/training/bigrams/${name}.json`;
+    const bigramsPath = `${__root}/training/ngrams/${name}.json`;
 
     await fs.writeFile(
-      bigramsPath, JSON.stringify(Context.bigrams)
+      bigramsPath,
+      JSON.stringify(bigrams)
     );
 
     console.log(`Wrote to file: ${bigramsPath}.`);
 
     console.log(
-      `Training completed in ${(Date.now() - startTime) / 1000} seconds. The bigrams for this data is located at "${bigramsPath}".`
+      `Training completed in ${(Date.now() - startTime) / 1000} seconds.`
     );
 
-    // keep a reference in memory for some NLP
-    // tasks
+    // keep a reference in memory
 
     Context.bigrams = bigrams;
 
-    // create vector embeddings from weights
+    // Embeddings
 
-    createEmbedding(bigrams);
+    const toVecsStart = Date.now();
+    const embeddings = [];
+
+    if (!wordToVec9?.toVecs) {
+      wordToVec9 = WordToVec9(bigrams);
+    }
+
+    console.log(NOTIF_CREATING_EMBEDDINGS);
+
+    // split sequences
+
+    Context.sequences = trainingText.replace(/\n/g, ' ')
+      .replace(MATCH_TERMINATORS, '$1|')
+      .split('|')
+      .map(toPlainText);
+
+    // vectorize each word of each sequence
+
+    for (const sequence of Context.sequences) {
+      embeddings.push(
+        wordToVec9.toVecs(sequence)
+      );
+    }
+
+    // save tensor to file
+
+    const embeddingsPath = `${__root}/training/tensors/${name}.json`;
+
+    await fs.writeFile(
+      embeddingsPath,
+      JSON.stringify(embeddings)
+    );
+
+    console.log(`Wrote to file: ${embeddingsPath}.`);
+
+    console.log(
+      `Embeddings computed in ${(Date.now() - toVecsStart) / 1000} seconds.`
+    );
+
+    // create in-memory context
+
+    createContext(bigrams, embeddings);
   };
 
   /**
@@ -449,7 +434,7 @@ module.exports = () => {
 
   const ingest = text => {
     trainingText = text;
-    trainingTokens = trainingText.split(' ');
+    Context.trainingTokens = trainingText.split(' ');
   };
 
   /**
@@ -479,17 +464,16 @@ module.exports = () => {
 
     ingest,
     train,
-    createEmbedding,
+    createContext,
 
     // N-gram prediction
 
-    getSingleTokenPrediction,
     getTokenPrediction,
     getTokenSequencePrediction,
     getCompletions,
 
-    // wordToVec8 prediction
+    // wordToVec9 prediction
 
-    ...wordToVec8
+    ...wordToVec9
   };
 };

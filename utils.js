@@ -27,12 +27,22 @@ module.exports = {
 
   fetchNgramByName: async name => {
     const file = await fs.readFile(
-      `${__root}/training/bigrams/${name}.json`
+      `${__root}/training/ngrams/${name}.json`
     );
 
     const ngram = JSON.parse(file.toString());
 
     return ngram;
+  },
+
+  fetchTensorByName: async name => {
+    const file = await fs.readFile(
+      `${__root}/training/tensors/${name}.json`
+    );
+
+    const tensor = JSON.parse(file.toString());
+
+    return tensor;
   },
 
   isLowerCase: letter => (

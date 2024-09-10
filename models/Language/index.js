@@ -5,10 +5,11 @@ const Transformer = require('../Transformer');
 
 const {
   combineDocuments,
-  fetchNgramByName
+  fetchNgramByName,
+  // fetchTensorByName
 } = require('../../utils');
 
-const DEFAULT_DATASET = require(`${__root}/training/datasets/OpenSourceBooks`);
+const DEFAULT_DATASET = require(`${__root}/training/datasets/Bootstrap`);
 
 const NEW_DATASET_NAME = 'New Dataset';
 
@@ -29,7 +30,7 @@ module.exports = async ({
 
   /**
    * init
-   * Train, create embeddings, and initialize the
+   * Train, create context and initialize the
    * model API for use
    */
 
@@ -60,11 +61,16 @@ module.exports = async ({
 
       const bigrams = await fetchNgramByName(dataset.name);
 
+      // load the corresponding embeddings
+
+      // const embeddings = await fetchTensorByName(dataset.name);
+
       // build training data object
 
       trainingData = {
         text,
-        bigrams
+        bigrams,
+        embeddings: []
       };
     }
 
@@ -97,12 +103,13 @@ module.exports = async ({
 
   const fromTrainingData = ({
     text,
-    bigrams
+    bigrams,
+    embeddings
   }) => {
     const textTransformer = Transformer();
 
     textTransformer.ingest(text);
-    textTransformer.createEmbedding(bigrams);
+    textTransformer.createContext(bigrams, embeddings);
 
     return textTransformer;
   };
