@@ -1,8 +1,7 @@
-const posSpecificityList = require('./pos');
+const posTags = require('./pos');
 const { alphabet, vowels } = require('./letters');
 
 const tokenizeSequence = sequence => sequence
-  .toLowerCase()
   .trim()
   .replace(/[\p{P}$+<=>^`|~]/gu, '')
   .split(' ');
@@ -55,7 +54,7 @@ module.exports = bigrams => {
    * Parts-of-speech
    *
    * getFirstVowel
-   * getPOSSpecificity
+   * getLinearPOS
    */
 
   const getVowels = string => {
@@ -86,7 +85,7 @@ module.exports = bigrams => {
     }
   };
 
-  const getPOSSpecificity = tag => posSpecificityList.indexOf(tag);
+  const getLinearPOS = tag => posTags.indexOf(tag);
 
   /**
    * Embeddings
@@ -112,47 +111,20 @@ module.exports = bigrams => {
       // pos tag
 
       const posTag = 'RB';
-
-      // frequency
-
-      const frequency = getMostFrequentNextTokenValue(token);
-
-      // prevalence
-
-      const prevalence = getTokenPrevalence(token);
-
-      // specificity
-
-      const specificity = getPOSSpecificity(posTag);
-
-      // length
-
-      const { length } = token;
-
-      // first letter
-
-      const firstLetter = alphabet.indexOf(token.charAt(0));
-
-      // last letter
-
+      const posLinear = getLinearPOS(posTag);
       const lastLetter = alphabet.indexOf(token.charAt(token.length - 1));
-
-      // first vowel
-
-      const firstVowel = alphabet.indexOf(getFirstVowel(token));
-
-      // last vowel
-
       const lastVowel = alphabet.indexOf(getFirstVowel(token.split('').reverse().join('')));
-
-      // vowel count
-
       const vowelCount = getVowels(token).length << 0;
+      const firstLetter = alphabet.indexOf(token.charAt(0));
+      const firstVowel = alphabet.indexOf(getFirstVowel(token));
+      const prevalence = getTokenPrevalence(token);
+      const frequency = getMostFrequentNextTokenValue(token);
+      const { length } = token;
 
       // Embeddings
 
       const prenormalized = [
-        specificity,
+        posLinear,
         lastLetter,
         lastVowel,
         vowelCount,
@@ -163,7 +135,7 @@ module.exports = bigrams => {
         length
       ];
 
-      const maxSpecificity = posSpecificityList.length - 1;
+      const maxPosLinear = posTags.length - 1;
       const maxLastLetter = 25;
       const maxLastVowel = 25;
       const maxVowelCount = 10;
@@ -174,7 +146,7 @@ module.exports = bigrams => {
       const maxLength = 20;
 
       const maximums = [
-        maxSpecificity,
+        maxPosLinear,
         maxLastLetter,
         maxLastVowel,
         maxVowelCount,
@@ -213,6 +185,8 @@ module.exports = bigrams => {
     const products = {};
 
     embeddings.forEach((embedding, index) => {
+      if (index === tokenIndex) return;
+
       const dotProduct = getDotProduct(tokenEmbedding, embedding);
       const tokenComparison = tokenizeSequence(sequence)[index];
 
@@ -240,7 +214,7 @@ module.exports = bigrams => {
 
     getVowels,
     getFirstVowel,
-    getPOSSpecificity,
+    getLinearPOS,
 
     // Vector embeddings
 

@@ -10,7 +10,6 @@ module.exports = {
     'david-copperfield',
     'design-of-wood-frame-structure-for-permanence',
     'elevator-systems-of-the-eiffel-tower',
-    'fact-bot',
     'facts-and-sentences',
     'heart-of-darkness',
     'human-physiology',
