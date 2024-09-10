@@ -212,12 +212,12 @@ module.exports = bigrams => {
     const tokenEmbedding = embeddings[tokenIndex];
     const products = {};
 
-    for (const tokenComparison of Object.keys(embeddings)) {
-      const embedding = embeddings[tokenComparison];
+    embeddings.forEach((embedding, index) => {
       const dotProduct = getDotProduct(tokenEmbedding, embedding);
+      const tokenComparison = tokenizeSequence(sequence)[index];
 
       products[tokenComparison] = dotProduct;
-    }
+    });
 
     const similarityIndex = Object.keys(products).sort((a, b) => (
       products[a] > products[b] ? 1 : -1
