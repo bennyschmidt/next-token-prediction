@@ -9,7 +9,7 @@ const {
   // fetchTensorByName
 } = require('../../utils');
 
-const DEFAULT_DATASET = require(`${__root}/training/datasets/Bootstrap`);
+const DEFAULT_DATASET = require(`${__root}/training/datasets/OpenSourceBooks`);
 
 const NEW_DATASET_NAME = 'New Dataset';
 

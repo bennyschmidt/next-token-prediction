@@ -63,7 +63,7 @@ TURNS, .
 
 
 
-25
+
 
 
 III.
@@ -75,7 +75,7 @@ The Story Begins,
 .
 
 
-38
+
 
 
 IV.
@@ -87,7 +87,7 @@ The Golden Age, .
 .
 
 
-52
+
 
 
 V.
@@ -99,7 +99,7 @@ Sunset,
 .
 
 
-63
+
 
 
 VI.
@@ -110,7 +110,7 @@ The Machine is Lost,
 
 
 
-79
+
 
 
 VII.
@@ -121,7 +121,7 @@ The Strange Animal,
 
 
 
-92
+
 
 
 VIII.
@@ -132,7 +132,7 @@ The Morlocks,
 
 
 
-120
+
 
 
 IX.
@@ -144,7 +144,7 @@ When the Night Came
 ,
 
 
-134
+
 
 
 X.
@@ -162,7 +162,7 @@ celain,
 
 
 
-151
+
 
 
 XI.
@@ -184,7 +184,7 @@ Forest,
 .
 
 
-168
+
 
 
 XII.
@@ -202,7 +202,7 @@ Sphinx,
 
 
 
-185
+
 
 
 XIII.
@@ -213,7 +213,7 @@ The Further Vision,
 
 
 
-192
+
 
 
 XIV.
@@ -232,7 +232,7 @@ er's Story, .
 .
 
 
-207
+
 
 
 
@@ -2292,7 +2292,7 @@ portal into the sunlit world again as
 soon as my hunger was satisfied. I
 was continually meeting more of these
 men of the future, who would follow
-63
+
 
 
 
@@ -2798,7 +2798,7 @@ removed out of my reach.
 
 "My breath came with pain. I
 
-79
+
 
 
 
@@ -3195,7 +3195,7 @@ doors under the sphinx, as much as
 possible in a corner of my memory
 until my growing knowledge would
 
-92
+
 
 
 
@@ -4563,7 +4563,7 @@ and malign. Instinctively I loathed
 them. Before, I had felt as a man
 might feel who had fallen into a pit ;
 my concern was with the pit and
-134
+
 
 
 
@@ -5629,7 +5629,7 @@ ress was slower than I had antici-
 pated, and besides, Weena was tired.
 I, too, began to suffer from sleepi-
 
-168
+
 
 
 
@@ -6185,7 +6185,7 @@ had saved Weena, and that suddenly
 gave me a keen stab of pain. And
 like blots upon the landscape rose
 
-185
+
 
 
 
