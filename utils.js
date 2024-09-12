@@ -25,24 +25,14 @@ module.exports = {
     return text;
   },
 
-  fetchNgramByName: async name => {
+  fetchEmbeddings: async name => {
     const file = await fs.readFile(
-      `${__root}/training/ngrams/${name}.json`
+      `${__root}/training/embeddings/${name}.json`
     );
 
-    const ngram = JSON.parse(file.toString());
+    const embeddings = JSON.parse(file.toString());
 
-    return ngram;
-  },
-
-  fetchTensorByName: async name => {
-    const file = await fs.readFile(
-      `${__root}/training/tensors/${name}.json`
-    );
-
-    const tensor = JSON.parse(file.toString());
-
-    return tensor;
+    return embeddings;
   },
 
   isLowerCase: letter => (

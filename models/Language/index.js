@@ -5,11 +5,11 @@ const Transformer = require('../Transformer');
 
 const {
   combineDocuments,
-  fetchNgramByName,
+  fetchEmbeddings,
   // fetchTensorByName
 } = require('../../utils');
 
-const DEFAULT_DATASET = require(`${__root}/training/datasets/OpenSourceBooks`);
+const DEFAULT_DATASET = require(`${__root}/training/datasets/Paris`);
 
 const NEW_DATASET_NAME = 'New Dataset';
 
@@ -46,8 +46,8 @@ module.exports = async ({
     }
 
     /**
-     * If a dataset is provided, create an embedding
-     * for the language model to use
+     * If a dataset is provided, create a model
+     * from training data
      */
 
     if (dataset?.name) {
@@ -57,20 +57,15 @@ module.exports = async ({
 
       const text = await combineDocuments(dataset.files);
 
-      // load the corresponding bigrams
-
-      const bigrams = await fetchNgramByName(dataset.name);
-
       // load the corresponding embeddings
 
-      // const embeddings = await fetchTensorByName(dataset.name);
+      const embeddings = await fetchEmbeddings(dataset.name);
 
       // build training data object
 
       trainingData = {
         text,
-        bigrams,
-        embeddings: []
+        embeddings
       };
     }
 
@@ -82,7 +77,7 @@ module.exports = async ({
     if (trainingData) {
 
       // Skips initial extraction and training
-      // just instantiates the model with bigrams
+      // just instantiates the model with embeddings
 
       transformer = fromTrainingData(trainingData);
     } else {
@@ -97,19 +92,17 @@ module.exports = async ({
 
   /**
    * fromTrainingData
-   * Create a new transformer model with new text
-   * and embeddings
+   * Create a new transformer model
    */
 
   const fromTrainingData = ({
     text,
-    bigrams,
     embeddings
   }) => {
     const textTransformer = Transformer();
 
     textTransformer.ingest(text);
-    textTransformer.createContext(bigrams, embeddings);
+    textTransformer.createContext(embeddings);
 
     return textTransformer;
   };

@@ -5,8 +5,6 @@ const fs = require('fs').promises;
 const { merge } = require('lodash');
 const dotenv = require('dotenv');
 
-const WordToVec9 = require('./wordToVec9');
-
 const {
   combineDocuments
 } = require('../../utils');
@@ -40,8 +38,9 @@ const NOTIF_END_OF_STATEMENT = 'End of sequence.';
 const NOTIF_UNKNOWN_TOKEN = 'Skipping unrecognized token.';
 const NOTIF_END_OF_DATA = 'End of training data.';
 const NOTIF_CREATING_CONTEXT = 'Creating context...';
-const NOTIF_CREATING_EMBEDDINGS = 'Creating embeddings...';
 const PARAMETER_CHUNK_SIZE = 50000;
+const DIMENSIONS = 9;
+const UNIT = 0.09;
 
 // Generator function to chunk arrays
 // Use with `PARAMETER_CHUNK_SIZE` for models
@@ -57,22 +56,18 @@ function* chunkArray (array, chunkSize) {
 
 const Context = {
   trie: {},
-  bigrams: {},
+  embeddings: {},
   tokens: [],
-  sequences: [],
-  embeddings: []
+  sequences: []
 };
 
 module.exports = () => {
   let trainingText = '';
-  let wordToVec9 = {};
 
   /**
    * getTokenPrediction
    * Predict the next token or token sequence
    * (agnostic)
-   *
-   * Uses n-gram and wordToVec9.
    */
 
   const getTokenPrediction = token => {
@@ -93,12 +88,6 @@ module.exports = () => {
 
     const highestRankedToken = rankedTokens[0];
 
-    // wordToVec9 search
-
-    const wordToVec9Prediction = (
-      wordToVec9.getMostFrequentNextToken(token) || ''
-    ).replace(/\\n/g, ' ').trim();
-
     // return highest ranked token and a top k sample
     // along with an error message (if any)
 
@@ -107,32 +96,41 @@ module.exports = () => {
         token: highestRankedToken,
         rankedTokenList: rankedTokens.slice(-RANKING_BATCH_SIZE)
       };
-    } else {
-      if (wordToVec9Prediction) {
+    }
+
+    if (Context.embeddings.hasOwnProperty(token)) {
+      // embedding search
+
+      const result = Object
+        .keys(embeddings[token])
+        .sort((a, b) => embeddings[token][a][0] - embeddings[token][b][0])
+        .pop()
+        .replace(/\\n/g, ' ')
+        .trim();
+
+      if (result) {
         return {
-          token: wordToVec9Prediction,
-          rankedTokenList: [wordToVec9Prediction]
+          token: result,
+          rankedTokenList: [result]
         };
       }
-
-      const message = MISSING_NGRAM_ERROR;
-
-      return {
-        error: {
-          message
-        },
-        token: null,
-        rankedTokenList: []
-      };
     }
+
+    const message = MISSING_NGRAM_ERROR;
+
+    return {
+      error: {
+        message
+      },
+      token: null,
+      rankedTokenList: []
+    };
   };
 
   /**
    * getTokenSequencePrediction
    * Predict the next sequence of tokens.
    * Designed for words and phrases.
-   *
-   * Uses n-gram.
    */
 
   const getTokenSequencePrediction = (token, sequenceLength = 2) => {
@@ -186,8 +184,6 @@ module.exports = () => {
    * getCompletions
    * Complete an input and provide a ranked list
    * of alternatives. Designed for words and phrases.
-   *
-   * Uses n-gram.
    */
 
   const getCompletions = input => {
@@ -231,7 +227,7 @@ module.exports = () => {
    * Designed for words and phrases.
    */
 
-  const createContext = (bigrams, embeddings) => {
+  const createContext = embeddings => {
     // Store current context in memory as a trie
 
     console.log(NOTIF_CREATING_CONTEXT);
@@ -266,18 +262,14 @@ module.exports = () => {
 
     // deep merge all n-gram sequences
 
-    const bigramCollection = (
+    const embeddingCollection = (
       chunkArray(ngrams, PARAMETER_CHUNK_SIZE)
     );
 
     // keep references in memory
 
-    for (const bigram of bigramCollection) {
-      Context.trie = merge(Context.trie, ...bigram);
-    }
-
-    if (!wordToVec9?.toVecs) {
-      wordToVec9 = WordToVec9(bigrams);
+    for (const embedding of embeddingCollection) {
+      Context.trie = merge(Context.trie, ...embedding);
     }
 
     Context.embeddings = embeddings;
@@ -318,7 +310,7 @@ module.exports = () => {
     // Weights
 
     const tokens = [...Context.trainingTokens];
-    const bigrams = {};
+    const embeddings = {};
 
     for (const token of tokens) {
       const index = tokens.indexOf(token);
@@ -349,67 +341,29 @@ module.exports = () => {
         continue;
       }
 
-      if (!bigrams[token]?.[nextToken]) {
-        bigrams[token] = {
-          ...bigrams[token],
+      if (!embeddings[token]?.[nextToken]) {
+        embeddings[token] = {
+          ...embeddings[token],
 
-          [nextToken]: 0
+          // initialize vector with random values
+
+          [nextToken]: Array.from(
+            { length: DIMENSIONS },
+            () => Math.random() / 100
+          )
         };
       }
 
-      bigrams[token][nextToken]++;
+      const frequency = embeddings[token][nextToken][0] + UNIT;
 
-      console.log(`Token "${nextToken}" ranked: ${bigrams[token][nextToken]} (when following ${token}).`);
+      embeddings[token][nextToken][0] = frequency;
+
+      console.log(`Token "${nextToken}" ranked: ${frequency} (when following ${token}).`);
     }
 
     // save weights to file
 
-    const bigramsPath = `${__root}/training/ngrams/${name}.json`;
-
-    await fs.writeFile(
-      bigramsPath,
-      JSON.stringify(bigrams)
-    );
-
-    console.log(`Wrote to file: ${bigramsPath}.`);
-
-    console.log(
-      `Training completed in ${(Date.now() - startTime) / 1000} seconds.`
-    );
-
-    // keep a reference in memory
-
-    Context.bigrams = bigrams;
-
-    // Embeddings
-
-    const toVecsStart = Date.now();
-    const embeddings = [];
-
-    if (!wordToVec9?.toVecs) {
-      wordToVec9 = WordToVec9(bigrams);
-    }
-
-    console.log(NOTIF_CREATING_EMBEDDINGS);
-
-    // split sequences
-
-    Context.sequences = trainingText.replace(/\n/g, ' ')
-      .replace(MATCH_TERMINATORS, '$1|')
-      .split('|')
-      .map(toPlainText);
-
-    // vectorize each word of each sequence
-
-    for (const sequence of Context.sequences) {
-      embeddings.push(
-        wordToVec9.toVecs(sequence)
-      );
-    }
-
-    // save tensor to file
-
-    const embeddingsPath = `${__root}/training/tensors/${name}.json`;
+    const embeddingsPath = `${__root}/training/embeddings/${name}.json`;
 
     await fs.writeFile(
       embeddingsPath,
@@ -419,12 +373,12 @@ module.exports = () => {
     console.log(`Wrote to file: ${embeddingsPath}.`);
 
     console.log(
-      `Embeddings computed in ${(Date.now() - toVecsStart) / 1000} seconds.`
+      `Training completed in ${(Date.now() - startTime) / 1000} seconds.`
     );
 
     // create in-memory context
 
-    createContext(bigrams, embeddings);
+    createContext(embeddings);
   };
 
   /**
@@ -460,20 +414,11 @@ module.exports = () => {
   // Transformer API
 
   return {
-    // Utilities
-
     ingest,
     train,
     createContext,
-
-    // N-gram prediction
-
     getTokenPrediction,
     getTokenSequencePrediction,
-    getCompletions,
-
-    // wordToVec9 prediction
-
-    ...wordToVec9
+    getCompletions
   };
 };
