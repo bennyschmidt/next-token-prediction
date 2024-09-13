@@ -40,7 +40,7 @@ const NOTIF_END_OF_DATA = 'End of training data.';
 const NOTIF_CREATING_CONTEXT = 'Creating context...';
 const PARAMETER_CHUNK_SIZE = 50000;
 const DIMENSIONS = 9;
-const UNIT = 0.09;
+const UNIT = 1;
 
 // Generator function to chunk arrays
 // Use with `PARAMETER_CHUNK_SIZE` for models
@@ -98,9 +98,11 @@ module.exports = () => {
       };
     }
 
-    if (Context.embeddings.hasOwnProperty(token)) {
-      // embedding search
+    // embedding search
 
+    const { embeddings } = Context;
+
+    if (embeddings.hasOwnProperty(token)) {
       const result = Object
         .keys(embeddings[token])
         .sort((a, b) => embeddings[token][a][0] - embeddings[token][b][0])
@@ -315,6 +317,8 @@ module.exports = () => {
     const tokens = [...Context.trainingTokens];
     const embeddings = {};
 
+    let highest = 0;
+
     for (const token of tokens) {
       const index = tokens.indexOf(token);
 
@@ -334,7 +338,7 @@ module.exports = () => {
         continue;
       }
 
-      let nextToken = tokens[index + 1];
+      const nextToken = tokens[index + 1];
 
       // Ensure next token exists
 
@@ -352,16 +356,38 @@ module.exports = () => {
 
           [nextToken]: Array.from(
             { length: DIMENSIONS },
-            () => Math.random() / 100
+            () => Math.random()
           )
         };
       }
 
-      const frequency = embeddings[token][nextToken][0] + UNIT;
+      const frequency = (
+        ++embeddings[token][nextToken][0]
+      );
+
+      if (frequency > highest) {
+        highest = frequency;
+      }
 
       embeddings[token][nextToken][0] = frequency;
 
       console.log(`Token "${nextToken}" ranked: ${frequency} (when following ${token}).`);
+    }
+
+    for (const computedToken of tokens) {
+      const tokenIndex = tokens.indexOf(computedToken);
+      const nextComputedToken = tokens[tokenIndex + 1];
+      const [value] = embeddings[computedToken]?.[nextComputedToken] || [];
+
+      if (value) {
+        const normalizedValue = parseFloat(value / highest).toFixed(DIMENSIONS);
+
+        console.log(`Adjusting token "${nextComputedToken}"${computedToken && ` (when following ${computedToken})`} from ${value} to ${normalizedValue}.`);
+
+        embeddings[computedToken][nextComputedToken][0] = (
+          normalizedValue
+        );
+      }
     }
 
     // save weights to file

@@ -5,10 +5,10 @@ const Transformer = require('../Transformer');
 
 const {
   combineDocuments,
-  fetchEmbeddings,
+  fetchEmbeddings
 } = require('../../utils');
 
-const DEFAULT_DATASET = require(`${__root}/training/datasets/OpenSourceBooks`);
+const DEFAULT_DATASET = require(`${__root}/training/datasets/Bootstrap`);
 
 const NEW_DATASET_NAME = 'New Dataset';
 
