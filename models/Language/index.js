@@ -6,16 +6,15 @@ const Transformer = require('../Transformer');
 const {
   combineDocuments,
   fetchEmbeddings,
-  // fetchTensorByName
 } = require('../../utils');
 
-const DEFAULT_DATASET = require(`${__root}/training/datasets/Paris`);
+const DEFAULT_DATASET = require(`${__root}/training/datasets/OpenSourceBooks`);
 
 const NEW_DATASET_NAME = 'New Dataset';
 
 /**
  * Create a language model from a
- * dataset or specify a list of files
+ * dataset or specify a list of files.
  */
 
 module.exports = async ({
@@ -31,13 +30,13 @@ module.exports = async ({
   /**
    * init
    * Train, create context and initialize the
-   * model API for use
+   * model API for use.
    */
 
   const init = async () => {
     /**
      * If bootstrap is true, start the LM
-     * with default training data
+     * with default training data.
      */
 
     if (bootstrap) {
@@ -47,7 +46,7 @@ module.exports = async ({
 
     /**
      * If a dataset is provided, create a model
-     * from training data
+     * from training data.
      */
 
     if (dataset?.name) {
@@ -71,20 +70,22 @@ module.exports = async ({
 
     /**
      * Instantiate a text transformer either from
-     * existing training data or by providing files
+     * existing training data or by providing
+     * files.
      */
 
     if (trainingData) {
 
       // Skips initial extraction and training
-      // just instantiates the model with embeddings
+      // just instantiates the model with
+      // embeddings.
 
       transformer = fromTrainingData(trainingData);
     } else {
 
       // Performs an intensive training operation
-      // using provided files, creating an elaborate
-      // model structure and corresponding values
+      // using provided files, creating a model
+      // structure and corresponding values.
 
       transformer = await fromFiles(files);
     }
@@ -92,7 +93,7 @@ module.exports = async ({
 
   /**
    * fromTrainingData
-   * Create a new transformer model
+   * Create a new transformer model.
    */
 
   const fromTrainingData = ({
@@ -110,7 +111,7 @@ module.exports = async ({
   /**
    * fromFiles
    * Create a new transformer model from .txt files
-   * (if none, default to the bootstrap)
+   * (if none, default to the bootstrap).
    */
 
   const fromFiles = async files => {
@@ -137,7 +138,7 @@ module.exports = async ({
   /**
    * complete
    * Pass query to the transformer and return
-   * the highest-ranked completion
+   * the highest-ranked completion.
    */
 
   const complete = query => (

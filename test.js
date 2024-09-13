@@ -54,13 +54,13 @@ const runTests = async () => {
   // Unit: Run different queries in isolation
   //       with different datasets
 
-  // await withDataset(OpenSourceBooksDataset, 'luckily');
+  await withDataset(OpenSourceBooksDataset, 'luckily');
 
-  // await withDataset(OpenSourceBooksDataset, 'with all');
+  await withDataset(OpenSourceBooksDataset, 'with all');
 
-  // await withDataset(OpenSourceBooksDataset, 'night');
+  await withDataset(OpenSourceBooksDataset, 'night');
 
-  // await withDataset(OpenSourceBooksDataset, 'unless');
+  await withDataset(OpenSourceBooksDataset, 'unless');
 
   // e2e: Run training from bootstrap then query
 
@@ -68,7 +68,7 @@ const runTests = async () => {
 
   // e2e: Run training on user provided files
 
-  // await withFiles(['liber-primus'], 'eloquence');
+  await withFiles(['liber-primus'], 'eloquence');
 };
 
 runTests();

@@ -67,7 +67,7 @@ module.exports = () => {
   /**
    * getTokenPrediction
    * Predict the next token or token sequence
-   * (agnostic)
+   * (agnostic).
    */
 
   const getTokenPrediction = token => {
@@ -279,7 +279,7 @@ module.exports = () => {
 
   /**
    * ngramSearch
-   * Look up n-gram by token sequence
+   * Look up n-gram by token sequence.
    */
 
   const ngramSearch = sequence => (
@@ -305,7 +305,10 @@ module.exports = () => {
 
     // tokenize
 
-    Context.trainingTokens = trainingText.split(' ');
+    Context.trainingTokens = trainingText
+      .trim()
+      .replace(/[\p{P}$+<=>^`(\\\n)|~]/gu, ' ')
+      .split(' ');
 
     // Weights
 
@@ -383,7 +386,7 @@ module.exports = () => {
 
   /**
    * ingest
-   * Provide new document text
+   * Provide new document text.
    */
 
   const ingest = text => {

@@ -2,7 +2,7 @@ const { dirname } = require('path');
 const __root = dirname(require.main.filename);
 
 const { Language: LM } = require('next-token-prediction');
-const ParisDataset = require(`${__root}/training/datasets/Paris`);
+const OpenSourceBooksDataset = require(`${__root}/training/datasets/OpenSourceBooks`);
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -48,7 +48,7 @@ const onStart = async () => {
   // Boot up LM
 
   agent = await LM({
-    dataset: ParisDataset
+    dataset: OpenSourceBooksDataset
   });
 
   // Configure router and listen for requests
