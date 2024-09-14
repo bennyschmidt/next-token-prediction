@@ -5,6 +5,14 @@ const fs = require('fs').promises;
 const FORMAT_ERROR = 'Invalid file format.';
 
 module.exports = {
+  alphabet: 'abcdefghijklmnopqrstuvwxyz',
+  vowels: 'aeiou',
+  y: 'y',
+  x: 'x',
+  w: 'w',
+  k: 'k',
+  j: 'j',
+
   combineDocuments: async documents => {
     let text = '';
 

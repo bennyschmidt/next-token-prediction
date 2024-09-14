@@ -6,6 +6,7 @@ const { merge } = require('lodash');
 const dotenv = require('dotenv');
 
 const {
+  alphabet,
   combineDocuments
 } = require('../../utils');
 
@@ -39,8 +40,7 @@ const NOTIF_UNKNOWN_TOKEN = 'Skipping unrecognized token.';
 const NOTIF_END_OF_DATA = 'End of training data.';
 const NOTIF_CREATING_CONTEXT = 'Creating context...';
 const PARAMETER_CHUNK_SIZE = 50000;
-const DIMENSIONS = 9;
-const UNIT = 1;
+const DIMENSIONS = 27;
 
 // Generator function to chunk arrays
 // Use with `PARAMETER_CHUNK_SIZE` for models
@@ -317,7 +317,7 @@ module.exports = () => {
     const tokens = [...Context.trainingTokens];
     const embeddings = {};
 
-    let highest = 0;
+    let maxFrequency = 0;
 
     for (const token of tokens) {
       const index = tokens.indexOf(token);
@@ -352,12 +352,11 @@ module.exports = () => {
         embeddings[token] = {
           ...embeddings[token],
 
-          // initialize vector with random values
+          // initialize vector with zeroes
 
-          [nextToken]: Array.from(
-            { length: DIMENSIONS },
-            () => Math.random()
-          )
+          [nextToken]: Array
+            .from({ length: DIMENSIONS })
+            .fill(0)
         };
       }
 
@@ -365,13 +364,30 @@ module.exports = () => {
         ++embeddings[token][nextToken][0]
       );
 
-      if (frequency > highest) {
-        highest = frequency;
+      console.log(`Token "${nextToken}" ranked: ${frequency} (when following "${token}").`);
+
+      if (frequency > maxFrequency) {
+        console.log(`Set new highest embedding value (of token "${nextToken}").`);
+
+        maxFrequency = frequency;
       }
 
       embeddings[token][nextToken][0] = frequency;
 
-      console.log(`Token "${nextToken}" ranked: ${frequency} (when following ${token}).`);
+      const letters = alphabet.split('');
+
+      for (const letter of letters) {
+        if (nextToken.includes(letter)) {
+          const letterIndex = letters.indexOf(letter);
+
+          embeddings[token][nextToken][letterIndex + 1] = parseFloat(
+            nextToken.split('').filter(char => char === letter).length /
+            nextToken.length
+          ).toFixed(16)
+        }
+      }
+
+      console.log(`Updated word embedding for "${nextToken}".`);
     }
 
     for (const computedToken of tokens) {
@@ -380,9 +396,9 @@ module.exports = () => {
       const [value] = embeddings[computedToken]?.[nextComputedToken] || [];
 
       if (value) {
-        const normalizedValue = parseFloat(value / highest).toFixed(DIMENSIONS);
+        const normalizedValue = parseFloat(value / maxFrequency).toFixed(16);
 
-        console.log(`Adjusting token "${nextComputedToken}"${computedToken && ` (when following ${computedToken})`} from ${value} to ${normalizedValue}.`);
+        console.log(`Adjusted word embedding for "${nextComputedToken}".`);
 
         embeddings[computedToken][nextComputedToken][0] = (
           normalizedValue
