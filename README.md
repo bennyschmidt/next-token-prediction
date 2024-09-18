@@ -117,10 +117,6 @@ https://github.com/bennyschmidt/next-token-prediction/assets/45407493/68c070bd-e
 
 https://github.com/bennyschmidt/next-token-prediction/assets/45407493/cd4a1102-5a82-4a6f-abb8-e96805fa65fd
 
-(the following is lower quality on GitHub because it's a couple minutes long - this is training & booting up the LM from 0-1)
-
-https://github.com/bennyschmidt/next-token-prediction/assets/45407493/033e8260-6a8c-4627-9195-9a6c8bd843bd
-
 ### Browser example: Fast autocomplete
 
 With more training data you can get more suggestions, eventually hitting a tipping point where it can complete anything.
