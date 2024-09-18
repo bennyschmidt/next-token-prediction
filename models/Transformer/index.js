@@ -5,6 +5,8 @@ const fs = require('fs').promises;
 const { merge } = require('lodash');
 const dotenv = require('dotenv');
 
+const Vector = require('../../components/Vector');
+
 const {
   alphabet,
   combineDocuments,
@@ -20,7 +22,6 @@ const {
   PARAMETER_CHUNK_SIZE = 50000,
   RANKING_BATCH_SIZE = 50,
   MAX_RESPONSE_LENGTH = 240,
-  DIMENSIONS = 144,
   VARIANCE = 0
 } = process.env;
 
@@ -46,22 +47,7 @@ const NOTIF_END_OF_STATEMENT = 'End of sequence.';
 const NOTIF_UNKNOWN_TOKEN = 'Skipping unrecognized token.';
 const NOTIF_END_OF_DATA = 'End of training data.';
 const NOTIF_CREATING_CONTEXT = 'Creating context...';
-const RANGE_ERROR = 'RangeError: Invalid vector length.';
 const DONE = 'Done.';
-
-class Vec144 extends Array {
-  static fromNull () {
-    return this.from({ length: DIMENSIONS}).fill(0);
-  }
-
-  constructor () {
-    super(...arguments);
-
-    if (this.length !== DIMENSIONS) {
-      throw RANGE_ERROR;
-    }
-  }
-}
 
 // Generator function to chunk arrays
 // Use with `PARAMETER_CHUNK_SIZE` for models
@@ -105,7 +91,7 @@ module.exports = () => {
     const [second, first] = tokenize(`${prevToken} ${token}`).reverse();
 
     if (!first || !Context.embeddings[first]) {
-      return Vec144.fromNull();
+      return Vector.fromNull();
     }
 
     return Context.embeddings[first][second];
@@ -117,8 +103,8 @@ module.exports = () => {
    */
 
   const dotProduct = (
-    vectorA = Vec144.fromNull(),
-    vectorB = Vec144.fromNull()
+    vectorA = Vector.fromNull(),
+    vectorB = Vector.fromNull()
   ) => (
     vectorA
       .map((_, i) => vectorA[i] * vectorB[i])
@@ -438,7 +424,7 @@ module.exports = () => {
       }
 
       if (!embeddings[token][nextToken]) {
-        embeddings[token][nextToken] = Vec144.fromNull();
+        embeddings[token][nextToken] = Vector.fromNull();
       }
 
       /**
