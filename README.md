@@ -101,6 +101,13 @@ const MyLanguageModel = () => {
 MyLanguageModel();
 ```
 
+#### Training embeddings
+
+> [!NOTE]
+> By default, next-token prediction does not use vector search. To enable it, set `VARIANCE=1` (any value higher than `0`) in an `.env`. This will change the prediction from returning the next likeliest token (n-gram search) to returning the most similar token (vector search) e.g. "The quick brown fox *jumped*..." (n-gram prediction) vs "The quick brown fox *juked*..." (vector similarity). Note that vector search is considerably slower and more resource intensive.
+
+When running the n-gram training using the built-in training method, vector embeddings (144-dimensional) are also created for each token pair to capture context and semantics (e.g. the token `Jordan` has different values in the fragment `Michael Jordan` than it does in the fragment `Syria, Jordan`). The goal of vector search is to optionally enable paraphrasing, slang and profanity filtering, and more. 
+
 Run tests
 
 `npm test`
@@ -138,6 +145,8 @@ Watch: [YouTube](https://www.youtube.com/watch?v=wjZofJX0v4M)
   - autocorrect
   - spell checking
   - search/lookup
+  - summarizing
+  - paraphrasing
 
 2. Create pixel and audio transformers for other prediction formats
 
