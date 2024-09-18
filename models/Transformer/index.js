@@ -17,8 +17,11 @@ const {
 dotenv.config();
 
 const {
+  PARAMETER_CHUNK_SIZE = 50000,
   RANKING_BATCH_SIZE = 50,
-  MAX_RESPONSE_LENGTH = 240
+  MAX_RESPONSE_LENGTH = 240,
+  DIMENSIONS = 144,
+  VARIANCE = 0
 } = process.env;
 
 // Tokenizer utils. Designed for words and phrases.
@@ -43,8 +46,22 @@ const NOTIF_END_OF_STATEMENT = 'End of sequence.';
 const NOTIF_UNKNOWN_TOKEN = 'Skipping unrecognized token.';
 const NOTIF_END_OF_DATA = 'End of training data.';
 const NOTIF_CREATING_CONTEXT = 'Creating context...';
-const PARAMETER_CHUNK_SIZE = 50000;
-const DIMENSIONS = 144;
+const RANGE_ERROR = 'RangeError: Invalid vector length.';
+const DONE = 'Done.';
+
+class Vec144 extends Array {
+  static fromNull () {
+    return this.from({ length: DIMENSIONS}).fill(0);
+  }
+
+  constructor () {
+    super(...arguments);
+
+    if (this.length !== DIMENSIONS) {
+      throw RANGE_ERROR;
+    }
+  }
+}
 
 // Generator function to chunk arrays
 // Use with `PARAMETER_CHUNK_SIZE` for models
@@ -84,47 +101,70 @@ module.exports = () => {
    * Look up embedding by token.
    */
 
-  const embeddingSearch = token => {
-    const entries = Object.keys(Context.embeddings);
-    const result = {};
+  const embeddingSearch = (prevToken, token) => {
+    const [second, first] = tokenize(`${prevToken} ${token}`).reverse();
 
-    for (const entry of entries) {
-      const embedding = Context.embeddings[entry][token];
-
-      if (embedding) {
-        result[entry] = embedding;
-      }
+    if (!first || !Context.embeddings[first]) {
+      return Vec144.fromNull();
     }
 
-    return result;
+    return Context.embeddings[first][second];
   };
+
+  /**
+   * dotProduct
+   * Dot product of two vectors.
+   */
+
+  const dotProduct = (
+    vectorA = Vec144.fromNull(),
+    vectorB = Vec144.fromNull()
+  ) => (
+    vectorA
+      .map((_, i) => vectorA[i] * vectorB[i])
+      .reduce((m, n) => m + n)
+  );
 
   /**
    * getSimilarToken
    * Get a similar token.
    */
 
-  const getSimilarToken = token => {
-    const tokenEmbeddings = embeddingSearch(token);
+  const getSimilarToken = (prevToken, token) => {
+    const tokenEmbedding = embeddingSearch(prevToken, token);
 
-    // TODO: Vector similarity search
-    //       instead of prior ngram
+    const entries = Object.keys(Context.embeddings);
+    const result = [];
 
-    const rankedTokenList = Object
-      .keys(tokenEmbeddings)
-      .filter(key => key !== token);
+    for (const entry of entries) {
+      const tokens = Object.keys(Context.embeddings[entry]);
 
-    if (!rankedTokenList?.length) {
-      return {
-        token: '',
-        rankedTokenList: []
-      };
+      for (const token of tokens) {
+        const embedding = Context.embeddings[entry][token];
+
+        if (embedding) {
+          result.push({
+            token,
+            embedding,
+            similarity: dotProduct(
+              tokenEmbedding,
+              embedding
+            )
+          });
+        }
+      }
     }
+
+    const rankedTokenList = result
+      .sort((a, b) => b.similarity - a.similarity)
+      .slice(-RANKING_BATCH_SIZE)
+      .filter(Boolean)
+      .map(rankedResult => rankedResult.token);
 
     return {
       token: rankedTokenList[rankedTokenList.length - 1],
-      rankedTokenList: []
-    }
+      rankedTokenList
+    };
   };
 
   /**
@@ -155,18 +195,19 @@ module.exports = () => {
     const highestRankedToken = rankedTokens[rankedTokens.length - 1];
 
     if (highestRankedToken) {
-      // paraphrasing
+      if (VARIANCE > 0) {
+        const {
+          token: similarToken,
+          rankedTokenList
+        } = getSimilarToken(token, highestRankedToken);
 
-      // const { token: similarToken } = getSimilarToken(highestRankedToken);
-
-      // if (similarToken) {
-      //   return {
-      //     token: similarToken,
-      //     rankedTokenList: rankedTokens
-      //       .slice(-RANKING_BATCH_SIZE)
-      //       .map(rankedToken => getSimilarToken(rankedToken).token)
-      //   };
-      // }
+        if (similarToken) {
+          return {
+            token: similarToken,
+            rankedTokenList
+          };
+        }
+      }
 
       return {
         token: highestRankedToken,
@@ -331,7 +372,7 @@ module.exports = () => {
       Context.trie = merge(Context.trie, ...ngram);
     }
 
-    console.log('Done.');
+    console.log(DONE);
   };
 
   /**
@@ -397,9 +438,7 @@ module.exports = () => {
       }
 
       if (!embeddings[token][nextToken]) {
-        embeddings[token][nextToken] = Array
-          .from({ length: DIMENSIONS })
-          .fill(0);
+        embeddings[token][nextToken] = Vec144.fromNull();
       }
 
       /**
@@ -492,6 +531,8 @@ module.exports = () => {
 
       console.log(`Token "${nextToken}" ranked: ${nextWordFrequency} (when following "${token}").`);
 
+      // TODO: Expand vocabulary
+
       const isStopWord = /i|me|my|myself|we|our|ours|ourselves|you|your|yours|yourself|yourselves|he|him|his|himself|she|her|hers|herself|it|its|itself|they|them|their|theirs|themselves|what|which|who|whom|this|that|these|those|am|is|are|was|were|be|been|being|have|has|had|having|do|does|did|doing|a|an|the|and|but|if|or|because|as|until|while|of|at|by|for|with|about|against|between|into|through|during|before|after|above|below|to|from|up|down|in|out|on|off|over|under|again|further|then|once|here|there|when|where|why|how|all|any|both|each|few|more|most|other|some|such|no|nor|not|only|own|same|so|than|too|very|s|t|can|will|just|don|should|now/
         .toString()
         .match(new RegExp(nextToken));
@@ -524,6 +565,7 @@ module.exports = () => {
        */
 
       // Pirate
+      // TODO: Expand vocabulary
 
       const isPirate = /ahoy|arrr|matey|blimey|scallywag/.test(
         new RegExp(`${token}|${nextToken}`)
@@ -534,6 +576,7 @@ module.exports = () => {
         : 0;
 
       // Victorian
+      // TODO: Expand vocabulary
 
       const isVictorian = /abeyance|ado|blunderbuss|carriage|chambre|corset|dandy|dote|doth|esquire|futile|grand|hath|hence|lively|nonesuch|thee|thou|thy|vestibule|wonderful/.test(
         new RegExp(`${token}|${nextToken}`)

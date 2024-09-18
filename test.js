@@ -58,17 +58,17 @@ const runTests = async () => {
 
   await withDataset(DefaultDataset, 'with all');
 
-  await withDataset(DefaultDataset, 'night');
+  await withDataset(DefaultDataset, 'grass');
 
   await withDataset(DefaultDataset, 'unless');
-
-  // e2e: Run training from bootstrap then query
-
-  await withBootstrap('people');
 
   // e2e: Run training on user provided files
 
   await withFiles(['the-phantom-of-the-opera'], 'eloquence');
+
+  // e2e: Run training from bootstrap then query
+
+  await withBootstrap('people');
 };
 
 runTests();
