@@ -1,6 +1,6 @@
 # Next-Token Prediction
 
-Create a language model based on a body of text and get high-quality predictions (next word, next phrase, next pixel, etc.). With enough training data and a good chat interface, this can be used instead of well-known decoder-only models like GPT, Mistral, etc.
+Create a language model based on a body of text and get high-quality predictions (next word, next phrase, next pixel, etc.).
 
 ## Install
 
