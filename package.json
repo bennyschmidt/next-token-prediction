@@ -1,6 +1,6 @@
 {
   "name": "next-token-prediction",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "author": "bennyschmidt",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "dotenv": "^16.4.5",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "wink-pos-tagger": "^2.2.2"
   }
 }

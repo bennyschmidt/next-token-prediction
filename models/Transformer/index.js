@@ -7,7 +7,11 @@ const dotenv = require('dotenv');
 
 const {
   alphabet,
-  combineDocuments
+  combineDocuments,
+  getPartsOfSpeech,
+  partsOfSpeech,
+  suffixes,
+  tokenize
 } = require('../../utils');
 
 dotenv.config();
@@ -40,7 +44,7 @@ const NOTIF_UNKNOWN_TOKEN = 'Skipping unrecognized token.';
 const NOTIF_END_OF_DATA = 'End of training data.';
 const NOTIF_CREATING_CONTEXT = 'Creating context...';
 const PARAMETER_CHUNK_SIZE = 50000;
-const DIMENSIONS = 27;
+const DIMENSIONS = 144;
 
 // Generator function to chunk arrays
 // Use with `PARAMETER_CHUNK_SIZE` for models
@@ -65,12 +69,78 @@ module.exports = () => {
   let trainingText = '';
 
   /**
+   * ngramSearch
+   * Look up n-gram by token sequence.
+   */
+
+  const ngramSearch = input => (
+    input
+      .split(/ /)
+      .reduce((a, b) => a?.[b], Context.trie) || {}
+  );
+
+  /**
+   * embeddingSearch
+   * Look up embedding by token.
+   */
+
+  const embeddingSearch = token => {
+    const entries = Object.keys(Context.embeddings);
+    const result = {};
+
+    for (const entry of entries) {
+      const embedding = Context.embeddings[entry][token];
+
+      if (embedding) {
+        result[entry] = embedding;
+      }
+    }
+
+    return result;
+  };
+
+  /**
+   * getSimilarToken
+   * Get a similar token.
+   */
+
+  const getSimilarToken = token => {
+    const tokenEmbeddings = embeddingSearch(token);
+
+    // TODO: Vector similarity search
+    //       instead of prior ngram
+
+    const rankedTokenList = Object
+      .keys(tokenEmbeddings)
+      .filter(key => key !== token);
+
+    if (!rankedTokenList?.length) {
+      return {
+        token: '',
+        rankedTokenList: []
+      };
+    }
+
+    return {
+      token: rankedTokenList[rankedTokenList.length - 1],
+      rankedTokenList: []
+    }
+  };
+
+  /**
    * getTokenPrediction
    * Predict the next token or token sequence
    * (agnostic).
    */
 
   const getTokenPrediction = token => {
+    if (!token) {
+      return {
+        token: '',
+        rankedTokenList: []
+      };
+    }
+
     // ngram search
 
     const rankedTokens = Object.keys(
@@ -82,40 +152,26 @@ module.exports = () => {
       )
     );
 
-    // rank by weight
-
-    rankedTokens.sort((a, b) => a[1] - b[1]);
-
-    const highestRankedToken = rankedTokens[0];
-
-    // return highest ranked token and a top k sample
-    // along with an error message (if any)
+    const highestRankedToken = rankedTokens[rankedTokens.length - 1];
 
     if (highestRankedToken) {
+      // paraphrasing
+
+      // const { token: similarToken } = getSimilarToken(highestRankedToken);
+
+      // if (similarToken) {
+      //   return {
+      //     token: similarToken,
+      //     rankedTokenList: rankedTokens
+      //       .slice(-RANKING_BATCH_SIZE)
+      //       .map(rankedToken => getSimilarToken(rankedToken).token)
+      //   };
+      // }
+
       return {
         token: highestRankedToken,
         rankedTokenList: rankedTokens.slice(-RANKING_BATCH_SIZE)
       };
-    }
-
-    // embedding search
-
-    const { embeddings } = Context;
-
-    if (embeddings.hasOwnProperty(token)) {
-      const result = Object
-        .keys(embeddings[token])
-        .sort((a, b) => embeddings[token][a][0] - embeddings[token][b][0])
-        .pop()
-        .replace(/\\n/g, ' ')
-        .trim();
-
-      if (result) {
-        return {
-          token: result,
-          rankedTokenList: [result]
-        };
-      }
     }
 
     const message = MISSING_NGRAM_ERROR;
@@ -124,7 +180,7 @@ module.exports = () => {
       error: {
         message
       },
-      token: null,
+      token: '',
       rankedTokenList: []
     };
   };
@@ -135,16 +191,16 @@ module.exports = () => {
    * Designed for words and phrases.
    */
 
-  const getTokenSequencePrediction = (token, sequenceLength = 2) => {
+  const getTokenSequencePrediction = (input, sequenceLength = 2) => {
     const sequence = [];
 
-    let result = token;
+    let result = input;
 
     // get top k sample from getTokenPrediction
 
     const {
       rankedTokenList: keyPredictions
-    } = getTokenPrediction(token);
+    } = getTokenPrediction(input);
 
     // iterate over each token prediction, deriving a
     // new sequence prediction for each token
@@ -226,10 +282,12 @@ module.exports = () => {
 
   /**
    * createContext
-   * Designed for words and phrases.
+   * Create model components in memory.
    */
 
   const createContext = embeddings => {
+    Context.embeddings = embeddings;
+
     // Store current context in memory as a trie
 
     console.log(NOTIF_CREATING_CONTEXT);
@@ -241,8 +299,7 @@ module.exports = () => {
       .split('|')
       .map(toPlainText);
 
-    // create n-grams of all sequences and
-    // vectorize each word of each sequence
+    // create n-grams of all sequences
 
     const ngrams = Context.sequences.map(sequence => {
       let cursor;
@@ -264,31 +321,18 @@ module.exports = () => {
 
     // deep merge all n-gram sequences
 
-    const embeddingCollection = (
+    const ngramMap = (
       chunkArray(ngrams, PARAMETER_CHUNK_SIZE)
     );
 
-    // keep references in memory
+    // keep reference in memory
 
-    for (const embedding of embeddingCollection) {
-      Context.trie = merge(Context.trie, ...embedding);
+    for (const ngram of ngramMap) {
+      Context.trie = merge(Context.trie, ...ngram);
     }
-
-    Context.embeddings = embeddings;
 
     console.log('Done.');
   };
-
-  /**
-   * ngramSearch
-   * Look up n-gram by token sequence.
-   */
-
-  const ngramSearch = sequence => (
-    sequence
-      .split(/ /)
-      .reduce((a, b) => a?.[b], Context.trie) || {}
-  );
 
   /**
    * train
@@ -305,22 +349,22 @@ module.exports = () => {
 
     trainingText = await combineDocuments(files);
 
-    // tokenize
+    // 1. Tokenize
 
-    Context.trainingTokens = trainingText
-      .trim()
-      .replace(/[\p{P}$+<=>^`(\\\n)|~]/gu, ' ')
-      .split(' ');
-
-    // Weights
+    Context.trainingTokens = tokenize(trainingText);
 
     const tokens = [...Context.trainingTokens];
     const embeddings = {};
 
-    let maxFrequency = 0;
+    let maxNextWordFrequency = 0;
+    let nextWordFrequencyIndexStart = 0;
 
-    for (const token of tokens) {
-      const index = tokens.indexOf(token);
+    // 2. Analyze
+
+    for (let index = 0; index < tokens.length; index++) {
+      const token = tokens[index];
+
+      if (!token) continue;
 
       // End statement on punctuation
 
@@ -348,31 +392,23 @@ module.exports = () => {
         continue;
       }
 
-      if (!embeddings[token]?.[nextToken]) {
-        embeddings[token] = {
-          ...embeddings[token],
-
-          // initialize vector with zeroes
-
-          [nextToken]: Array
-            .from({ length: DIMENSIONS })
-            .fill(0)
-        };
+      if (!embeddings[token]) {
+        embeddings[token] = {};
       }
 
-      const frequency = (
-        ++embeddings[token][nextToken][0]
-      );
-
-      console.log(`Token "${nextToken}" ranked: ${frequency} (when following "${token}").`);
-
-      if (frequency > maxFrequency) {
-        console.log(`Set new highest embedding value (of token "${nextToken}").`);
-
-        maxFrequency = frequency;
+      if (!embeddings[token][nextToken]) {
+        embeddings[token][nextToken] = Array
+          .from({ length: DIMENSIONS })
+          .fill(0);
       }
 
-      embeddings[token][nextToken][0] = frequency;
+      /**
+       * Training metrics
+       * I. Composition
+       *
+       * Distribution of 66 alpha-numeric (and other)
+       * symbols.
+       */
 
       const letters = alphabet.split('');
 
@@ -380,33 +416,158 @@ module.exports = () => {
         if (nextToken.includes(letter)) {
           const letterIndex = letters.indexOf(letter);
 
-          embeddings[token][nextToken][letterIndex + 1] = parseFloat(
+          embeddings[token][nextToken][letterIndex] = parseFloat(
             nextToken.split('').filter(char => char === letter).length /
             nextToken.length
-          ).toFixed(16)
+          );
         }
       }
+
+      /**
+       * Training metrics
+       * II. Parts-of-speech
+       *
+       * Distribution of 36 parts-of-speech types.
+       */
+
+      const posIndexStart = alphabet.length;
+
+      const [tag] = getPartsOfSpeech(nextToken.toLowerCase());
+
+      if (tag?.pos) {
+        const tagIndex = Object.keys(partsOfSpeech.indexOf(tag.pos));
+
+        embeddings[token][nextToken][posIndexStart + tagIndex] = 1;
+      }
+
+      /**
+       * Training metrics
+       * III. Prevalence
+       *
+       * Token prevalence (in the dataset).
+       */
+
+      const prevalenceIndexStart = (
+        posIndexStart +
+        partsOfSpeech.length
+      );
+
+      // Prevalence
+
+      embeddings[token][nextToken][prevalenceIndexStart] = parseFloat(tokens
+        .filter(_token => _token === nextToken)
+        .length / tokens.length);
+
+      /**
+       * Training metrics
+       * IV. Word suffixes
+       *
+       * Distribution of 37 common rhyme suffixes.
+       */
+
+      const suffixesIndexStart = prevalenceIndexStart + 1;
+
+      for (const suffix of suffixes) {
+        const suffixIndex = suffixes.indexOf(suffix);
+
+        embeddings[token][nextToken][suffixesIndexStart + suffixIndex] = (
+          new RegExp(suffix).test(nextToken.slice(-suffix.length))
+            ? 1
+            : 0
+        );
+      }
+
+      /**
+       * Training metrics
+       * V. Next-word frequency
+       *
+       * Token occurrence count (as next token).
+       */
+
+      nextWordFrequencyIndexStart = suffixesIndexStart + suffixes.length;
+
+      const nextWordFrequency = (
+        ++embeddings[token][nextToken][nextWordFrequencyIndexStart]
+      );
+
+      console.log(`Token "${nextToken}" ranked: ${nextWordFrequency} (when following "${token}").`);
+
+      const isStopWord = /i|me|my|myself|we|our|ours|ourselves|you|your|yours|yourself|yourselves|he|him|his|himself|she|her|hers|herself|it|its|itself|they|them|their|theirs|themselves|what|which|who|whom|this|that|these|those|am|is|are|was|were|be|been|being|have|has|had|having|do|does|did|doing|a|an|the|and|but|if|or|because|as|until|while|of|at|by|for|with|about|against|between|into|through|during|before|after|above|below|to|from|up|down|in|out|on|off|over|under|again|further|then|once|here|there|when|where|why|how|all|any|both|each|few|more|most|other|some|such|no|nor|not|only|own|same|so|than|too|very|s|t|can|will|just|don|should|now/
+        .toString()
+        .match(new RegExp(nextToken));
+
+      if (!isStopWord && (nextWordFrequency > maxNextWordFrequency)) {
+        console.log(`Set new highest embedding value (of token "${nextToken}").`);
+
+        maxNextWordFrequency = nextWordFrequency;
+      }
+
+      /**
+       * Training metrics
+       * VI. Vulgar
+       *
+       * Slang, slurs, profanity, etc.
+       */
+
+      const vulgarIndexStart = nextWordFrequencyIndexStart + 1;
+
+      // TODO: Vulgarity
+
+      embeddings[token][nextToken][vulgarIndexStart] = 0;
+
+      /**
+       * Training metrics
+       * VII. Style
+       *
+       * Extend embeddings with stylistic
+       * features.
+       */
+
+      // Pirate
+
+      const isPirate = /ahoy|arrr|matey|blimey|scallywag/.test(
+        new RegExp(`${token}|${nextToken}`)
+      ) || (token === 'me' && tag.pos.match('NN'));
+
+      embeddings[token][nextToken][vulgarIndexStart + 1] = isPirate
+        ? 1
+        : 0;
+
+      // Victorian
+
+      const isVictorian = /abeyance|ado|blunderbuss|carriage|chambre|corset|dandy|dote|doth|esquire|futile|grand|hath|hence|lively|nonesuch|thee|thou|thy|vestibule|wonderful/.test(
+        new RegExp(`${token}|${nextToken}`)
+      );
+
+      embeddings[token][nextToken][vulgarIndexStart + 2] = isVictorian
+        ? 1
+        : 0;
 
       console.log(`Updated word embedding for "${nextToken}".`);
     }
 
-    for (const computedToken of tokens) {
-      const tokenIndex = tokens.indexOf(computedToken);
+    // 3. Normalize
+
+    for (let tokenIndex = 0; tokenIndex < tokens.length; tokenIndex++) {
+      const computedToken = tokens[tokenIndex];
       const nextComputedToken = tokens[tokenIndex + 1];
-      const [value] = embeddings[computedToken]?.[nextComputedToken] || [];
+      const value = embeddings[computedToken]?.[nextComputedToken]?.[nextWordFrequencyIndexStart];
 
       if (value) {
-        const normalizedValue = parseFloat(value / maxFrequency).toFixed(16);
+        const normalizedValue = Math.min(
+          1,
+          parseFloat(value / maxNextWordFrequency)
+        );
 
         console.log(`Adjusted word embedding for "${nextComputedToken}".`);
 
-        embeddings[computedToken][nextComputedToken][0] = (
+        embeddings[computedToken][nextComputedToken][nextWordFrequencyIndexStart] = parseFloat(
           normalizedValue
         );
       }
     }
 
-    // save weights to file
+    // save embedding to file
 
     const embeddingsPath = `${__root}/training/embeddings/${name}.json`;
 
@@ -438,9 +599,9 @@ module.exports = () => {
 
   /**
    * toPlainText
-   * Transform text to a plain format. Designed for words
-   * and phrases. Capitalizes the first token of sequences,
-   * removing certain special characters, new lines, etc.
+   * Transform text to a plain format.Capitalizes
+   * the first token of sequences, removing certain
+   * special characters, new lines, etc.
    */
 
   const toPlainText = text => text

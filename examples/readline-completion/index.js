@@ -4,13 +4,13 @@ const { dirname } = require('path');
 const __root = dirname(require.main.filename);
 
 const { Language: LM } = require('../../models');
-const OpenSourceBooksDataset = require(`${__root}/training/datasets/OpenSourceBooks`);
+const TestDataset = require(`${__root}/training/datasets/Default`);
 
 const rl = readline.createInterface({ input, output });
 
 const MyLanguageModel = async (verbose = false) => {
   const agent = await LM({
-    dataset: OpenSourceBooksDataset
+    dataset: TestDataset
   });
 
   const print = input => {
