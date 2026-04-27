@@ -21,8 +21,7 @@ const NOTIF_CREATING_CONTEXT = 'Creating pixel context...';
 
 /**
  * toCommonHex
- * Mathematically snaps a 24-bit hex color to a 1000-color grid (10 steps per channel).
- * This replaces the manual PALETTE lookup for efficiency and speed.
+ * Mathematically snaps a color to a 24-bit hex value.
  */
 
 const toCommonHex = (hex) => {

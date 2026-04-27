@@ -11,7 +11,7 @@ const NEW_MODEL_NAME = "New Image Model";
  * Manages training on image data and generating
  * next-pixel sequences.
  */
- 
+
 module.exports = async ({
   name,
   pixels,
@@ -59,7 +59,7 @@ module.exports = async ({
   /**
    * fromImages
    * Aggregates PNG files from the training folder and
-   * performs the frequency tally training.
+   * performs the frequency training.
    */
 
   const fromImages = async (imageFiles) => {
