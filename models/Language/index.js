@@ -1,12 +1,9 @@
 const { dirname } = require('path');
 const __root = dirname(require.main.filename);
 
-const Transformer = require('../Transformer');
+const Phrase = require('../Phrase');
 
-const {
-  combineDocuments,
-  fetchEmbeddings
-} = require('../../utils');
+const { combineDocuments } = require('../../utils');
 
 const DEFAULT_DATASET = require(`${__root}/training/datasets/Default`);
 
@@ -25,7 +22,7 @@ module.exports = async ({
 } = {}) => {
   let datasetName = name || NEW_DATASET_NAME;
   let trainingData = null;
-  let transformer;
+  let phraseModel;
 
   /**
    * init
@@ -56,20 +53,15 @@ module.exports = async ({
 
       const text = await combineDocuments(dataset.files);
 
-      // load the corresponding embeddings
-
-      const embeddings = await fetchEmbeddings(dataset.name);
-
       // build training data object
 
       trainingData = {
-        text,
-        embeddings
+        text
       };
     }
 
     /**
-     * Instantiate a text transformer either from
+     * Instantiate a phrase model either from
      * existing training data or by providing
      * files.
      */
@@ -77,48 +69,46 @@ module.exports = async ({
     if (trainingData) {
 
       // Skips initial extraction and training
-      // just instantiates the model with
-      // embeddings.
+      // just instantiates the model.
 
-      transformer = fromTrainingData(trainingData);
+      phraseModel = fromTrainingData(trainingData);
     } else {
 
       // Performs an intensive training operation
       // using provided files, creating a model
       // structure and corresponding values.
 
-      transformer = await fromFiles(files);
+      phraseModel = await fromFiles(files);
     }
   };
 
   /**
    * fromTrainingData
-   * Create a new transformer model.
+   * Create a new phrase model.
    */
 
   const fromTrainingData = ({
-    text,
-    embeddings
+    text
   }) => {
-    const textTransformer = Transformer();
+    const textPhrase = Phrase();
 
-    textTransformer.ingest(text);
-    textTransformer.createContext(embeddings);
+    textPhrase.ingest(text);
+    textPhrase.createContext();
 
-    return textTransformer;
+    return textPhrase;
   };
 
   /**
    * fromFiles
-   * Create a new transformer model from .txt files
+   * Create a new phrase model from .txt files
    * (if none, default to the bootstrap).
    */
 
   const fromFiles = async files => {
-    const textTransformer = Transformer();
+    const textPhrase = Phrase();
 
     if (files) {
-      await textTransformer.train({
+      await textPhrase.train({
         name: datasetName,
         files
       });
@@ -126,31 +116,31 @@ module.exports = async ({
 
       // Default to bootstrap
 
-      await textTransformer.train({
+      await textPhrase.train({
         name: DEFAULT_DATASET.name,
         files: DEFAULT_DATASET.files
       });
     }
 
-    return textTransformer;
+    return textPhrase;
   };
 
   /**
    * complete
-   * Pass query to the transformer and return
+   * Pass query to the phrase model and return
    * the highest-ranked completion.
    */
 
   const complete = query => (
-    transformer.getCompletions(query).completion
+    phraseModel.getCompletions(query).completion
   );
 
-  // Language API (extends Transformer)
+  // Language API (extends Phrase)
 
   await init();
 
   return {
-    ...transformer,
+    ...phraseModel,
 
     fromTrainingData,
     fromFiles,

@@ -1,8 +1,17 @@
 const { dirname } = require('path');
 const __root = dirname(require.main.filename);
 
-const { Language: LanguageModel } = require('./models');
+const {
+  Language: LanguageModel,
+  Image: ImageModel
+} = require('./models');
+
 const DefaultDataset = require(`${__root}/training/datasets/Default`);
+const DefaultImageDataset = require(`${__root}/training/datasets/images/Default`);
+
+/**
+ * Language model tests
+ */
 
 const withDataset = async (dataset, query) => {
   const agent = await LanguageModel({
@@ -71,4 +80,48 @@ const runTests = async () => {
   await withBootstrap('people');
 };
 
-runTests();
+/**
+ * Image model tests
+ */
+
+const withImageDataset = async (dataset, seedPixel) => {
+  const agent = await ImageModel({
+    dataset
+  });
+
+  console.log(`pixel: ${seedPixel}`)
+
+  // Log next pixel prediction
+
+  console.log(
+    'getPixelPrediction >>',
+    `pixel: ${seedPixel}`,
+    agent.getPixelPrediction(seedPixel)
+  );
+
+  // Log sequence generation
+
+  console.log(
+    'getGradientCompletion >>',
+    `pixel: ${seedPixel}`,
+    agent.render(agent.generate(seedPixel))
+  );
+};
+
+const runImageTests = async () => {
+  // Unit: Predict a gradient from common starter colors
+
+  await withImageDataset(DefaultImageDataset, '#000000');
+
+  await withImageDataset(DefaultImageDataset, '#ffffff');
+
+  await withImageDataset(DefaultImageDataset, '#c6e3ff');
+
+  console.log('Done.');
+};
+
+(async () => {
+  await runTests();
+
+  await runImageTests();
+})();

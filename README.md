@@ -101,14 +101,7 @@ const MyLanguageModel = () => {
 MyLanguageModel();
 ```
 
-#### Training embeddings
-
-> [!NOTE]
-> By default, next-token prediction does not use vector search. To enable it, set `VARIANCE=1` (any value higher than `0`) in an `.env`. This will change the prediction from returning the next likeliest token (n-gram search) to returning the most similar token (vector search) e.g. "The quick brown fox *jumped*..." (n-gram prediction) vs "The quick brown fox *juked*..." (vector similarity). Note that vector search is considerably slower and more resource intensive.
-
-When running the n-gram training using the built-in training method, vector embeddings (144-dimensional) are also created for each token pair to capture context and semantics (e.g. the token `Jordan` has different values in the fragment `Michael Jordan` than it does in the fragment `Syria, Jordan`). The goal of vector search is to optionally enable paraphrasing, slang and profanity filtering, and more. 
-
-Run tests
+## Run tests
 
 `npm test`
 
@@ -124,19 +117,16 @@ https://github.com/bennyschmidt/next-token-prediction/assets/45407493/68c070bd-e
 
 https://github.com/bennyschmidt/next-token-prediction/assets/45407493/cd4a1102-5a82-4a6f-abb8-e96805fa65fd
 
-### Browser example: Fast autocomplete
+### Browser example: Fast text autocomplete
 
 With more training data you can get more suggestions, eventually hitting a tipping point where it can complete anything.
 
 https://github.com/bennyschmidt/next-token-prediction/assets/45407493/942bdabf-4bf5-4d7a-b0db-2331d8c3dd18
 
-## Inspiration
 
-3Blue1Brown video on YouTube:
+### Browser example: Fast generative fill
 
-![YouTube](https://img.youtube.com/vi/wjZofJX0v4M/0.jpg)
-
-Watch: [YouTube](https://www.youtube.com/watch?v=wjZofJX0v4M)
+Coming soon!
 
 ## Goals
 
@@ -148,8 +138,6 @@ Watch: [YouTube](https://www.youtube.com/watch?v=wjZofJX0v4M)
   - summarizing
   - paraphrasing
 
-2. Create pixel and audio transformers for other prediction formats
+2. Create image and audio models for other prediction formats
 
-3. Demystify LLMs & simplify methodologies
-
-4. Make a high-quality, free/open chat-focused LLM in JavaScript, and an equally sophisticated image-focused diffusion model. Working on this [here](https://github.com/bennyschmidt/llimo).
+3. Simplify AI/ML methodologies

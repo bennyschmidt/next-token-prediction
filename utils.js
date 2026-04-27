@@ -1,53 +1,9 @@
 const { dirname } = require('path');
 const __root = dirname(require.main.filename);
 const fs = require('fs').promises;
-
-const Tagger = require('wink-pos-tagger');
-
-// See: https://winkjs.org/wink-pos-tagger/
+const zlib = require('zlib');
 
 const FORMAT_ERROR = 'Invalid file format.';
-
-const tagger = Tagger();
-
-const partsOfSpeech = [
-  'CC',
-  'CD',
-  'DT',
-  'EX',
-  'FW',
-  'IN',
-  'JJ',
-  'JJR',
-  'JJS',
-  'LS',
-  'MD',
-  'NN',
-  'NNS',
-  'NNP',
-  'NNPS',
-  'PDT',
-  'POS',
-  'PRP',
-  'PRP$',
-  'RB',
-  'RBR',
-  'RBS',
-  'RP',
-  'SYM',
-  'TO',
-  'UH',
-  'VB',
-  'VBD',
-  'VBG',
-  'VBN',
-  'VBP',
-  'VBZ',
-  'WDT',
-  'WP',
-  'WP$',
-  'WRB'
-];
 
 const suffixes = [
   'ack',
@@ -97,8 +53,6 @@ module.exports = {
   w: 'w',
   k: 'k',
   j: 'j',
-
-  partsOfSpeech,
   suffixes,
 
   combineDocuments: async documents => {
@@ -121,19 +75,60 @@ module.exports = {
     return text;
   },
 
-  fetchEmbeddings: async name => {
-    const file = await fs.readFile(
-      `${__root}/training/embeddings/${name}.json`
-    );
+   combineImages: async images => {
+     let allPixels = [];
 
-    const embeddings = JSON.parse(file.toString());
+     for (const imageName of images) {
+       const buffer = await fs.readFile(`${__root}/training/images/${imageName}.png`);
 
-    return embeddings;
-  },
+       // 1. Validating image
 
-  getPartsOfSpeech: text => (
-    tagger.tagSentence(text)
-  ),
+       if (buffer.readUInt32BE(0) !== 0x89504E47) continue;
+
+       let pos = 8;
+       let width, height;
+       let idatChunks = [];
+
+       // 2. Walking the chunks
+
+       while (pos < buffer.length) {
+         const length = buffer.readUInt32BE(pos);
+         const type = buffer.toString('ascii', pos + 4, pos + 8);
+
+         if (type === 'IHDR') {
+           width = buffer.readUInt32BE(pos + 8);
+           height = buffer.readUInt32BE(pos + 12);
+         } else if (type === 'IDAT') {
+           idatChunks.push(buffer.slice(pos + 8, pos + 8 + length));
+         } else if (type === 'IEND') break;
+
+         pos += length + 12;
+       }
+
+       // 3. Decompressing the Pixel Stream
+
+       const rawData = zlib.inflateSync(Buffer.concat(idatChunks));
+
+       // 4. Scanline parsing (skipping the filter byte)
+
+       const bytesPerPixel = 4;
+       const stride = (width * bytesPerPixel) + 1;
+
+       for (let y = 0; y < height; y++) {
+         for (let x = 0; x < width; x++) {
+           const idx = (y * stride) + 1 + (x * bytesPerPixel);
+
+           const r = rawData[idx].toString(16).padStart(2, '0');
+           const g = rawData[idx + 1].toString(16).padStart(2, '0');
+           const b = rawData[idx + 2].toString(16).padStart(2, '0');
+
+           allPixels.push(`#${r}${g}${b}`);
+         }
+       }
+     }
+
+     return allPixels;
+   },
 
   isLowerCase: letter => (
     letter === letter.toLowerCase() &&

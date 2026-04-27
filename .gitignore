@@ -1,1 +1,21 @@
-/node_modules
+# dependencies
+node_modules
+
+# env
+.env
+.env.dev
+.env.prod
+
+# ssl
+/ssl
+
+# data
+src/apps/static/resources
+src/services/.dss
+dump.rdb
+dump
+
+# misc
+.DS_Store
+.eslintcache
+npm-debug.log*

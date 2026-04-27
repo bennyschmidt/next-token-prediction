@@ -1,7 +1,12 @@
-const Transformer = require('./Transformer');
+const Phrase = require('./Phrase');
 const Language = require('./Language');
+
+const Gradient = require('./Gradient');
+const Image = require('./Image');
 
 module.exports = {
   Language,
-  Transformer
+  Phrase,
+  Gradient,
+  Image
 };
