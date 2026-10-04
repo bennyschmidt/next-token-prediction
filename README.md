@@ -123,11 +123,6 @@ With more training data you can get more suggestions, eventually hitting a tippi
 
 https://github.com/bennyschmidt/next-token-prediction/assets/45407493/942bdabf-4bf5-4d7a-b0db-2331d8c3dd18
 
-
-### Browser example: Fast generative fill
-
-Coming soon!
-
 ## Goals
 
 1. Provide a high-quality text prediction library for:
@@ -141,3 +136,5 @@ Coming soon!
 2. Create image and audio models for other prediction formats
 
 3. Simplify AI/ML methodologies
+
+4. Create simple chat and image generation software (see: https://github.com/bennyschmidt/llimo)
